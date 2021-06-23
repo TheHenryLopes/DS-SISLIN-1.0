@@ -4,15 +4,59 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
+        xmlns:materialDesign="http://materialdesignnxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="" Height="560" Width="915" Icon="2334597.png">
-    <Grid Background="#FFDED6E2" Margin="0,0,-3,-3">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="89*"/>
-            <ColumnDefinition Width="41*"/>
-        </Grid.ColumnDefinitions>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="349,302,0,0" VerticalAlignment="Top" Width="214" Height="80"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="398,130,0,0" VerticalAlignment="Top" Width="100"/>
+        Title="" Height="480" Width="360" AllowsTransparency="True" WindowStyle="None"
+        Background="Transparent" ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
 
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#7BE9F6" Offset="0.0"/>
+                        <GradientStop Color="#C490E4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                
+                <StackPanel VerticalAlignment="Center" Margin="2">
+                    <PasswordBox Password="12345" Margin="53,294,53,148"
+                Background="Transparent" Foreground="White" SelectionBrush="#FF518BB9" BorderBrush="White"/>
+                </StackPanel>
+                        
+            </Border>
+
+            <StackPanel VerticalAlignment="Center">
+                <Image Source="icon_login.png" Width="100" />
+                <TextBlock Text="Fazer Login"
+                FontWeight="Light" FontFamily="Helvetica"
+                FontSize="22" Foreground="White"
+                HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox FontFamily="Helvetica"
+                FontWeight="Light" Text="Adm" FontSize="22"
+                HorizontalAlignment="Center" Foreground="White"
+                Background="Transparent" BorderThickness="0"
+                Width="236" HorizontalContentAlignment="Left"
+                Opacity="0.5" Height="25" Margin="62,0"/>
+
+                </StackPanel>
+                <Border Width="250" Height="2" Background="White" Opacity="0.5"/>
+            </StackPanel>
+            <Button Content="Entrar" HorizontalAlignment="Left" Margin="52,124,0,0" 
+                    Grid.Row="1" VerticalAlignment="Top" Width="102" Height="37"
+                    Background="Transparent" BorderBrush="White" FontSize="20" FontFamily="Helvetica" Foreground="White"/>
+            <Button Content="Sair" HorizontalAlignment="Left" Margin="206,124,0,0" 
+                Grid.Row="1" VerticalAlignment="Top" Width="102" Height="37"
+                Background="Transparent" BorderBrush="White" FontSize="20" FontFamily="Helvetica" Foreground="White" Click="Button_Click"/>
+
+        </Grid>
     </Grid>
 </Window>
