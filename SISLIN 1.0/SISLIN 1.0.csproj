@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{80877A5C-4256-4870-9F3D-D3E37AF0D5F2}</ProjectGuid>
+    <ProjectGuid>{EF223659-A327-4154-AA8A-2E309D1DE26C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SISLIN_1._0</RootNamespace>
     <AssemblyName>SISLIN 1.0</AssemblyName>
@@ -93,9 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="2334597.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
