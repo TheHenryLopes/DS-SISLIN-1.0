@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="" Height="560" Width="915" Icon="2334597.png">
     <Grid Background="#FFDED6E2" Margin="0,0,-3,-3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="41*"/>
+        </Grid.ColumnDefinitions>
         <Button Content="Button" HorizontalAlignment="Left" Margin="349,302,0,0" VerticalAlignment="Top" Width="214" Height="80"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="398,130,0,0" VerticalAlignment="Top" Width="100"/>
 
