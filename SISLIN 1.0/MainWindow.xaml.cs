@@ -20,6 +20,8 @@ namespace SISLIN_1._0
     /// </summary>
     public partial class MainWindow : Window
     {
+        string senha;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,6 +30,33 @@ namespace SISLIN_1._0
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            senha = (SENHA.Text);
+
+            if (senha == "12345")
+            {
+                MenuPrincipal Chamar = new MenuPrincipal();
+                Chamar.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Senha Incorreta!");
+            }
+        }
+
+        private void SENHA_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
