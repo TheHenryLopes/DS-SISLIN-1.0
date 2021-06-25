@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="Cadastrar_Promocao" Height="450" Width="800">
+        Title="Cadastrar_Promocao" Height="560" Width="915">
     <Grid>
-        
+        <Label Content="Cadastrar Promoção&#xD;&#xA;" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Arial Black"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="282,148,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
     </Grid>
 </Window>

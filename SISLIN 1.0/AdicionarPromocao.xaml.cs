@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Cadastrar_Promocao.xaml
+    /// Lógica interna para AdicionarPromocao.xaml
     /// </summary>
-    public partial class Cadastrar_Promocao : Window
+    public partial class AdicionarPromocao : Window
     {
-        public Cadastrar_Promocao()
+        public AdicionarPromocao()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            AdicionarPromocao chamar = new AdicionarPromocao();
-            chamar.ShowDialog();
-
         }
     }
 }
