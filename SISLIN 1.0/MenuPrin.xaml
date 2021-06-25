@@ -5,9 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="MenuPrin" Height="450" Width="800">
+        Title="MenuPrin" Height="560" Width="915" Background="Transparent">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="495,225,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Border CornerRadius="1" Margin="-1,0,0,0">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7BE9F6" Offset="0.0"/>
+                    <GradientStop Color="#C490E4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Menu x:Name="MenuPrincipal" Margin="0,0,0,498" HorizontalAlignment="Left" Width="908" Height="31" VerticalAlignment="Bottom"
+                  >
+            </Menu>
+        </Border>
 
     </Grid>
 </Window>

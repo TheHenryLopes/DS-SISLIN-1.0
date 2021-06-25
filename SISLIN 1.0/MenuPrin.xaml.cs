@@ -23,8 +23,7 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Cadastrar_Promocao Chamar = new Cadastrar_Promocao();
             Chamar.ShowDialog();
