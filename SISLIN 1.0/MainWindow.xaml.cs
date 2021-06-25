@@ -43,7 +43,7 @@ namespace SISLIN_1._0
 
             if (senha == "12345")
             {
-                MenuPrincipal Chamar = new MenuPrincipal();
+                MenuPrin Chamar = new MenuPrin();
                 Chamar.ShowDialog();
 
                 this.Close();

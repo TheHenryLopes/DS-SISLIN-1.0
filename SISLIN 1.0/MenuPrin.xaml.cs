@@ -15,13 +15,19 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para MenuPrincipal.xaml
+    /// Lógica interna para MenuPrin.xaml
     /// </summary>
-    public partial class MenuPrincipal : Window
+    public partial class MenuPrin : Window
     {
-        public MenuPrincipal()
+        public MenuPrin()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Cadastrar_Promocao Chamar = new Cadastrar_Promocao();
+            Chamar.ShowDialog();
         }
     }
 }
