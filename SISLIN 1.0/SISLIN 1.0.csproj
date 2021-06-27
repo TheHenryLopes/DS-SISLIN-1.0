@@ -73,6 +73,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CadastrarCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Cadastrar_Promocao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -87,6 +91,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CadastrarCliente.xaml.cs">
+      <DependentUpon>CadastrarCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cadastrar_Promocao.xaml.cs">
       <DependentUpon>Cadastrar_Promocao.xaml</DependentUpon>

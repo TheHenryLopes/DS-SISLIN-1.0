@@ -7,7 +7,8 @@
         xmlns:materialDesign="http://materialdesignnxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="" Height="480" Width="360" AllowsTransparency="True" WindowStyle="None"
-        Background="Transparent" ResizeMode="NoResize" Icon="2334597.png">
+        Background="Transparent" ResizeMode="NoResize" Icon="2334597.png"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
