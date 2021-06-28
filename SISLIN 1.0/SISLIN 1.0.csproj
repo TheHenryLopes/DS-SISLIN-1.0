@@ -69,6 +69,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Tela_Orcamento.xaml.cs">
+      <DependentUpon>Tela_Orcamento.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tela_Perdas.xaml.cs">
       <DependentUpon>Tela_Perdas.xaml</DependentUpon>
     </Compile>
@@ -113,6 +116,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenuPrin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tela_Orcamento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

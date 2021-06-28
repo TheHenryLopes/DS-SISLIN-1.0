@@ -1,0 +1,199 @@
+﻿<Window x:Class="SISLIN_1._0.Tela_Orcamento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISLIN_1._0"
+        mc:Ignorable="d"
+        Title="Tela_Orcamento" Height="800" Width="1200">
+    <Grid>
+        <Border CornerRadius="10" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7BE9F6" Offset="0.0"/>
+                    <GradientStop Color="#C490E4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+
+        </Border>
+
+        <Button Content="Atualizar" HorizontalAlignment="Left" 
+                Margin="170 40 20 0" VerticalAlignment="Top" 
+                Width="150" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"/>
+
+        <Button Content="Localizar" HorizontalAlignment="Left" 
+                Margin="400 40 20 0" VerticalAlignment="Top" 
+                Width="150" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"/>
+
+        <Button Content="Ordenar" HorizontalAlignment="Left" 
+                Margin="630 40 20 0" VerticalAlignment="Top" 
+                Width="150" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"/>
+
+        <Button Content="Cancelar" HorizontalAlignment="Left" 
+                Margin="860 40 20 0" VerticalAlignment="Top" 
+                Width="150" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"/>
+
+
+        <Label Content="Código" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="150 110 900 625"/>
+
+        <TextBox TextWrapping="Wrap" Margin="150 150 900 585"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Data de Emissão" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="340 110 690 625"/>
+
+        <TextBox TextWrapping="Wrap" Margin="340 150 650 585"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Vendedor" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="610 110 470 625"/>
+
+        <ComboBox x:Name="Vendedor" Background="Transparent" Margin="610 150 450 585"
+                     Foreground="Black" BorderBrush="White">
+            <ComboBoxItem  Content="Any"/>
+            <ComboBoxItem Content="Jeremy"/>
+            <ComboBoxItem Content="Arthur"/>
+            <ComboBoxItem Content="Tess"/>
+            <ComboBoxItem Content="Athanasia"/>
+            <ComboBoxItem Content="Claude Athanasius"/>
+            <ComboBoxItem Content="..."/>
+        </ComboBox>
+
+        <Label Content="Cliente" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="810 110 200 625"/>
+
+        <TextBox TextWrapping="Wrap" Margin="810 150 130 585"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+
+
+        <Label Content="Nome Usual" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="150 200 900 535"/>
+
+        <TextBox TextWrapping="Wrap" Margin="150 240 830 495"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="CPF" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="410 200 550 535"/>
+
+        <TextBox TextWrapping="Wrap" Margin="410 240 550 495"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="País" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="690 200 350 535"/>
+
+        <ComboBox x:Name="Pais" Background="Transparent" 
+         Foreground="Black" BorderBrush="White" Margin="690 240 350 495">
+            <ComboBoxItem  Content="Argentina"/>
+            <ComboBoxItem Content="Brasil"/>
+            <ComboBoxItem Content="Estados Unidos"/>
+            <ComboBoxItem Content="Itália"/>
+            <ComboBoxItem Content="Espanha"/>
+            <ComboBoxItem Content="Gênova"/>
+            <ComboBoxItem Content="..."/>
+        </ComboBox>
+
+        <Label Content="Telefone" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="890 200 200 535"/>
+
+        <TextBox TextWrapping="Wrap" Margin="890 240 130 495"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+
+
+        <Label Content="Logradouro" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="150 290 650 440"/>
+
+        <TextBox TextWrapping="Wrap" Margin="150 330 650 404"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Número" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="590 290 500 440"/>
+
+        <TextBox TextWrapping="Wrap" Margin="590 330 490 404"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Complemento" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="750 290 200 440"/>
+
+        <TextBox TextWrapping="Wrap" Margin="750 330 130 404"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+
+
+
+        <Label Content="Bairro" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="150 380 650 355"/>
+
+        <TextBox TextWrapping="Wrap" Margin="150 420 590 315"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Localidade" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="650 380 130 355"/>
+
+        <TextBox TextWrapping="Wrap" Margin="650 420 130 315"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+
+
+
+
+        <Button Content="Salvar" Margin="170 704 872 28"
+                Width="150" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"/>
+
+        <Button Content="Inserir" Margin="400 704 642 28"
+                Width="150" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"/>
+
+        <Button Content="Excluir" Margin="630 704 412 28"
+                Width="150" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"/>
+
+        <Button Content="Editar" Margin="860 704 182 28"
+                Width="150" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"/>
+    </Grid>
+</Window>
