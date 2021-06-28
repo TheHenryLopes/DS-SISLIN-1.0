@@ -12,7 +12,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Border CornerRadius="10" Grid.RowSpan="2">
+        <Border CornerRadius="1" Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>
