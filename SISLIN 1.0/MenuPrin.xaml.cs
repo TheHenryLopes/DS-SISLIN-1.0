@@ -34,5 +34,11 @@ namespace SISLIN_1._0
             ERRMovimento SoVem = new ERRMovimento();
             SoVem.ShowDialog();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Tela_Perdas SoVem = new Tela_Perdas();
+            SoVem.ShowDialog();
+        }
     }
 }
