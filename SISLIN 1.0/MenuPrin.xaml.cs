@@ -40,5 +40,11 @@ namespace SISLIN_1._0
             Tela_Perdas SoVem = new Tela_Perdas();
             SoVem.ShowDialog();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Tela_Orcamento SoVem = new Tela_Orcamento();
+            SoVem.ShowDialog();
+        }
     }
 }

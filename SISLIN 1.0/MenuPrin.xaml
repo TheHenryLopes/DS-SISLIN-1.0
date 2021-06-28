@@ -18,7 +18,7 @@
             <Button Content="Gustavo" Margin="110,118,598,293" FontSize="50" Click="Button_Click"/>
         </Border>
         <Button Content="Naiany" HorizontalAlignment="Left" Margin="104,280,0,0" VerticalAlignment="Top" Width="132" Height="136" Click="Button_Click_1"/>
-        <Button Content="Nai Perdas" HorizontalAlignment="Left" Margin="392,311,0,0" VerticalAlignment="Top" Width="211" RenderTransformOrigin="0.5,0.5" Height="95" Click="Button_Click_2">
+        <Button Content="Nai Perdas" HorizontalAlignment="Left" Margin="270,344,0,0" VerticalAlignment="Top" Width="212" RenderTransformOrigin="0.5,0.5" Height="95" Click="Button_Click_2">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -28,6 +28,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
+        <Button Content="Nai Orca" HorizontalAlignment="Left" Margin="526,326,0,0" VerticalAlignment="Top" Width="354" Height="193" FontSize="80" Click="Button_Click_3"/>
 
     </Grid>
 </Window>
