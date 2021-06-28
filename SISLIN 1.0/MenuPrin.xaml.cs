@@ -28,5 +28,11 @@ namespace SISLIN_1._0
             Cadastrar_Promocao Chamar = new Cadastrar_Promocao();
             Chamar.ShowDialog();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ERRMovimento SoVem = new ERRMovimento();
+            SoVem.ShowDialog();
+        }
     }
 }

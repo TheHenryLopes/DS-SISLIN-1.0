@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
         Title="MenuPrin" Height="560" Width="915" Background="Transparent"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" Icon="2334597.png">
     <Grid>
         <Border CornerRadius="1" Margin="-1,0,0,0">
             <Border.Background>
@@ -17,6 +17,7 @@
             </Border.Background>
             <Button Content="Gustavo" Margin="110,118,598,293" FontSize="50" Click="Button_Click"/>
         </Border>
+        <Button Content="Naiany" HorizontalAlignment="Left" Margin="228,321,0,0" VerticalAlignment="Top" Width="424" Height="135" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
