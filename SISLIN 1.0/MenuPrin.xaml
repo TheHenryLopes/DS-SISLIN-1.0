@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="MenuPrin" Height="560" Width="915" Background="Transparent">
+        Title="MenuPrin" Height="560" Width="915" Background="Transparent"
+        WindowStartupLocation="CenterScreen" Icon="2334597.png">
     <Grid>
         <Border CornerRadius="1" Margin="-1,0,0,0">
             <Border.Background>
@@ -14,8 +15,20 @@
                     <GradientStop Color="#C490E4" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Button Content="Naiany" Margin="110,118,598,293" FontSize="50" Click="Button_Click"/>
+            <Button Content="Gustavo" Margin="110,118,598,293" FontSize="50" Click="Button_Click"/>
         </Border>
+        <Button Content="Naiany" HorizontalAlignment="Left" Margin="104,280,0,0" VerticalAlignment="Top" Width="132" Height="136" Click="Button_Click_1"/>
+        <Button Content="Nai Perdas" HorizontalAlignment="Left" Margin="270,344,0,0" VerticalAlignment="Top" Width="212" RenderTransformOrigin="0.5,0.5" Height="95" Click="Button_Click_2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15.203"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Nai Orca" HorizontalAlignment="Left" Margin="526,326,0,0" VerticalAlignment="Top" Width="354" Height="193" FontSize="80" Click="Button_Click_3"/>
 
     </Grid>
 </Window>

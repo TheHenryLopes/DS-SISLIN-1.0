@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Cadastrar_Orcamentos.xaml
+    /// Lógica interna para ERRMovimento.xaml
     /// </summary>
-    public partial class Cadastrar_Orcamentos : Window
+    public partial class ERRMovimento : Window
     {
-        public Cadastrar_Orcamentos()
+        public ERRMovimento()
         {
             InitializeComponent();
         }

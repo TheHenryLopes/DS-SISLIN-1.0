@@ -23,16 +23,28 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
         }
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             Cadastrar_Promocao Chamar = new Cadastrar_Promocao();
             Chamar.ShowDialog();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Cadastrar_Promocao Chamar = new Cadastrar_Promocao();
-            Chamar.ShowDialog();
+            ERRMovimento SoVem = new ERRMovimento();
+            SoVem.ShowDialog();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Tela_Perdas SoVem = new Tela_Perdas();
+            SoVem.ShowDialog();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Tela_Orcamento SoVem = new Tela_Orcamento();
+            SoVem.ShowDialog();
         }
     }
 }

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Cadastrar_Perdas.xaml
+    /// Lógica interna para Tela_Orcamento.xaml
     /// </summary>
-    public partial class Cadastrar_Perdas : Window
+    public partial class Tela_Orcamento : Window
     {
-        public Cadastrar_Perdas()
+        public Tela_Orcamento()
         {
             InitializeComponent();
         }

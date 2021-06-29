@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para ERRM.xaml
+    /// Lógica interna para Tela_Perdas.xaml
     /// </summary>
-    public partial class ERRM : Window
+    public partial class Tela_Perdas : Window
     {
-        public ERRM()
+        public Tela_Perdas()
         {
             InitializeComponent();
         }
