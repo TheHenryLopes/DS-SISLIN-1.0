@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SISLIN_1._0.Relatorio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,5 +47,7 @@ namespace SISLIN_1._0
             Tela_Orcamento SoVem = new Tela_Orcamento();
             SoVem.ShowDialog();
         }
+
+
     }
 }

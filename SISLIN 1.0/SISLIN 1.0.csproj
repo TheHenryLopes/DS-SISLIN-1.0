@@ -70,6 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Relatorio\Relatorio_venda.cs" />
     <Compile Include="Tela_Orcamento.xaml.cs">
       <DependentUpon>Tela_Orcamento.xaml</DependentUpon>
     </Compile>
