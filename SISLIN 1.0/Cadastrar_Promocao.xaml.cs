@@ -28,6 +28,11 @@ namespace SISLIN_1._0
         {
             AdicionarPromocao chamar = new AdicionarPromocao();
             chamar.ShowDialog();
+           
+        }
+
+        private void Adicionar_Produto_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

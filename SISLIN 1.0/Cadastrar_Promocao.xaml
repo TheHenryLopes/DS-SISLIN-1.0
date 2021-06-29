@@ -5,10 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="Cadastrar_Promocao" Height="560" Width="915">
-    <Grid>
-        <Label Content="Cadastrar Promoção&#xD;&#xA;" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Arial Black"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="282,148,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-
+        Title="Cadastrar Promoção" Height="480" Width="500
+" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Icon="promo_gusta.png">
+    <Grid >
+        <Border CornerRadius="1" Margin="-1,0,0,0">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7BE9F6" Offset="0.0"/>
+                    <GradientStop Color="#C490E4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Label Content="Cadastrar Promoção&#xD;&#xA;" HorizontalAlignment="Left" Margin="76,10,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Arial Black" Height="79" Width="348"/>
+        <Button Content="Adicionar Promoção" HorizontalAlignment="Left" Margin="189,209,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click" Height="45" Opacity="0.8">
+            <Button.Effect>
+                <DropShadowEffect Opacity="2"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Adicionar_Produto" Content="Adicionar Produtos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="122" Margin="189,94,0,0" Height="45" Opacity="0.8" Background="#FFE4E4E4" Click="Adicionar_Produto_Click">
+            <Button.Effect>
+                <DropShadowEffect Opacity="2" RenderingBias="Quality"/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Procurar Produtos na Promoção" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190" Margin="161,331,0,0" Height="45" Opacity="0.8">
+            <Button.Effect>
+                <DropShadowEffect Opacity="2"/>
+            </Button.Effect>
+        </Button>
     </Grid>
 </Window>

@@ -22,6 +22,53 @@ namespace SISLIN_1._0
         public AdicionarPromocao()
         {
             InitializeComponent();
+            DpData.SelectedDate = DateTime.Now;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string nome;
+            nome = Convert.ToString(Nome.Text);
+
+
+            MessageBox.Show("O sistema ainda não está com essa função disponível, pois não temos o Banco de Dados.\nMas a opção " + nome + " será anotada, obrigado.");
+        }
+
+        private void AddPromo_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime data_selecionada = Convert.ToDateTime(DpData.SelectedDate);
+            int dias = Convert.ToInt32(QtPromo.Text);
+            data_selecionada.AddDays(dias);
+            String aa, vencimento;
+            
+
+            VcPromo.Text = Convert.ToString(data_selecionada.AddDays(dias)).Substring(0, 10);
+
+            double n_1, porcentagem, vp, VrProduto;
+
+            vp = Convert.ToDouble(ValorPor.Text);
+            VrProduto = Convert.ToDouble(ValorProduto.Text);
+            aa = Convert.ToString(ProdutoNome.Text);
+            vencimento = Convert.ToString(VcPromo.Text);
+
+
+            porcentagem = vp / 100;
+            
+
+            n_1 = VrProduto - (VrProduto * porcentagem);
+
+            MessageBox.Show("O produto " + aa + " entrou em promoção e agora está valendo: " + n_1 + " reais a promoção é válida até o dia :" + vencimento);
+
+
+
+
+
+        }
+
+        private void VcPromo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
+
