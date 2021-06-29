@@ -1,0 +1,76 @@
+﻿<Window x:Class="SISLIN_1._0.Emissor_de_documentos_fiscais"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISLIN_1._0"
+        mc:Ignorable="d"
+          Title="Emissor De Documentos Fiscais" Height="450" Width="800">
+    <Grid>
+        <Border CornerRadius="1" Margin="-1,0,0,0">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7BE9F6" Offset="0.0"/>
+                    <GradientStop Color="#C490E4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Label Content="CNPJ/CPF:" HorizontalAlignment="Left" Margin="115,66,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.719"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.546"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Data de emissão" HorizontalAlignment="Left" Margin="115,155,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="115,184,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="115,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Label Content="CEP:" HorizontalAlignment="Left" Margin="115,242,0,0" VerticalAlignment="Top"/>
+        <Label Content="CNPJ/CPF:" HorizontalAlignment="Left" Margin="115,66,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.719"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.546"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Data de emissão" HorizontalAlignment="Left" Margin="115,155,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="115,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="115,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Label Content="CEP:" HorizontalAlignment="Left" Margin="115,242,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nome do cliente:" HorizontalAlignment="Left" Margin="500,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.126"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="504,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.719"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.546"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Saída:" HorizontalAlignment="Left" Margin="502,153,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="500,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="500,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Valor:" HorizontalAlignment="Left" Margin="502,240,0,0" VerticalAlignment="Top"/>
+        <Button Content="Finalizar" HorizontalAlignment="Left" Margin="545,372,0,0" VerticalAlignment="Top" Width="75" Background="#FF993399" Click="Button_Click"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="668,372,0,0" VerticalAlignment="Top" Width="75" Background="#FFEA7A45" RenderTransformOrigin="0.262,0.645" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

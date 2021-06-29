@@ -69,6 +69,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="botaofeedback.xaml.cs">
+      <DependentUpon>botaofeedback.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Emissor de documentos fiscais.xaml.cs">
+      <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Relatorio\Relatorio_venda.cs" />
     <Compile Include="Tela_Orcamento.xaml.cs">
       <DependentUpon>Tela_Orcamento.xaml</DependentUpon>
@@ -80,11 +86,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="botaofeedback.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CadastrarCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Cadastrar_Promocao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Emissor de documentos fiscais.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
