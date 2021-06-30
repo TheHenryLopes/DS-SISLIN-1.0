@@ -18,6 +18,7 @@
                     <GradientStop Color="#C490E4" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
+            <DataGrid x:Name="info_orca" Margin="70,492,50,100"/>
         </Border>
 
 

@@ -45,6 +45,7 @@
 
 
 
+
         <Button Content="Gerar Relatório" HorizontalAlignment="Left" Margin="65,113,0,0"  
                     VerticalAlignment="Top" Width="166" Height="37" 
                     Background="Transparent" BorderBrush="White" FontSize="20" 
@@ -56,5 +57,6 @@
         <Button Content="Salvar em PDF" HorizontalAlignment="Left" Margin="320,332,0,0" VerticalAlignment="Top" Width="150" Height="37" 
                 Background="Transparent" BorderBrush="White" FontSize="20" 
                 FontFamily="Helvetica" Foreground="White"/>
+        <DataGrid HorizontalAlignment="Left" Height="133" Margin="38,177,0,0" VerticalAlignment="Top" Width="513"/>
     </Grid>
 </Window>

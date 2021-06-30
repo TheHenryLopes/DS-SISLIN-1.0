@@ -19,9 +19,25 @@ namespace SISLIN_1._0
     /// </summary>
     public partial class Cadastrar_Orçamentos1 : Window
     {
+        List<Dados_Orcamento> Informacao = new List<Dados_Orcamento>();
+
         public Cadastrar_Orçamentos1()
         {
             InitializeComponent();
+
+            Loaded += Cadastrar_Orçamentos1_Loaded;
+        }
+
+        private void Cadastrar_Orçamentos1_Loaded(object sender, RoutedEventArgs e)
+        {
+            for(int i = 0; i < 2; i++)
+            {
+                Informacao.Add(new Dados_Orcamento()
+                {
+                    Cod = i + 1
+                });
+            }
+            info_orca.ItemsSource = Informacao;
         }
     }
 }

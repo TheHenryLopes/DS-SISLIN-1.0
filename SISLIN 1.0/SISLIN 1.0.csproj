@@ -78,6 +78,7 @@
     <Compile Include="Cadastrar_PerdasSimples.xaml.cs">
       <DependentUpon>Cadastrar_PerdasSimples.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dados_Orcamento.cs" />
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
     </Compile>
