@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SISLIN_1._0"
         xmlns:Custom="http://metro.mahapps.com/winfx/xaml/iconpacks" x:Class="SISLIN_1._0.AdicionarPromocao"
         mc:Ignorable="d"
-        Title="Adicionar Promoção" Height="800" Width="900    " WindowStartupLocation="CenterScreen"  ResizeMode="CanMinimize">
+        Title="Adicionar Promoção" Height="800" Width="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -14,11 +14,8 @@
             <RowDefinition Height="214"/>
             <RowDefinition Height="27"/>
         </Grid.RowDefinitions>
-<<<<<<< Updated upstream
+
         <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="3" IsEnabled="False">
-=======
-        <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="4" IsEnabled="False">
->>>>>>> Stashed changes
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -69,17 +69,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-<<<<<<< Updated upstream
     <Compile Include="botaofeedback.xaml.cs">
       <DependentUpon>botaofeedback.xaml</DependentUpon>
-=======
+    </Compile>
     <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
       <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProdutosPromocao.cs" />
     <Compile Include="Tela_Orcamento.xaml.cs">
       <DependentUpon>Tela_Orcamento.xaml</DependentUpon>
->>>>>>> Stashed changes
     </Compile>
     <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
       <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
@@ -154,17 +152,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-<<<<<<< Updated upstream
-=======
     <Page Include="ProcurarProdutosNaPromocao.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Tela_Orcamento.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Tela_Perdas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,7 +160,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MenuPrin.xaml.cs">
