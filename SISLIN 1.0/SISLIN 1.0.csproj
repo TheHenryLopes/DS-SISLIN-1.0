@@ -75,13 +75,6 @@
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Relatorio\Relatorio_venda.cs" />
-    <Compile Include="Tela_Orcamento.xaml.cs">
-      <DependentUpon>Tela_Orcamento.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Tela_Perdas.xaml.cs">
-      <DependentUpon>Tela_Perdas.xaml</DependentUpon>
-    </Compile>
     <Page Include="AdicionarPromocao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -102,10 +95,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ERRMovimento.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -123,22 +112,11 @@
     <Compile Include="Cadastrar_Promocao.xaml.cs">
       <DependentUpon>Cadastrar_Promocao.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ERRMovimento.xaml.cs">
-      <DependentUpon>ERRMovimento.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenuPrin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Tela_Orcamento.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Tela_Perdas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
