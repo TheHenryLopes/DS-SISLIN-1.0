@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Tela_Orcamento.xaml
+    /// Lógica interna para ERRMovimento.xaml
     /// </summary>
-    public partial class Tela_Orcamento : Window
+    public partial class ERRMovimento : Window
     {
-        public Tela_Orcamento()
+        public ERRMovimento()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
