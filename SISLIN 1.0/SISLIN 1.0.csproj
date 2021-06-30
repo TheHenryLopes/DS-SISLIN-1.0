@@ -72,6 +72,15 @@
     <Compile Include="botaofeedback.xaml.cs">
       <DependentUpon>botaofeedback.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cadast_Pagamento1.xaml.cs">
+      <DependentUpon>Cadast_Pagamento1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="cad_Comp.xaml.cs">
+      <DependentUpon>cad_Comp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cad_produtos.xaml.cs">
+      <DependentUpon>Cad_produtos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
       <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
     </Compile>
@@ -94,6 +103,9 @@
     </Compile>
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pagamento2.xaml.cs">
+      <DependentUpon>Pagamento2.xaml</DependentUpon>
     </Compile>
     <Compile Include="VerProdutos.xaml.cs">
       <DependentUpon>VerProdutos.xaml</DependentUpon>
@@ -173,6 +185,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MenuPrin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pagamento2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
