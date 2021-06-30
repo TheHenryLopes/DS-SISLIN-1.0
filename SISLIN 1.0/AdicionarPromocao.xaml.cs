@@ -69,6 +69,12 @@ namespace SISLIN_1._0
         {
 
         }
+
+        private void VerPromo_Click(object sender, RoutedEventArgs e)
+        {
+            VerProdutos chamar = new VerProdutos();
+            chamar.ShowDialog();
+        }
     }
 }
 

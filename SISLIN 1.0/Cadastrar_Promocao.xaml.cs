@@ -33,7 +33,13 @@ namespace SISLIN_1._0
 
         private void Adicionar_Produto_Click(object sender, RoutedEventArgs e)
         {
+           
+        }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ProcurarProdutosNaPromocao chamar = new ProcurarProdutosNaPromocao();
+            chamar.ShowDialog();
         }
     }
 }

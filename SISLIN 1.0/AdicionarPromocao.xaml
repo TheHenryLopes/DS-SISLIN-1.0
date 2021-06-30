@@ -6,14 +6,19 @@
         xmlns:local="clr-namespace:SISLIN_1._0"
         xmlns:Custom="http://metro.mahapps.com/winfx/xaml/iconpacks" x:Class="SISLIN_1._0.AdicionarPromocao"
         mc:Ignorable="d"
-        Title="Adicionar Promoção" Height="760" Width="915         " WindowStartupLocation="CenterScreen">
+        Title="Adicionar Promoção" Height="800" Width="900    " WindowStartupLocation="CenterScreen"  ResizeMode="CanMinimize">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="145*"/>
-            <RowDefinition Height="22*"/>
-            <RowDefinition Height="76*"/>
+            <RowDefinition/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="214"/>
+            <RowDefinition Height="27"/>
         </Grid.RowDefinitions>
+<<<<<<< Updated upstream
         <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="3" IsEnabled="False">
+=======
+        <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="4" IsEnabled="False">
+>>>>>>> Stashed changes
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>
@@ -29,24 +34,29 @@
         </TextBox>
         <Button Content="Pesquisar" HorizontalAlignment="Left" Margin="729,78,0,0" VerticalAlignment="Top" Width="142" Height="44" Click="Button_Click"/>
         <Image HorizontalAlignment="Left" Height="64" Margin="70,69,0,0" VerticalAlignment="Top" Width="96" Source="71646d7673e8847ab07b3b7e78928777-iacute-cone-do-c-iacute-rculo-de-pesquisa-by-vexels.png"/>
-        <DatePicker x:Name="DpData" HorizontalAlignment="Left" Margin="374,284,0,0" VerticalAlignment="Top"/>
-        <Label Content="Quantidade de dias de promoção" HorizontalAlignment="Left" Margin="181,336,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="QtPromo" HorizontalAlignment="Left" Height="23" Margin="374,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" />
-        <Label Content="Data de vencimento da promoção" HorizontalAlignment="Left" Margin="184,87,0,0" VerticalAlignment="Top" Grid.Row="2"/>
+        <DatePicker x:Name="DpData" HorizontalAlignment="Left" Margin="388,284,0,0" VerticalAlignment="Top"/>
+        <Label Content="Quantidade de dias de promoção (digite apenas números)" HorizontalAlignment="Left" Margin="314,326,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="QtPromo" HorizontalAlignment="Left" Height="23" Margin="388,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" />
+        <Label Content="Data de vencimento da promoção" HorizontalAlignment="Left" Margin="195,22,0,0" VerticalAlignment="Top" Grid.Row="2"/>
         <Label Content="Selecione a data de início da promoção" HorizontalAlignment="Left" Margin="348,253,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="AddPromo" Content="Adicionar Promoção" HorizontalAlignment="Left" Margin="365,173,0,0" VerticalAlignment="Top" Width="147" Opacity="0.795" Height="45" Grid.Row="2" Click="AddPromo_Click">
+        <Button x:Name="AddPromo" Content="Adicionar Promoção" HorizontalAlignment="Left" Margin="381,76,0,0" VerticalAlignment="Top" Width="147" Opacity="0.795" Height="45" Grid.Row="2" Click="AddPromo_Click">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
-        <TextBox x:Name="VcPromo" HorizontalAlignment="Left" Height="23" Margin="374,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Row="2" IsUndoEnabled="False" TextChanged="VcPromo_TextChanged" IsEnabled="False"/>
-        <Label Content="Adicone um produto em promoção" HorizontalAlignment="Left" Margin="347,147,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="VcPromo" HorizontalAlignment="Left" Height="23" Margin="390,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Row="2" IsUndoEnabled="False" TextChanged="VcPromo_TextChanged" IsEnabled="False"/>
+        <Label Content="Adicone um produto em promoção" HorizontalAlignment="Left" Margin="347,147,0,0" VerticalAlignment="Top" FontFamily="Arial Black"/>
         <Label Content="Digite o nome do produto em que deseja por em promoção" HorizontalAlignment="Left" Margin="304,178,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="ProdutoNome" HorizontalAlignment="Left" Height="23" Margin="347,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
-        <TextBox x:Name="ValorProduto" HorizontalAlignment="Left" Height="23" Margin="388,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Row="1"/>
-        <Label Content="Digite o valor atual do produto" HorizontalAlignment="Left" Margin="197,10,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-        <Label Content="Digite a porcentagem que deseja aplicar, de desconto, no produto:" HorizontalAlignment="Left" Margin="248,10,0,0" VerticalAlignment="Top" Grid.Row="2"/>
-        <TextBox x:Name="ValorPor" HorizontalAlignment="Left" Height="23" Margin="374,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Row="2"/>
+        <TextBox x:Name="ValorProduto" HorizontalAlignment="Left" Height="23" Margin="388,427,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Digite o valor atual do produto (digite apenas números)" HorizontalAlignment="Left" Margin="304,396,0,0" VerticalAlignment="Top"/>
+        <Label Content="Digite a porcentagem que deseja aplicar, de desconto, no produto: (digite apenas números)" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox x:Name="ValorPor" HorizontalAlignment="Left" Height="23" Margin="388,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Row="1"/>
+        <Button x:Name="VerPromo" Content="Ver produtos na promoção" HorizontalAlignment="Left" Margin="366,177,0,0" Grid.Row="2" VerticalAlignment="Top" Width="179" Height="37" Opacity="0.8" Click="VerPromo_Click">
+            <Button.Effect>
+                <DropShadowEffect Opacity="2"/>
+            </Button.Effect>
+        </Button>
 
     </Grid>
 </Window>

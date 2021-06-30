@@ -69,8 +69,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< Updated upstream
     <Compile Include="botaofeedback.xaml.cs">
       <DependentUpon>botaofeedback.xaml</DependentUpon>
+=======
+    <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
+      <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProdutosPromocao.cs" />
+    <Compile Include="Tela_Orcamento.xaml.cs">
+      <DependentUpon>Tela_Orcamento.xaml</DependentUpon>
+>>>>>>> Stashed changes
     </Compile>
     <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
       <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
@@ -81,6 +90,9 @@
     <Compile Include="Dados_Orcamento.cs" />
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerProdutos.xaml.cs">
+      <DependentUpon>VerProdutos.xaml</DependentUpon>
     </Compile>
     <Page Include="AdicionarPromocao.xaml">
       <SubType>Designer</SubType>
@@ -142,6 +154,25 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< Updated upstream
+=======
+    <Page Include="ProcurarProdutosNaPromocao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tela_Orcamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tela_Perdas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MenuPrin.xaml.cs">

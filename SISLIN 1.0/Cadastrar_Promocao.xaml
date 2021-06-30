@@ -17,17 +17,12 @@
             </Border.Background>
         </Border>
         <Label Content="Cadastrar Promoção&#xD;&#xA;" HorizontalAlignment="Left" Margin="76,10,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Arial Black" Height="79" Width="348"/>
-        <Button Content="Adicionar Promoção" HorizontalAlignment="Left" Margin="189,209,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click" Height="45" Opacity="0.8">
+        <Button Content="Adicionar Promoção" HorizontalAlignment="Left" Margin="190,185,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click" Height="45" Opacity="0.8">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
-        <Button x:Name="Adicionar_Produto" Content="Adicionar Produtos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="122" Margin="189,94,0,0" Height="45" Opacity="0.8" Background="#FFE4E4E4" Click="Adicionar_Produto_Click">
-            <Button.Effect>
-                <DropShadowEffect Opacity="2" RenderingBias="Quality"/>
-            </Button.Effect>
-        </Button>
-        <Button Content="Procurar Produtos na Promoção" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190" Margin="161,331,0,0" Height="45" Opacity="0.8">
+        <Button Content="Procurar Produtos na Promoção" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190" Margin="159,302,0,0" Height="45" Opacity="0.8" Click="Button_Click_1">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
