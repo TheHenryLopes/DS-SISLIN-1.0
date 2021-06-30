@@ -25,7 +25,12 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
 
-            Loaded += Cadastrar_Orçamentos1_Loaded;
+            Loaded += Cadastrar_Orçamentos1_Loaded1;
+        }
+
+        private void Cadastrar_Orçamentos1_Loaded1(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private void Cadastrar_Orçamentos1_Loaded(object sender, RoutedEventArgs e)
