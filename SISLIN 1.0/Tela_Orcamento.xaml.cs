@@ -23,10 +23,5 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }
