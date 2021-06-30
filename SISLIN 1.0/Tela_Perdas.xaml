@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="Tela_Perdas" Height="750" Width="700" WindowStartupLocation="CenterScreen">
+        Title="Tela_Perdas" Height="550" Width="700" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Border CornerRadius="1" Margin="-1,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="165*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>
@@ -16,32 +20,125 @@
             </Border.Background>
         </Border>
 
-            <Button Content="Editar" HorizontalAlignment="Left" 
-                Margin="170 20 20 0" VerticalAlignment="Top" 
+        <Button x:Name="editar" Content="Editar" HorizontalAlignment="Left" 
+                Margin="170,20,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White"/>
+                FontFamily="Helvetica" Foreground="White" Click="editar_Click"/>
 
-            <Button Content="Inserir" HorizontalAlignment="Left" 
-                Margin="360 20 20 0" VerticalAlignment="Top" 
+        <Button x:Name="inserir" Content="Inserir" HorizontalAlignment="Left" 
+                Margin="360,20,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White"/>
+                FontFamily="Helvetica" Foreground="White" Click="inserir_Click"/>
 
-        
+        <Label Content="Código" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="67,85,50,235.875"/>
 
-        
+        <TextBox TextWrapping="Wrap" Margin="67,120,526,348.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
 
-            <Button Content="Salvar" HorizontalAlignment="Left" 
-                Margin="170 640 20 0" Width="150" Height="37" 
+        <Label Content="Data" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="198,85,50,230.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="198,120,317,348.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Motivo" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="400,85,50,230.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="400,120,50,348.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+
+        <Label Content="Produto" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="67,146,50,249.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="67,180,398,288.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Código de Barras" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="323,146,50,249.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="323,180,50,288.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+
+        <Label Content="Referências" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="67,211,50,211.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="67,245,50,223.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+
+        <Label Content="Unidade" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="67,276,50,39.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="67,310,526,158.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Quantidade" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="193,276,50,39.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="193,310,372,158.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Preço Custo" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="342,276,50,39.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="342,310,217,158.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+        <Label Content="Preço Venda" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="498,276,50,39.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="498,310,50,158.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+
+        <Label Content="Observações" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="67,336,50,79.875"/>
+
+        <TextBox TextWrapping="Wrap" Margin="67,372,50,92.875"
+                 Background="Transparent" 
+                     Foreground="Black" BorderBrush="White"/>
+
+
+        <Button x:Name="salvar" Content="Salvar" HorizontalAlignment="Left" 
+                Margin="170,431,0,27" Width="150" 
                 Background="Transparent" BorderBrush="White" 
-                FontSize="20" FontFamily="Helvetica" Foreground="White"/>
+                FontSize="20" FontFamily="Helvetica" Foreground="White" Click="salvar_Click"/>
 
 
-            <Button Content="Excluir" HorizontalAlignment="Left" 
-                Margin="360 640 20 0" Width="150" Height="37" 
+        <Button x:Name="excluir" Content="Excluir" HorizontalAlignment="Left" 
+                Margin="360,431,0,27" Width="150" 
                 Background="Transparent" BorderBrush="White" 
                 FontSize="20" FontFamily="Helvetica" 
-                Foreground="White"/>
+                Foreground="White" Click="excluir_Click"/>
     </Grid>
 </Window>
