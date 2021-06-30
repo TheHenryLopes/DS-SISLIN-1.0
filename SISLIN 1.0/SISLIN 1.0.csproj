@@ -78,9 +78,6 @@
     <Compile Include="Cadastrar_PerdasSimples.xaml.cs">
       <DependentUpon>Cadastrar_PerdasSimples.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoginWindow.xaml.cs">
-      <DependentUpon>LoginWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
       <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
     </Compile>
@@ -121,10 +118,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Emitir_RRM1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
