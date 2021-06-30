@@ -29,6 +29,7 @@
             </Button.RenderTransform>
         </Button>
         <Button Content="Nai Orca" HorizontalAlignment="Left" Margin="526,326,0,0" VerticalAlignment="Top" Width="354" Height="193" FontSize="80" Click="Button_Click_3"/>
+        <Button Content="Botão Ajuda" HorizontalAlignment="Left" Margin="701,136,0,0" VerticalAlignment="Top" Width="149" Height="78" Click="Button_Click_4"/>
 
     </Grid>
 </Window>
