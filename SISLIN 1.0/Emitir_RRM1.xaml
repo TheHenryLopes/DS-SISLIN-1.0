@@ -7,14 +7,20 @@
         mc:Ignorable="d"
         Title="Emitir_RRM1" Height="450" Width="600" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Border CornerRadius="1" Margin="-1,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="701*"/>
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
+        <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>
                     <GradientStop Color="#C490E4" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
+
         </Border>
+
 
 
 
@@ -43,9 +49,6 @@
             </ComboBox>
         </StackPanel>
 
-
-
-
         <Button Content="Gerar Relatório" HorizontalAlignment="Left" Margin="65,113,0,0"  
                     VerticalAlignment="Top" Width="166" Height="37" 
                     Background="Transparent" BorderBrush="White" FontSize="20" 
@@ -57,6 +60,11 @@
         <Button Content="Salvar em PDF" HorizontalAlignment="Left" Margin="320,332,0,0" VerticalAlignment="Top" Width="150" Height="37" 
                 Background="Transparent" BorderBrush="White" FontSize="20" 
                 FontFamily="Helvetica" Foreground="White"/>
-        <DataGrid HorizontalAlignment="Left" Height="133" Margin="38,177,0,0" VerticalAlignment="Top" Width="513"/>
+        <DataGrid HorizontalAlignment="Left" Height="140" Margin="38,172,0,0" VerticalAlignment="Top" Width="517"/>
+
+
+
+
+
     </Grid>
 </Window>
