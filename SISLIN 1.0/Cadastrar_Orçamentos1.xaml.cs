@@ -30,7 +30,7 @@ namespace SISLIN_1._0
 
         private void Cadastrar_Orçamentos1_Loaded1(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
 
         private void Cadastrar_Orçamentos1_Loaded(object sender, RoutedEventArgs e)
