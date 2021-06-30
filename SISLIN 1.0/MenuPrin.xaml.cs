@@ -1,4 +1,4 @@
-﻿using SISLIN_1._0.Relatorio;
+﻿using SISLIN_1._0;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,20 +32,17 @@ namespace SISLIN_1._0
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ERRMovimento SoVem = new ERRMovimento();
-            SoVem.ShowDialog();
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Tela_Perdas SoVem = new Tela_Perdas();
-            SoVem.ShowDialog();
+            
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Tela_Orcamento SoVem = new Tela_Orcamento();
-            SoVem.ShowDialog();
+
         }
 
 
