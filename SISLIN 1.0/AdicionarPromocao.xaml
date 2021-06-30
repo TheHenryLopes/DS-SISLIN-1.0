@@ -49,7 +49,7 @@
         <Label Content="Digite o valor atual do produto (digite apenas números)" HorizontalAlignment="Left" Margin="304,396,0,0" VerticalAlignment="Top"/>
         <Label Content="Digite a porcentagem que deseja aplicar, de desconto, no produto: (digite apenas números)" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Grid.Row="1"/>
         <TextBox x:Name="ValorPor" HorizontalAlignment="Left" Height="23" Margin="388,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" Grid.Row="1"/>
-        <Button x:Name="VerPromo" Content="Ver produtos na promoção" HorizontalAlignment="Left" Margin="366,177,0,0" Grid.Row="2" VerticalAlignment="Top" Width="179" Height="37" Opacity="0.8" Click="VerPromo_Click">
+        <Button x:Name="VerPromo" Content="Ver produtos na promoção" HorizontalAlignment="Left" Margin="366,156,0,0" Grid.Row="2" VerticalAlignment="Top" Width="179" Height="37" Opacity="0.8" Click="VerPromo_Click">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
