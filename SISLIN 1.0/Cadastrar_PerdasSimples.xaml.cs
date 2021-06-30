@@ -23,5 +23,25 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
         }
+
+        private void editar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void inserir_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void salvar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void excluir_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
