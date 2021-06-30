@@ -24,7 +24,7 @@
         <Label Content="Adicionar Promoção" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Width="417" FontSize="36" FontFamily="Arial Black"/>
         <TextBox x:Name="Nome" HorizontalAlignment="Left" Height="44" Margin="144,78,0,0" TextWrapping="Wrap" Text="Pesquise os produtos aqui..." VerticalAlignment="Top" Width="580">
             <TextBox.DataContext>
-                <Custom:MetaDataAttribute/>
+                Custom:MetaDataAttribute/>
             </TextBox.DataContext>
         </TextBox>
         <Button Content="Pesquisar" HorizontalAlignment="Left" Margin="729,78,0,0" VerticalAlignment="Top" Width="142" Height="44" Click="Button_Click"/>
