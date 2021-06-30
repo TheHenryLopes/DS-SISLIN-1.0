@@ -92,15 +92,6 @@
     </Compile>
     <Compile Include="ProdutosPromocao.cs" />
     <Compile Include="Dados_Orcamento.cs" />
-    <Compile Include="Cadast_Pagamento1.xaml.cs">
-      <DependentUpon>Cadast_Pagamento1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="cad_Comp.xaml.cs">
-      <DependentUpon>cad_Comp.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Cad_produtos.xaml.cs">
-      <DependentUpon>Cad_produtos.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
     </Compile>
@@ -109,12 +100,6 @@
     </Compile>
     <Compile Include="VerProdutos.xaml.cs">
       <DependentUpon>VerProdutos.xaml</DependentUpon>
-    <Compile Include="Pagamento2.xaml.cs">
-      <DependentUpon>Pagamento2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Relatorio\Relatorio_venda.cs" />
-    <Compile Include="Tela_Orcamento.xaml.cs">
-      <DependentUpon>Tela_Orcamento.xaml</DependentUpon>
     </Compile>
     <Page Include="AdicionarPromocao.xaml">
       <SubType>Designer</SubType>
@@ -137,18 +122,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Cadastrar_Promocao.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Cadast_Pagamento1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="cad_Comp.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Cad_produtos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -193,11 +166,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ProcurarProdutosNaPromocao.xaml">
-    <Page Include="Pagamento2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Tela_Orcamento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
