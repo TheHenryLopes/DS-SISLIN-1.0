@@ -15,26 +15,16 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Emissor_de_documentos_fiscais.xaml
+    /// Lógica interna para Tela_Perdas.xaml
     /// </summary>
-    public partial class Emissor_de_documentos_fiscais : Window
+    public partial class Tela_Perdas : Window
     {
-        public Emissor_de_documentos_fiscais()
+        public Tela_Perdas()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("O documento foi emitido com sucesso!");
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

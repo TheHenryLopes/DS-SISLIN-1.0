@@ -15,16 +15,16 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Emitir_RRM1.xaml
+    /// Lógica interna para Tela_Orcamento.xaml
     /// </summary>
-    public partial class Emitir_RRM1 : Window
+    public partial class Tela_Orcamento : Window
     {
-        public Emitir_RRM1()
+        public Tela_Orcamento()
         {
             InitializeComponent();
         }
 
-        private void Vendas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

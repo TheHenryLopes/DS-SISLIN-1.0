@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Emitir_RRM1.xaml
+    /// Lógica interna para ERRMovimento.xaml
     /// </summary>
-    public partial class Emitir_RRM1 : Window
+    public partial class ERRMovimento : Window
     {
-        public Emitir_RRM1()
+        public ERRMovimento()
         {
             InitializeComponent();
-        }
-
-        private void Vendas_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

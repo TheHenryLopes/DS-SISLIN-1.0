@@ -15,28 +15,33 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Emissor_de_documentos_fiscais.xaml
+    /// Lógica interna para Cad_produtos.xaml
     /// </summary>
-    public partial class Emissor_de_documentos_fiscais : Window
+    public partial class Cad_produtos : Window
     {
-        public Emissor_de_documentos_fiscais()
+        public Cad_produtos()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            MessageBox.Show("O documento foi emitido com sucesso!");
+
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ListBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-            this.Close();
+
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void quan_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void codigo1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
         }
     }
 }
