@@ -52,5 +52,16 @@ namespace SISLIN_1._0
             Cadastrar_Promocao Chamar = new Cadastrar_Promocao();
             Chamar.ShowDialog();
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            CadastrarCliente Chamar = new CadastrarCliente();
+            Chamar.ShowDialog();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
