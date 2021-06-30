@@ -76,9 +76,6 @@
       <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProdutosPromocao.cs" />
-    <Compile Include="Tela_Orcamento.xaml.cs">
-      <DependentUpon>Tela_Orcamento.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
       <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
     </Compile>
@@ -91,6 +88,9 @@
     </Compile>
     <Compile Include="VerProdutos.xaml.cs">
       <DependentUpon>VerProdutos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
+      <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
     </Compile>
     <Page Include="AdicionarPromocao.xaml">
       <SubType>Designer</SubType>
@@ -157,6 +157,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VerProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastrar_Orçamentos1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastrar_PerdasSimples.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
