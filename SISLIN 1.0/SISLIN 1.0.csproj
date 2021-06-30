@@ -72,6 +72,12 @@
     <Compile Include="botaofeedback.xaml.cs">
       <DependentUpon>botaofeedback.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
+      <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar_PerdasSimples.xaml.cs">
+      <DependentUpon>Cadastrar_PerdasSimples.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
     </Compile>
@@ -87,11 +93,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Cadastrar_Orçamentos1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cadastrar_PerdasSimples.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Cadastrar_Promocao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Emissor de documentos fiscais.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Emitir_RRM1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,6 +129,9 @@
     </Compile>
     <Compile Include="Cadastrar_Promocao.xaml.cs">
       <DependentUpon>Cadastrar_Promocao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Emitir_RRM1.xaml.cs">
+      <DependentUpon>Emitir_RRM1.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
