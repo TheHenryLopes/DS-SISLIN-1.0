@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -72,25 +72,25 @@
     <Compile Include="botaofeedback.xaml.cs">
       <DependentUpon>botaofeedback.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
-      <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ProdutosPromocao.cs" />
     <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
       <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cadastrar_PerdasSimples.xaml.cs">
       <DependentUpon>Cadastrar_PerdasSimples.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
+      <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProdutosPromocao.cs" />
     <Compile Include="Dados_Orcamento.cs" />
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
     </Compile>
     <Compile Include="VerProdutos.xaml.cs">
       <DependentUpon>VerProdutos.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
-      <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
     </Compile>
     <Page Include="AdicionarPromocao.xaml">
       <SubType>Designer</SubType>
@@ -105,12 +105,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Cadastrar_Orçamentos1.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Cadastrar_PerdasSimples.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Cadastrar_Promocao.xaml">
       <SubType>Designer</SubType>
@@ -121,6 +121,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Emitir_RRM1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -157,14 +161,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VerProdutos.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Cadastrar_Orçamentos1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Cadastrar_PerdasSimples.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
