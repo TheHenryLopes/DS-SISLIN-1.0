@@ -44,7 +44,7 @@
 
 
             <Button x:Name="cancela" Content="Cancelar" HorizontalAlignment="Left" 
-                Margin="600,310,0,55" Width="122" 
+                Margin="559,310,0,55" Width="122" 
                 Background="#FF969696" BorderBrush="#FF0E0D0D" 
                 FontSize="20" FontFamily="Helvetica" 
                 Foreground="White"/>
