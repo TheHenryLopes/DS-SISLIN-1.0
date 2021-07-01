@@ -81,6 +81,9 @@
     <Compile Include="Cadastrar_PerdasSimples.xaml.cs">
       <DependentUpon>Cadastrar_PerdasSimples.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ConsumoInterno.xaml.cs">
+      <DependentUpon>ConsumoInterno.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
       <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Cadastrar_Promocao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConsumoInterno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

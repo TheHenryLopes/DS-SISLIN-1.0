@@ -32,7 +32,17 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <DataGrid HorizontalAlignment="Left" Height="359" Margin="112,51,0,0" VerticalAlignment="Top" Width="610"/>
+        <DataGrid HorizontalAlignment="Left" Height="359" Margin="112,51,0,0" VerticalAlignment="Top" Width="610" x:Name="datagrid" SelectionChanged="datagrid_SelectionChanged" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Código                    " FontSize="17" Binding="{Binding Id, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Produto                   " FontSize="17" Binding="{Binding Produto, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Valor atual           " FontSize="17" Binding="{Binding Valor_atual, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Valor com Promoção     " FontSize="17" Binding="{Binding Valor_promo, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Valor porcentagem       " FontSize="17" Binding="{Binding Porcent, ConverterCulture='pt-BR'}"/>
+                
+
+            </DataGrid.Columns>
+        </DataGrid>
 
 
 
