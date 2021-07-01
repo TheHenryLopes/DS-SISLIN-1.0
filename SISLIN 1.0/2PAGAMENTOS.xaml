@@ -31,7 +31,7 @@
 
 
             <Button x:Name="confirmar" Content="Confirmar Compra" HorizontalAlignment="Left" 
-                Margin="317,310,0,55" Width="175" 
+                Margin="136,310,0,55" Width="175" 
                 Background="#FF969696" 
                 FontSize="20" FontFamily="Helvetica" Foreground="White">
                 <Button.BorderBrush>
