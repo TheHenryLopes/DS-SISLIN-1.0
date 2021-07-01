@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
         Title="MenuPrin" Height="599.333" Width="966" Background="Transparent"
-        WindowStartupLocation="CenterScreen" Icon="2334597.png">
+        WindowStartupLocation="CenterScreen" Icon="2334597.png" ResizeMode="CanMinimize">
     <Grid Margin="0,0,-8,-1">
         <Border CornerRadius="1" Margin="-1,0,6,1" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
@@ -45,15 +45,15 @@
                     <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
                     <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
                 </StackPanel>
-
             </ScrollViewer>
-           
         </Grid>
 
-
-        <Button Content="Botão Ajuda" HorizontalAlignment="Left" Margin="810,71,0,0" VerticalAlignment="Top" Width="123" Height="55" Click="Button_Click_4"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="821,30,0,0" VerticalAlignment="Top" Width="117" Height="76" Click="Button_Click_4"/>
         <Button Content="SAIR" HorizontalAlignment="Left" Margin="821,500,0,23" Width="112" FontSize="20" Click="Button_Click_6"/>
 
+        <Calendar HorizontalAlignment="Left" Margin="742,228,0,0" VerticalAlignment="Top" Width="226"/>
+        <Image HorizontalAlignment="Left" Height="241" Margin="251,106,0,0" VerticalAlignment="Top" Width="257" Source="Capricho-removebg-preview.png"/>
+        <Image HorizontalAlignment="Left" Height="53" Margin="855,47,0,0" VerticalAlignment="Top" Width="68" Source="2753-removebg-preview.png"/>
 
     </Grid>
 </Window>
