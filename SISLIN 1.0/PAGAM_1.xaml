@@ -43,7 +43,7 @@
                 Background="#FF969696" BorderBrush="#FF0E0D0D" 
                 FontSize="20" FontFamily="Helvetica" 
                 Foreground="White"/>
-            <TextBox x:Name="tipo" HorizontalAlignment="Left" Height="26" Margin="560,119,0,0" TextWrapping="Wrap" Text="Tipo de Compra" VerticalAlignment="Top" Width="117" Background="#FFC5BFBF"/>
+            <TextBox x:Name="tipo" HorizontalAlignment="Left" Height="26" Margin="547,62,0,0" TextWrapping="Wrap" Text="Tipo de Compra" VerticalAlignment="Top" Width="117" Background="#FFC5BFBF"/>
             <ComboBox HorizontalAlignment="Left" Height="26" Margin="547,88,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.5,0.5">
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
