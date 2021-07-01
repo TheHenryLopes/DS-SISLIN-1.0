@@ -25,6 +25,8 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
 
+            datinha.SelectedDate = DateTime.Now;
+
             Loaded += Cadastrar_Orçamentos1_Loaded;
         }
 
@@ -35,12 +37,12 @@ namespace SISLIN_1._0
                 Informacao.Add(new Dados_Orcamento()
                 {
                     Cod = i + 1,
-                    Desc = "16 litros de Coca-cola",
-                    Desconto = 5,
-                    Unidd = 4,
-                    Quantdd = 8,
-                    Preco_Venda = 80,
-                    Total = 76
+                    Desc = "Lingeries",
+                    Desconto = 15,
+                    Unidd = 50 + i,
+                    Quantdd = 200 + i,
+                    Preco_Venda = 80 +i,
+                    Total = 76 + i
                 }) ;
             }
             info_orca.ItemsSource = Informacao;

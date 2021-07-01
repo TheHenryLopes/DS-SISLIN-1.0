@@ -23,13 +23,13 @@
                   FontFamily="Corbel">
 
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Código" FontSize="17" Binding="{Binding Cod, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Descrição" FontSize="17" Binding="{Binding Desc, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Desconto" FontSize="17" Binding="{Binding Desconto, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Unidade" FontSize="17" Binding="{Binding Unidd, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Quantidade" FontSize="17" Binding="{Binding Quantdd, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Preço Venda" FontSize="17" Binding="{Binding Preco_Venda, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Total" FontSize="17" Binding="{Binding Total, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Código          " FontSize="17" Binding="{Binding Cod, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Descrição                                                                    " FontSize="17" Binding="{Binding Desc, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Desconto             " FontSize="17" Binding="{Binding Desconto, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Unidade                  " FontSize="17" Binding="{Binding Unidd, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Quantidade             " FontSize="17" Binding="{Binding Quantdd, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Preço Venda                " FontSize="17" Binding="{Binding Preco_Venda, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Total                " FontSize="17" Binding="{Binding Total, ConverterCulture='pt-BR'}"/>
 
                 </DataGrid.Columns>
 
@@ -73,10 +73,6 @@
         <Label Content="Data de Emissão" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
                Foreground="Black" Margin="193,85,50,255"/>
-
-        <TextBox TextWrapping="Wrap" Margin="193,118,530,548"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
 
         <Label Content="Vendedor" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
@@ -213,6 +209,7 @@
         <Button x:Name="edit" Content="Editar" Margin="650,644,0,0" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" HorizontalAlignment="Left"
                 FontFamily="Helvetica" Foreground="White" VerticalAlignment="Top" Width="150" Click="edit_Click"/>
+        <DatePicker x:Name="datinha" HorizontalAlignment="Left" Margin="193,123,0,0" VerticalAlignment="Top" Width="169"/>
 
     </Grid>
 </Window>

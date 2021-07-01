@@ -22,6 +22,8 @@ namespace SISLIN_1._0
         public Cadastrar_PerdasSimples()
         {
             InitializeComponent();
+
+            data_info.SelectedDate = DateTime.Now;
         }
 
         private void editar_Click(object sender, RoutedEventArgs e)
@@ -63,7 +65,6 @@ namespace SISLIN_1._0
             txt_codBarrs.Text = "";
             txt_codigo.Text = "";
             txt_custo.Text = "";
-            txt_data.Text = "";
             txt_motivo.Text = "";
             txt_obs.Text = "";
             txt_produto.Text = "";
