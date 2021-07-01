@@ -38,7 +38,7 @@
                     <Button Content="Cadastrar Perdas" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="226" Click="Button_Click_2" Height="56" FontSize="20"/>
                     <Button Content="Cadastrar Promoção" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Click="Button_Click" Height="55" FontSize="20"/>
                     <Button Content="Cadastrar Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" Click="Button_Click_5" FontSize="20"/>
-                    <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
+                    <Button Content="Consultar Preços" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Click="Button_Click_7"/>
                     <Button Content="Button" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="226" FontSize="20"/>
                     <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
                     <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
@@ -48,12 +48,20 @@
             </ScrollViewer>
         </Grid>
 
-        <Button Content="" HorizontalAlignment="Left" Margin="821,30,0,0" VerticalAlignment="Top" Width="117" Height="76" Click="Button_Click_4"/>
-        <Button Content="SAIR" HorizontalAlignment="Left" Margin="821,500,0,23" Width="112" FontSize="20" Click="Button_Click_6"/>
-
-        <Calendar HorizontalAlignment="Left" Margin="742,228,0,0" VerticalAlignment="Top" Width="226"/>
-        <Image HorizontalAlignment="Left" Height="241" Margin="251,106,0,0" VerticalAlignment="Top" Width="257" Source="Capricho-removebg-preview.png"/>
-        <Image HorizontalAlignment="Left" Height="53" Margin="855,47,0,0" VerticalAlignment="Top" Width="68" Source="2753-removebg-preview.png"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="1076,518,-225,-23" VerticalAlignment="Top" Width="117" Height="76" Click="Button_Click_4"/>
+        <Image HorizontalAlignment="Left" Height="672" Margin="307,-23,-384,-78" VerticalAlignment="Top" Width="1045" Source="Capricho-removebg-preview.png" RenderTransformOrigin="0.324,0.503">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.479"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="53" Margin="1125,518,-225,0" VerticalAlignment="Top" Width="68" Source="2753-removebg-preview.png"/>
+        <Button Content="SAIR" HorizontalAlignment="Left" Margin="826,513,0,10" Width="112" FontSize="20" Click="Button_Click_6"/>
+        <Calendar HorizontalAlignment="Left" Margin="1230,150,-488,0" VerticalAlignment="Top" Width="226"/>
 
     </Grid>
 </Window>
