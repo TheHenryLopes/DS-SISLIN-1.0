@@ -69,6 +69,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="2PAGAMENTOS.xaml.cs">
+      <DependentUpon>2PAGAMENTOS.xaml</DependentUpon>
+    </Compile>
     <Compile Include="botaofeedback.xaml.cs">
       <DependentUpon>botaofeedback.xaml</DependentUpon>
     </Compile>
@@ -81,8 +84,14 @@
     <Compile Include="Cadastrar_PerdasSimples.xaml.cs">
       <DependentUpon>Cadastrar_PerdasSimples.xaml</DependentUpon>
     </Compile>
+    <Compile Include="COMPRAS_CAD.xaml.cs">
+      <DependentUpon>COMPRAS_CAD.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ConsumoInterno.xaml.cs">
       <DependentUpon>ConsumoInterno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PAGAM_1.xaml.cs">
+      <DependentUpon>PAGAM_1.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
       <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
@@ -92,9 +101,17 @@
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PRODUTOS_CADASTRO.xaml.cs">
+      <DependentUpon>PRODUTOS_CADASTRO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio_Mov.cs" />
     <Compile Include="VerProdutos.xaml.cs">
       <DependentUpon>VerProdutos.xaml</DependentUpon>
     </Compile>
+    <Page Include="2PAGAMENTOS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdicionarPromocao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -120,6 +137,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Cadastrar_Promocao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="COMPRAS_CAD.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -163,7 +184,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PAGAM_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ProcurarProdutosNaPromocao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PRODUTOS_CADASTRO.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
