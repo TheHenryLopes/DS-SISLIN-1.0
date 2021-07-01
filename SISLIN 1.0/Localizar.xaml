@@ -1,0 +1,44 @@
+﻿<Window x:Class="SISLIN_1._0.Localizar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SISLIN_1._0"
+        mc:Ignorable="d"
+        Title="Localizar" Height="290.276" Width="549.658" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="701*"/>
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
+        <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7BE9F6" Offset="0.0"/>
+                    <GradientStop Color="#C490E4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Label x:Name="Menssagem" Content="Versão apenas para Free" Margin="187,29,21,155" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="0.8" Background="#00000000" Foreground="#FF150099" FontSize="27" FontFamily="MV Boli" FontWeight="Bold">
+                <Label.Effect>
+                    <DropShadowEffect Opacity="2"/>
+                </Label.Effect>
+            </Label>
+        </Border>
+        <Image HorizontalAlignment="Left" Height="164" Margin="26,29,0,0" VerticalAlignment="Top" Width="161" Source="admim.png"/>
+        <Label Content="Que estará disponível&#xD;&#xA;no SISLLIN2.0" HorizontalAlignment="Left" Margin="187,77,0,0" VerticalAlignment="Top" Width="331" Height="107" FontFamily="Segoe Print" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#00000000" Foreground="#FF814A81" FontSize="25">
+            <Label.Effect>
+                <BlurEffect/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="confirm" Content="Ok" HorizontalAlignment="Left" Margin="207,189,0,0" 
+                VerticalAlignment="Top" Width="110" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Gabriola" Foreground="White" Opacity="0.8" Click="confirm_Click">
+            <Button.Effect>
+                <DropShadowEffect Opacity="2"/>
+            </Button.Effect>
+        </Button>
+
+
+    </Grid>
+</Window>
