@@ -69,5 +69,11 @@ namespace SISLIN_1._0
             CadastrarConsultarPreco Chamar = new CadastrarConsultarPreco();
             Chamar.ShowDialog();
         }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            COMPRAS_CAD Chamar = new COMPRAS_CAD();
+            Chamar.ShowDialog();
+        }
     }
 }

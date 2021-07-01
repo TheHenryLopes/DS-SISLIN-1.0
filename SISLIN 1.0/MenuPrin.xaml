@@ -39,7 +39,7 @@
                     <Button Content="Cadastrar Promoção" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Click="Button_Click" Height="55" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
                     <Button Content="Cadastrar Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" Click="Button_Click_5" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
                     <Button Content="Consultar Preços" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Click="Button_Click_7" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
-                    <Button Content="Button" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="226" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
+                    <Button Content="Cadastrar Compras" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="226" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Button_Click_8"/>
                     <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
                     <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
                     <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
