@@ -72,11 +72,17 @@
     <Compile Include="botaofeedback.xaml.cs">
       <DependentUpon>botaofeedback.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CadastrarConsultarPreco.xaml.cs">
+      <DependentUpon>CadastrarConsultarPreco.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Cadastrar_Orçamentos1.xaml.cs">
       <DependentUpon>Cadastrar_Orçamentos1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cadastrar_PerdasSimples.xaml.cs">
       <DependentUpon>Cadastrar_PerdasSimples.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumoInterno.xaml.cs">
+      <DependentUpon>ConsumoInterno.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
       <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
@@ -101,6 +107,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CadastrarConsultarPreco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Cadastrar_Orçamentos1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -110,6 +120,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Cadastrar_Promocao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConsumoInterno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -205,6 +219,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="71646d7673e8847ab07b3b7e78928777-iacute-cone-do-c-iacute-rculo-de-pesquisa-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Capricho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Capricho-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2753-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets')" />

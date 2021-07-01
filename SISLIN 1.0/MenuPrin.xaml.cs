@@ -63,5 +63,11 @@ namespace SISLIN_1._0
         {
             this.Close();
         }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            CadastrarConsultarPreco Chamar = new CadastrarConsultarPreco();
+            Chamar.ShowDialog();
+        }
     }
 }

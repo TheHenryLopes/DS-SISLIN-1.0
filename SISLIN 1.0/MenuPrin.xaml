@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
         Title="MenuPrin" Height="599.333" Width="966" Background="Transparent"
-        WindowStartupLocation="CenterScreen" Icon="2334597.png">
+        WindowStartupLocation="CenterScreen" Icon="2334597.png" ResizeMode="CanMinimize">
     <Grid Margin="0,0,-8,-1">
         <Border CornerRadius="1" Margin="-1,0,6,1" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
@@ -38,22 +38,30 @@
                     <Button Content="Cadastrar Perdas" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="226" Click="Button_Click_2" Height="56" FontSize="20"/>
                     <Button Content="Cadastrar Promoção" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Click="Button_Click" Height="55" FontSize="20"/>
                     <Button Content="Cadastrar Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" Click="Button_Click_5" FontSize="20"/>
-                    <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
+                    <Button Content="Consultar Preços" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Click="Button_Click_7"/>
                     <Button Content="Button" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="226" FontSize="20"/>
                     <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
                     <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
                     <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
                     <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
                 </StackPanel>
-
             </ScrollViewer>
-           
         </Grid>
 
-
-        <Button Content="Botão Ajuda" HorizontalAlignment="Left" Margin="810,71,0,0" VerticalAlignment="Top" Width="123" Height="55" Click="Button_Click_4"/>
-        <Button Content="SAIR" HorizontalAlignment="Left" Margin="821,500,0,23" Width="112" FontSize="20" Click="Button_Click_6"/>
-
+        <Button Content="" HorizontalAlignment="Left" Margin="1076,518,-225,-23" VerticalAlignment="Top" Width="117" Height="76" Click="Button_Click_4"/>
+        <Image HorizontalAlignment="Left" Height="672" Margin="307,-23,-384,-78" VerticalAlignment="Top" Width="1045" Source="Capricho-removebg-preview.png" RenderTransformOrigin="0.324,0.503">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.479"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="53" Margin="1125,518,-225,0" VerticalAlignment="Top" Width="68" Source="2753-removebg-preview.png"/>
+        <Button Content="SAIR" HorizontalAlignment="Left" Margin="826,513,0,10" Width="112" FontSize="20" Click="Button_Click_6"/>
+        <Calendar HorizontalAlignment="Left" Margin="1230,150,-488,0" VerticalAlignment="Top" Width="226"/>
 
     </Grid>
 </Window>
