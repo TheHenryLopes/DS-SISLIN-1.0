@@ -59,21 +59,12 @@ namespace SISLIN_1._0
 
             MessageBox.Show("O produto " + aa + " entrou em promoção e agora está valendo: " + n_1 + " reais a promoção é válida até o dia :" + vencimento);
 
-            
+
 
 
 
         }
 
-
-        private void ClearTextBox()
-        {
-            ProdutoNome.Text = "";
-            QtPromo.Text = "";
-            ValorProduto.Text = "";
-            ValorPor.Text = "";
-            
-        }
         private void VcPromo_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -83,12 +74,6 @@ namespace SISLIN_1._0
         {
             VerProdutos chamar = new VerProdutos();
             chamar.ShowDialog();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            ClearTextBox();
-            
         }
     }
 }

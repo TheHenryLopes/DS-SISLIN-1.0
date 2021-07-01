@@ -38,7 +38,7 @@ namespace SISLIN_1._0
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            VerProdutos chamar = new VerProdutos();
+            ProcurarProdutosNaPromocao chamar = new ProcurarProdutosNaPromocao();
             chamar.ShowDialog();
         }
     }

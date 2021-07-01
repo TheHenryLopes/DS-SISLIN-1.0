@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
         Title="Consumo Interno" Height="450" Width="800">
-
+    
     <Grid>
         <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2">
             <Border.Background>
@@ -15,22 +15,8 @@
                     <GradientStop Color="#C490E4" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <Label Content="CONSUMO INTERNO" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" FontFamily="Arial Black" Height="79" Width="348" Margin="222,10,0,0"/>
 
         </Border>
-        <DataGrid x:Name="d_t_a" HorizontalAlignment="Left" Height="297" Margin="79,61,0,0" VerticalAlignment="Top" Width="635" SelectionChanged="DataGrid_SelectionChanged">
-
-            <DataGrid.Columns>
-
-                <DataGridTextColumn Header="Valor em produtos gastos" FontSize="17" Binding="{Binding Id, ConverterCulture='pt-BR'}"/>
-                <DataGridTextColumn Header="Valor gasto internamente" FontSize="17" Binding="{Binding Produto, ConverterCulture='pt-BR'}"/>
-                <DataGridTextColumn Header="Despesas com funcionários" FontSize="17" Binding="{Binding Valor_atual, ConverterCulture='pt-BR'}"/>
-                <DataGridTextColumn Header="Valor das demais despesas" FontSize="17" Binding="{Binding Valor_promo, ConverterCulture='pt-BR'}"/>
-
-
-
-            </DataGrid.Columns>
-        </DataGrid>
 
 
     </Grid>
