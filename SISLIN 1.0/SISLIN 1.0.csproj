@@ -92,6 +92,7 @@
     <Compile Include="Emissor de documentos fiscais.xaml.cs">
       <DependentUpon>Emissor de documentos fiscais.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TabelaOrca.cs" />
     <Compile Include="VerProdutos.xaml.cs">
       <DependentUpon>VerProdutos.xaml</DependentUpon>
     </Compile>

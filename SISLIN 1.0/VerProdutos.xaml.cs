@@ -44,6 +44,9 @@ namespace SISLIN_1._0
             datagrid.ItemsSource = codigopromo;
         }
 
-       
+        private void datagrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
