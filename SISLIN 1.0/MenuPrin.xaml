@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="MenuPrin" Height="596" Width="966" Background="Transparent"
+        Title="MenuPrin" Height="599.333" Width="966" Background="Transparent"
         WindowStartupLocation="CenterScreen" Icon="2334597.png">
     <Grid Margin="0,0,-8,-1">
-        <Border CornerRadius="1" Margin="-1,0,7,3" RenderTransformOrigin="0.5,0.5">
+        <Border CornerRadius="1" Margin="-1,0,6,1" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -24,18 +24,36 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        <Button Content="Resumo de Movimento" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="226" Height="56" Click="Button_Click_1" FontSize="20"/>
-        <Button Content="Cadastrar Orçamentos " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="226" Height="56" FontSize="20" Click="Button_Click_3"/>
-        <Button Content="Botão Ajuda" HorizontalAlignment="Left" Margin="701,136,0,0" VerticalAlignment="Top" Width="149" Height="78" Click="Button_Click_4"/>
-        <Button Content="Cadastrar Perdas" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" Width="226" Click="Button_Click_2" Height="56" FontSize="20"/>
-        <Button Content="Cadastrar Promoção" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="226" Click="Button_Click" Height="55" FontSize="20"/>
-        <Button Content="Cadastrar Cliente" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="226" Height="54" Click="Button_Click_5" FontSize="20"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="243"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0"/>
+            <ScrollViewer Height="565">
+                <StackPanel>
+                    <Button Content="Resumo de Movimento" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="56" Click="Button_Click_1" FontSize="20"/>
+                    <Button Content="Cadastrar Orçamentos " HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="56" FontSize="20" Click="Button_Click_3"/>
+                    <Button Content="Cadastrar Perdas" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="226" Click="Button_Click_2" Height="56" FontSize="20"/>
+                    <Button Content="Cadastrar Promoção" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Click="Button_Click" Height="55" FontSize="20"/>
+                    <Button Content="Cadastrar Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" Click="Button_Click_5" FontSize="20"/>
+                    <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
+                    <Button Content="Button" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="226" FontSize="20"/>
+                    <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
+                    <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
+                    <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
+                    <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
+                </StackPanel>
+
+            </ScrollViewer>
+           
+        </Grid>
+
+
+        <Button Content="Botão Ajuda" HorizontalAlignment="Left" Margin="810,71,0,0" VerticalAlignment="Top" Width="123" Height="55" Click="Button_Click_4"/>
         <Button Content="SAIR" HorizontalAlignment="Left" Margin="821,500,0,23" Width="112" FontSize="20" Click="Button_Click_6"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,312,0,0" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="54" Margin="10,371,0,0" VerticalAlignment="Top" Width="226" FontSize="20"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,430,0,0" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="100" Margin="530,125,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,489,0,0" VerticalAlignment="Top" Width="226" Height="54" FontSize="20"/>
+
 
     </Grid>
 </Window>
