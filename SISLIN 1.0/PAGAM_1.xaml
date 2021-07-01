@@ -43,10 +43,8 @@
                 Background="#FF969696" BorderBrush="#FF0E0D0D" 
                 FontSize="20" FontFamily="Helvetica" 
                 Foreground="White"/>
-            <TextBox x:Name="cod_compra" HorizontalAlignment="Left" Height="30" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Background="#FFC5BFBF" Cursor="Código" Text="código da Compra" FontSize="20" TextAlignment="Center"/>
-            <TextBox x:Name="comprador" HorizontalAlignment="Left" Height="25" Margin="10,109,0,0" TextWrapping="Wrap" Text="Nome do Comprador" VerticalAlignment="Top" Width="158" Background="#FFC5BFBF" FontSize="16"/>
-            <TextBox x:Name="tipo" HorizontalAlignment="Left" Height="26" Margin="533,33,0,0" TextWrapping="Wrap" Text="Tipo de Compra" VerticalAlignment="Top" Width="117" Background="#FFC5BFBF"/>
-            <ComboBox HorizontalAlignment="Left" Height="26" Margin="533,59,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.5,0.5">
+            <TextBox x:Name="tipo" HorizontalAlignment="Left" Height="26" Margin="560,119,0,0" TextWrapping="Wrap" Text="Tipo de Compra" VerticalAlignment="Top" Width="117" Background="#FFC5BFBF"/>
+            <ComboBox HorizontalAlignment="Left" Height="26" Margin="547,88,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.5,0.5">
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -54,13 +52,15 @@
                     </LinearGradientBrush>
                 </ComboBox.Background>
             </ComboBox>
-            <TextBox x:Name="codigo1" HorizontalAlignment="Left" Height="23" Margin="207,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="nome1" HorizontalAlignment="Left" Height="23" Margin="191,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.766,0.462"/>
+            <TextBox x:Name="codigo1" HorizontalAlignment="Left" Height="30" Margin="125,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+            <TextBox x:Name="nome1" HorizontalAlignment="Left" Height="28" Margin="125,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" RenderTransformOrigin="0.766,0.462"/>
             <RadioButton Content="Cartão de Crédito" HorizontalAlignment="Left" Margin="489,235,0,0" VerticalAlignment="Top" Background="#FFFFFEFE" BorderBrush="#FF151515" Height="19" Width="148" FontSize="16"/>
             <RadioButton x:Name="bol_" Content="Boleto" HorizontalAlignment="Left" Margin="489,270,0,0" VerticalAlignment="Top" FontSize="16" Background="White" BorderBrush="Black"/>
         </Grid>
         <RadioButton Content="A vista&#xD;&#xA;" HorizontalAlignment="Left" Margin="501,208,0,0" VerticalAlignment="Top" Width="86" Height="38" FontSize="16" BorderBrush="Black"/>
         <TextBox x:Name="formas" HorizontalAlignment="Left" Height="30" Margin="501,161,0,0" TextWrapping="Wrap" Text="formas de pagamento" VerticalAlignment="Top" Width="188" FontSize="18" Background="#FFC5BFBF"/>
+        <Label Content="Código da Compra" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Background="#FFDAD2D2"/>
+        <Label Content="Nome do Comprador" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Background="#FFDAD2D2"/>
     </Grid>
-   
+
 </Window>

@@ -18,19 +18,20 @@
                     <GradientStop Color="#C490E4" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
+            <Label Content=""/>
         </Border>
 
         <Button Content="Editar" HorizontalAlignment="Left" 
-                Margin="228,48,0,0" VerticalAlignment="Top" 
-                Width="57" Height="24" Background="#FF969696" 
-                BorderBrush="#FF0C0B0B" FontSize="16" 
-                FontFamily="Helvetica" Foreground="White"/>
+                Margin="192,50,0,0" VerticalAlignment="Top" 
+                Width="76" Height="28" Background="Transparent" 
+                BorderBrush="Black" FontSize="18" 
+                FontFamily="Helvetica" Foreground="White" Click="loc_Click" Opacity="0.8"/>
 
         <Button Content="Inserir" HorizontalAlignment="Left" 
-                Margin="309,49,0,0" VerticalAlignment="Top" 
-                Width="62" Height="24" Background="#FF969696" 
-                BorderBrush="#FF060606" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White"  RenderTransformOrigin="-0.516,0.929"/>
+                Margin="293,50,0,0" VerticalAlignment="Top" 
+                Width="76" Height="27" Background="Transparent" 
+                BorderBrush="Black" FontSize="18" 
+                FontFamily="Helvetica" Foreground="White" Click="loc_Click" Opacity="0.8"/>
 
 
 
@@ -54,22 +55,20 @@
                 Background="#FF969696" BorderBrush="#FF0E0D0D" 
                 FontSize="20" FontFamily="Helvetica" 
                 Foreground="White"/>
-        <TextBox x:Name="cod" HorizontalAlignment="Left" Height="30" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" Background="#FFC5BFBF" Cursor="Código" Text="código" FontSize="20" TextAlignment="Center"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="10,109,0,0" TextWrapping="Wrap" Text="Nome do Produto" VerticalAlignment="Top" Width="128" Background="#FFC5BFBF"/>
-        <TextBox x:Name="quan_" HorizontalAlignment="Left" Height="21" Margin="533,38,0,0" TextWrapping="Wrap" Text="Quantidade" VerticalAlignment="Top" Width="81" Background="#FFC5BFBF"/>
+        <TextBox x:Name="quan_" HorizontalAlignment="Left" Height="28" Margin="533,26,0,0" TextWrapping="Wrap" Text="Quantidade" VerticalAlignment="Top" Width="93" Background="Transparent" 
+                BorderBrush="Black" FontSize="16" 
+                FontFamily="Helvetica" Foreground="White" Opacity="0.8"/>
         <Button x:Name="edi_nom_pro" Content="Editar" HorizontalAlignment="Left" 
-            Margin="293,111,0,0" VerticalAlignment="Top" 
-            Width="60" Height="23" Background="#FF969696" 
-            BorderBrush="#FF060606" FontSize="20" 
-            FontFamily="Helvetica" Foreground="White" 
-                RenderTransformOrigin="0.694,1.571"/>
-        <Button x:Name="ins_cod" Content="Inserir" HorizontalAlignment="Left" Margin="377,111,0,0" VerticalAlignment="Top" Width="64" Foreground="White" FontSize="20" FontFamily="Heveltica" BorderBrush="Black" Height="25" RenderTransformOrigin="1.226,-1.241"
-                >
-            <Button.Background>
-                <SolidColorBrush Color="#FF969696"/>
-            </Button.Background>
+            Margin="243,116,0,0" VerticalAlignment="Top" 
+            Width="75" Height="32" Background="Transparent" 
+                BorderBrush="Black" FontSize="18" 
+                FontFamily="Helvetica" Foreground="White" Click="loc_Click" Opacity="0.8"/>
+        <Button x:Name="ins_cod" Content="Inserir" HorizontalAlignment="Left" Margin="338,116,0,0" VerticalAlignment="Top" Width="80" Background="Transparent" 
+                BorderBrush="Black" FontSize="18" 
+                FontFamily="Helvetica" Foreground="White" Click="loc_Click" Opacity="0.8" Height="32"  >
+
         </Button>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="533,59,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.5,0.5">
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="533,49,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.5,0.5">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -77,16 +76,20 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <TextBox x:Name="cor" HorizontalAlignment="Left" Height="21" Margin="648,38,0,0" TextWrapping="Wrap" Text="Cor" VerticalAlignment="Top" Width="81" Background="#FFC5BFBF"/>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="648,59,0,0" VerticalAlignment="Top" Width="81">
+        <TextBox x:Name="cor" HorizontalAlignment="Left" Height="28" Margin="648,26,0,0" TextWrapping="Wrap" Text="Cor" VerticalAlignment="Top" Width="63" Background="Transparent" 
+                BorderBrush="Black" FontSize="16" 
+                FontFamily="Helvetica" Foreground="White"  Opacity="0.8"/>
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="648,54,0,0" VerticalAlignment="Top" Width="63">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
                     <GradientStop Color="#FF8C8C8C" Offset="1"/>
                 </LinearGradientBrush>
             </ComboBox.Background>
-        </ComboBox>
-        <TextBox x:Name="codigo1" HorizontalAlignment="Left" Height="23" Margin="88,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="codigo1_TextChanged"/>
-        <TextBox x:Name="nome1" HorizontalAlignment="Left" Height="23" Margin="143,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+             </ComboBox>
+        <TextBox x:Name="codigo1" HorizontalAlignment="Left" Height="30" Margin="65,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"  RenderTransformOrigin="0.201,0.934"/>
+        <TextBox x:Name="nome1" HorizontalAlignment="Left" Height="29" Margin="114,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.43,0.468"/>
+        <Label Content="Código" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" BorderBrush="#FFABADB3" RenderTransformOrigin="6.064,0.024" Background="#FFABADB3"/>
+        <Label Content="Nome do Produto" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Background="#FFABADB3"/>
     </Grid>
 </Window>

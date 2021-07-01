@@ -13,11 +13,16 @@
             <RowDefinition Height="171*"/>
         </Grid.RowDefinitions>
         <Grid Margin="-97,32,127,-19" Grid.RowSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="233*"/>
+                <ColumnDefinition Width="148*"/>
+            </Grid.ColumnDefinitions>
+
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition Height="0*"/>
             </Grid.RowDefinitions>
-            <Border CornerRadius="1" Margin="0,-52,-27,36">
+            <Border CornerRadius="1" Margin="-14,-56,-27,40" Grid.ColumnSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="#7BE9F6" Offset="0.0"/>
@@ -44,13 +49,13 @@
 
 
             <Button x:Name="cancela" Content="Cancelar" HorizontalAlignment="Left" 
-                Margin="559,310,0,55" Width="122" 
+                Margin="88,310,0,55" Width="122" 
                 Background="#FF969696" BorderBrush="#FF0E0D0D" 
                 FontSize="20" FontFamily="Helvetica" 
                 Foreground="White"/>
-            <TextBox x:Name="titular" HorizontalAlignment="Left" Height="30" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Background="#FFC5BFBF" Cursor="Código" Text="Titular do Cartão" FontSize="20" TextAlignment="Center"/>
-            <TextBox x:Name="numero" HorizontalAlignment="Left" Height="25" Margin="10,109,0,0" TextWrapping="Wrap" Text="Numero do Cartão" VerticalAlignment="Top" Width="158" Background="#FFC5BFBF" FontSize="16"/>
-            <TextBox x:Name="banco" HorizontalAlignment="Left" Height="26" Margin="37,-35,0,0" TextWrapping="Wrap" Text="Banco" VerticalAlignment="Top" Width="117" Background="#FFC5BFBF"/>
+            <TextBox x:Name="banco" HorizontalAlignment="Left" Height="26" Margin="37,-35,0,0" TextWrapping="Wrap" Text="Banco" VerticalAlignment="Top" Width="117" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White" Opacity="0.8" FontStyle="Italic"/>
             <ComboBox HorizontalAlignment="Left" Height="26" Margin="37,-9,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.5,0.5">
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -59,12 +64,22 @@
                     </LinearGradientBrush>
                 </ComboBox.Background>
             </ComboBox>
-            <TextBox x:Name="codigo1" HorizontalAlignment="Left" Height="23" Margin="207,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="nome1" HorizontalAlignment="Left" Height="23" Margin="191,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.766,0.462"/>
+            <TextBox x:Name="codigo1" HorizontalAlignment="Left" Height="23" Margin="191,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="codigo1_TextChanged" Background="Transparent" 
+                BorderBrush="#FF0C0B0B" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"  Opacity="0.8"/>
+            <TextBox x:Name="nome1" HorizontalAlignment="Left" Height="23" Margin="191,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.766,0.462" Background="Transparent" 
+                BorderBrush="#FF060606" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"  Opacity="0.8"/>
+            <Label Content="TITULAR DO CARTÃO" HorizontalAlignment="Left" Margin="29,53,0,0" VerticalAlignment="Top" Background="#FFDAD2D2"/>
+            <Label Content="Número do Cartão" HorizontalAlignment="Left" Margin="28,114,0,0" VerticalAlignment="Top" Background="#FFDAD2D2"/>
+            <Label Content="Número da Agência" HorizontalAlignment="Left" Margin="21,166,0,0" VerticalAlignment="Top" Background="#FFDAD2D2"/>
         </Grid>
-        <ComboBox x:Name="parc" HorizontalAlignment="Left" Margin="345,27,0,0" VerticalAlignment="Top" Width="85" FontSize="16" Height="27"/>
-        <TextBox x:Name="parcelas" HorizontalAlignment="Left" Height="23" Margin="345,4,0,0" TextWrapping="Wrap" Text="Parcelas" VerticalAlignment="Top" Width="85" Background="#FFC5BFBF" FontSize="16"/>
-        <TextBox x:Name="agencia" HorizontalAlignment="Left" Height="23" Margin="-85,198,0,0" TextWrapping="Wrap" Text="Número da Agência" VerticalAlignment="Top" Width="158" FontSize="16" Background="#FFC5BFBF"/>
-        <TextBox x:Name="agen_" HorizontalAlignment="Left" Height="23" Margin="99,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.493,2.373"/>
+        <ComboBox x:Name="parc" HorizontalAlignment="Left" Margin="345,27,0,0" VerticalAlignment="Top" Width="95" FontSize="16" Height="27"/>
+        <TextBox x:Name="parcelas" HorizontalAlignment="Left" Height="23" Margin="345,4,0,0" TextWrapping="Wrap" Text="Parcelas" VerticalAlignment="Top" Width="95" Background="Transparent" 
+                BorderBrush="White" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White"  Opacity="0.8" FontStyle="Italic"/>
+        <TextBox x:Name="agen_" HorizontalAlignment="Left" Height="23" Margin="92,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.493,2.373" Background="Transparent" 
+                BorderBrush="Black" FontSize="25" 
+                FontFamily="Helvetica" Foreground="White" Opacity="0.8"/>
     </Grid>
 </Window>

@@ -52,8 +52,8 @@
         <TextBox x:Name="formas" HorizontalAlignment="Left" Height="30" Margin="24,169,0,0" TextWrapping="Wrap" Text="Nome do Produto&#xD;&#xA;" VerticalAlignment="Top" Width="160" FontSize="18" Background="#FFC5BFBF"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="199,176,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="435,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
-        <ComboBox HorizontalAlignment="Left" Margin="597,173,0,0" VerticalAlignment="Top" Width="65" SelectionChanged="ComboBox_SelectionChanged" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="546,173,0,0" TextWrapping="Wrap" Text="Cor&#xD;&#xA;" VerticalAlignment="Top" Width="46" Background="#FFC5BFBF" RenderTransformOrigin="2.384,-2.002" TextChanged="TextBox_TextChanged"/>
+        <ComboBox HorizontalAlignment="Left" Margin="597,173,0,0" VerticalAlignment="Top" Width="65"  Height="26"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="546,173,0,0" TextWrapping="Wrap" Text="Cor&#xD;&#xA;" VerticalAlignment="Top" Width="46" Background="#FFC5BFBF" RenderTransformOrigin="2.384,-2.002" />
         <TextBox HorizontalAlignment="Left" Height="23" Margin="528,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="144,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="24,277,0,0" TextWrapping="Wrap" Text="Data de Entrega" VerticalAlignment="Top" Width="120" Background="#FFC5BFBF" FontSize="16"/>

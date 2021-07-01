@@ -23,5 +23,10 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
         }
+
+        private void codigo1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
