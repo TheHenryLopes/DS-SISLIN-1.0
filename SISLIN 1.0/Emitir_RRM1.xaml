@@ -49,18 +49,33 @@
             </ComboBox>
         </StackPanel>
 
-        <Button Content="Gerar Relatório" HorizontalAlignment="Left" Margin="65,113,0,0"  
+        <Button x:Name="Gerar_Relal" Content="Gerar Relatório" HorizontalAlignment="Left" Margin="65,113,0,0"  
                     VerticalAlignment="Top" Width="166" Height="37" 
                     Background="Transparent" BorderBrush="White" FontSize="20" 
-                    FontFamily="Helvetica" Foreground="White" Grid.Row="0"/>
+                    FontFamily="Helvetica" Foreground="White" Grid.Row="0" Click="Gerar_Relal_Click"/>
 
-        <Button Content="Imprimir" HorizontalAlignment="Left" Margin="159,332,0,0" VerticalAlignment="Top" Width="102" Height="37" 
+        <Button x:Name="Imprimir" Content="Imprimir" HorizontalAlignment="Left" Margin="159,332,0,0" VerticalAlignment="Top" Width="102" Height="37" 
                     Background="Transparent" BorderBrush="White" FontSize="20" 
-                    FontFamily="Helvetica" Foreground="White"/>
-        <Button Content="Salvar em PDF" HorizontalAlignment="Left" Margin="320,332,0,0" VerticalAlignment="Top" Width="150" Height="37" 
+                    FontFamily="Helvetica" Foreground="White" Click="Imprimir_Click"/>
+        <Button x:Name="pdf" Content="Salvar em PDF" HorizontalAlignment="Left" Margin="320,332,0,0" VerticalAlignment="Top" Width="150" Height="37" 
                 Background="Transparent" BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White"/>
-        <DataGrid HorizontalAlignment="Left" Height="140" Margin="38,172,0,0" VerticalAlignment="Top" Width="517"/>
+                FontFamily="Helvetica" Foreground="White" Click="pdf_Click"/>
+        <DataGrid x:Name="relatorio" HorizontalAlignment="Left" Height="140" Margin="9,172,0,0" VerticalAlignment="Top" Width="573"
+                  IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#d3e0f5" AlternationCount="2" 
+                  FontFamily="Corbel">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Vedido" FontSize="17" Binding="{Binding Vend, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Cancelado" FontSize="17" Binding="{Binding Cancel, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Estoque" FontSize="17" Binding="{Binding Estoq, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Marca" FontSize="17" Binding="{Binding Marc, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Código de Barras" FontSize="17" Binding="{Binding cod_Barras, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Preço" FontSize="17" Binding="{Binding Prec, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Quantidade" FontSize="17" Binding="{Binding Quantdd, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Lucro" FontSize="17" Binding="{Binding Luc, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="imposto" FontSize="17" Binding="{Binding Impos, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Despesas" FontSize="17" Binding="{Binding Desp, ConverterCulture='pt-BR'}"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
 
 
