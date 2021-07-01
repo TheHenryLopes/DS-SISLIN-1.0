@@ -10,16 +10,16 @@ namespace SISLIN_1._0
     {
         public int Cod { get; set; }
 
-        public int Desc { get; set; }
+        public string Desc { get; set; }
 
-        public int Desconto { get; set; }
+        public double Desconto { get; set; }
 
         public int Unidd { get; set; }
 
         public int Quantdd { get; set; }
 
-        public int Preco_Venda { get; set; }
+        public double Preco_Venda { get; set; }
 
-        public int Total { get; set; }
+        public double Total { get; set; }
     }
 }
