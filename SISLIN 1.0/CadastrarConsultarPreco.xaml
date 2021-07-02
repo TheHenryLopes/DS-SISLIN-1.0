@@ -5,7 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="Consultar Preço" Height="500" Width="600">
+=======
+        Title="Consultar Preço" Height="500" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+>>>>>>> main
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="103*"/>

@@ -5,9 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="CadastrarCliente" Height="619.5" Width="840.5">
     <Grid Margin="0,0,114,18">
         <Border CornerRadius="1" Margin="-1,0,-115,-18">
+=======
+        Title="Cadastrar Cliente" Height="618.5" Width="853.5" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,114,18">
+        <Border CornerRadius="1" Margin="-1,0,-114,-18">
+>>>>>>> main
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>
@@ -16,26 +22,49 @@
             </Border.Background>
         </Border>
 
+<<<<<<< HEAD
         <Grid Background="Transparent" Margin="28,20,-89,10">
+=======
+        <Grid Background="Transparent" Margin="28,20,-215,10">
+>>>>>>> main
             <Grid.RowDefinitions>
                 <RowDefinition Height="149*"/>
                 <RowDefinition Height="56*"/>
             </Grid.RowDefinitions>
+<<<<<<< HEAD
             <TextBox HorizontalAlignment="Left" Height="32" Margin="132,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" RenderTransformOrigin="0.196,-0.13"/>
             <TextBox HorizontalAlignment="Left" Height="32" Margin="132,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" RenderTransformOrigin="0.196,-0.13"/>
+=======
+            <TextBox x:Name="COD" HorizontalAlignment="Left" Height="32" Margin="132,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" RenderTransformOrigin="0.196,-0.13" TextChanged="COD_TextChanged"/>
+            <TextBox x:Name="NOME" HorizontalAlignment="Left" Height="32" Margin="132,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="558" RenderTransformOrigin="0.196,-0.13"/>
+            <TextBox x:Name="TELE" HorizontalAlignment="Left" Height="32" Margin="132,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" RenderTransformOrigin="0.196,-0.13"/>
+            <TextBox x:Name="CELU" HorizontalAlignment="Left" Height="32" Margin="470,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.196,-0.13"/>
+            <TextBox x:Name="RG" HorizontalAlignment="Left" Height="32" Margin="132,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" RenderTransformOrigin="0.196,-0.13"/>
+            <TextBox x:Name="CPF" HorizontalAlignment="Left" Height="32" Margin="470,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.196,-0.13"/>
+            <TextBox x:Name="ENDERE" HorizontalAlignment="Left" Height="146" Margin="132,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="558" RenderTransformOrigin="0.196,-0.13" Grid.RowSpan="2"/>
+>>>>>>> main
         </Grid>
 
         <Label Content="Código:" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
+<<<<<<< HEAD
                Foreground="Black" Margin="67,41,563,495"/>
 
         <Label Content="Motivo" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
                Foreground="Black" Margin="267,234,183,300"/>
+=======
+               Foreground="Black" Margin="52,41,578,478"/>
+
+        <Label Content="Telefone:" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="52,200,563,327"/>
+>>>>>>> main
 
 
         <Label Content="Nome:" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
+<<<<<<< HEAD
                Foreground="Black" Margin="67,93,563,440"/>
 
         <Label Content="Código de Barras" FontWeight="Light" 
@@ -77,5 +106,61 @@
                 Background="Transparent" BorderBrush="White" 
                 FontSize="20" FontFamily="Helvetica" 
                 Foreground="White"/>
+=======
+               Foreground="Black" Margin="52,93,578,424"/>
+
+        <Label Content="Data de Nascimento:" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="52,147,448,376"/>
+
+        <Label Content="Sexo:" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="456,147,196,379"/>
+
+        <Label Content="Celular:" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="389,200,226,320"/>
+
+        <Label Content="RG:" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="52,249,517,262"/>
+
+        <Label Content="Endereço:" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="47,314,548,211"/>
+
+        <Label Content="CPF:" FontWeight="Light" 
+               FontFamily="Helvetica" FontSize="22" 
+               Foreground="Black" Margin="389,249,189,274"/>
+
+        <Button x:Name="salvar" Content="Salvar" HorizontalAlignment="Left" 
+                Margin="148,503,0,24" Width="122" 
+                Background="Transparent" BorderBrush="White" 
+                FontSize="20" FontFamily="Helvetica" Foreground="White" Click="salvar_Click" />
+
+
+        <Button x:Name="excluir" Content="Limpar" HorizontalAlignment="Left" 
+                Margin="299,503,0,24" Width="122" 
+                Background="Transparent" BorderBrush="White" 
+                FontSize="20" FontFamily="Helvetica" 
+                Foreground="White" Click="excluir_Click"/>
+        <Button x:Name="junior" Content="Localizar" HorizontalAlignment="Left" 
+                Margin="447,503,0,24" Width="122" 
+                Background="Transparent" BorderBrush="White" 
+                FontSize="20" FontFamily="Helvetica" 
+                Foreground="White" Click="junior_Click_1"/>
+        <DatePicker x:Name="Niver" HorizontalAlignment="Left" Margin="285,155,0,0" VerticalAlignment="Top" Width="147" Height="40"/>
+        <ComboBox HorizontalAlignment="Left" Margin="527,147,0,0" VerticalAlignment="Top" Width="191" Height="28">
+            <ComboBoxItem Content="Masculino"/>
+            <ComboBoxItem Content="Feminino"/>
+            <ComboBoxItem Content="Não Binário"/>
+            <ComboBoxItem Content="Outro"/>
+        </ComboBox>
+        <Button x:Name="excluir1" Content="Sair" HorizontalAlignment="Left" 
+            Margin="596,503,0,24" Width="122" 
+            Background="Transparent" BorderBrush="White" 
+            FontSize="20" FontFamily="Helvetica" 
+            Foreground="White" Click="excluir1_Click"/>
+>>>>>>> main
     </Grid>
 </Window>

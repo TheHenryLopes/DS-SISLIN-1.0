@@ -15,31 +15,30 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Cadastrar_Promocao.xaml
+    /// Lógica interna para Cadas_Comp.xaml
     /// </summary>
-    public partial class Cadastrar_Promocao : Window
+    public partial class Cadas_Comp : Window
     {
-        public Cadastrar_Promocao()
+        public Cadas_Comp()
         {
             InitializeComponent();
+
+            dataTrem.SelectedDate = DateTime.Now;
+        }
+
+        private void codigo1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AdicionarPromocao chamar = new AdicionarPromocao();
-            chamar.ShowDialog();
-           
+            this.Close();
         }
 
-        private void Adicionar_Produto_Click(object sender, RoutedEventArgs e)
+        private void salvar_Click(object sender, RoutedEventArgs e)
         {
-           
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            VerProdutos chamar = new VerProdutos();
-            chamar.ShowDialog();
+            MessageBoxResult result = MessageBox.Show("Salvo com sucesso!", "Alerta", MessageBoxButton.OK, MessageBoxImage.Question);
         }
     }
 }

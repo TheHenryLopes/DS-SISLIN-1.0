@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="Consumo Interno" Height="450" Width="800">
     
+=======
+        Title="Consumo Interno" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+
+>>>>>>> main
     <Grid>
         <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2">
             <Border.Background>
@@ -17,6 +22,42 @@
             </Border.Background>
 
         </Border>
+<<<<<<< HEAD
+=======
+        <Label Content="Consumo Interno" HorizontalAlignment="Left" Margin="252,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Arial Black" FontSize="26">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.001"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <DataGrid x:Name="datagrid_i" HorizontalAlignment="Left" Height="160" Margin="91,103,0,0" VerticalAlignment="Top" Width="632" SelectionChanged="DataGrid_SelectionChanged">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Valor gasto em compras " FontSize="17" Binding="{Binding Id, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Valor em salários                   " FontSize="17" Binding="{Binding Produto, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Valor em demais           " FontSize="17" Binding="{Binding Valor_atual, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Custo da loja    " FontSize="17" Binding="{Binding Valor_promo, ConverterCulture='pt-BR'}"/>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Gasto interno do mês" HorizontalAlignment="Left" Margin="272,70,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="16"/>
+        <Button Content="Interno entre os meses" HorizontalAlignment="Left" Margin="303,290,0,0" VerticalAlignment="Top" Width="167" Height="49" Opacity="0.8" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect Opacity="2"/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Interno entre os anos" HorizontalAlignment="Left" Margin="303,359,0,0" VerticalAlignment="Top" Width="176" Height="50" Opacity="0.8" Click="Button_Click_1">
+            <Button.Effect>
+                <DropShadowEffect Opacity="2"/>
+            </Button.Effect>
+        </Button>
+>>>>>>> main
 
 
     </Grid>

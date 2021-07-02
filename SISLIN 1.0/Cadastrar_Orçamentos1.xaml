@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="Cadastrar_Orçamentos1" Height="750" Width="900" WindowStartupLocation="CenterScreen">
+        Title="Cadastrar_Orçamentos1" Height="750" Width="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="701*"/>
@@ -20,7 +20,11 @@
             </Border.Background>
             <DataGrid x:Name="info_orca" Margin="72,414,48,96" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"
                   IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#d3e0f5" AlternationCount="2" 
+<<<<<<< HEAD
                   FontFamily="Corbel" Background="#FFF8FFB2">
+=======
+                  FontFamily="Corbel">
+>>>>>>> main
 
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Código          " FontSize="17" Binding="{Binding Cod, ConverterCulture='pt-BR'}"/>
@@ -41,41 +45,57 @@
                 Margin="67,40,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" 
+<<<<<<< HEAD
                 FontFamily="Helvetica" Foreground="White" Click="atual_Click" Opacity="0.8">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
+=======
+                FontFamily="Helvetica" Foreground="White" Click="atual_Click"/>
+>>>>>>> main
 
         <Button x:Name="loc" Content="Localizar" HorizontalAlignment="Left" 
                 Margin="260,40,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" 
+<<<<<<< HEAD
                 FontFamily="Helvetica" Foreground="White" Click="loc_Click" Opacity="0.8">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
+=======
+                FontFamily="Helvetica" Foreground="White" Click="loc_Click"/>
+>>>>>>> main
 
         <Button x:Name="ord" Content="Ordenar" HorizontalAlignment="Left" 
                 Margin="460,40,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" 
+<<<<<<< HEAD
                 FontFamily="Helvetica" Foreground="White" Click="ord_Click" Opacity="0.8">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
+=======
+                FontFamily="Helvetica" Foreground="White" Click="ord_Click"/>
+>>>>>>> main
 
         <Button x:Name="cancel" Content="Cancelar" HorizontalAlignment="Left" 
                 Margin="650,40,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" 
+<<<<<<< HEAD
                 FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.3,0.61" Click="cancel_Click" Opacity="0.8">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
+=======
+                FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.3,0.61" Click="cancel_Click"/>
+>>>>>>> main
 
 
         <Label Content="Código" FontWeight="Light" 
@@ -94,8 +114,13 @@
                FontFamily="Helvetica" FontSize="22" 
                Foreground="Black" Margin="400,85,50,255"/>
 
+<<<<<<< HEAD
         <ComboBox x:Name="combox_Vendedor" Background="#00000000" Margin="400,118,342,548"
                      Foreground="Black" BorderBrush="#00000000">
+=======
+        <ComboBox x:Name="combox_Vendedor" Background="Transparent" Margin="400,118,342,548"
+                     Foreground="Black" BorderBrush="White">
+>>>>>>> main
             <ComboBoxItem  Content="Any"/>
             <ComboBoxItem Content="Jeremy"/>
             <ComboBoxItem Content="Arthur"/>
@@ -210,24 +235,33 @@
         <Button x:Name="salv" Content="Salvar" Margin="67,644,0,0" HorizontalAlignment="Left"
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" VerticalAlignment="Top"
+<<<<<<< HEAD
                 FontFamily="Helvetica" Foreground="White" Click="salv_Click" Opacity="0.8">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
+=======
+                FontFamily="Helvetica" Foreground="White" Click="salv_Click"/>
+>>>>>>> main
 
         <Button x:Name="inse" Content="Inserir" Margin="260,644,0,0" HorizontalAlignment="Left"
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" VerticalAlignment="Top"
+<<<<<<< HEAD
                 FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.583,1.443" Click="inse_Click" Opacity="0.8">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
+=======
+                FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.583,1.443" Click="inse_Click"/>
+>>>>>>> main
 
         <Button x:Name="exc" Content="Excluir" Margin="458,644,0,0" HorizontalAlignment="Left"
                 Width="152" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" VerticalAlignment="Top"
+<<<<<<< HEAD
                 FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.451,0.514" Click="exc_Click" Opacity="0.8">
             <Button.Effect>
                 <DropShadowEffect Opacity="2"/>
@@ -241,6 +275,13 @@
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
+=======
+                FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.451,0.514" Click="exc_Click"/>
+
+        <Button x:Name="edit" Content="Editar" Margin="650,644,0,0" Height="37" Background="Transparent" 
+                BorderBrush="White" FontSize="25" HorizontalAlignment="Left"
+                FontFamily="Helvetica" Foreground="White" VerticalAlignment="Top" Width="150" Click="edit_Click"/>
+>>>>>>> main
         <DatePicker x:Name="datinha" HorizontalAlignment="Left" Margin="193,123,0,0" VerticalAlignment="Top" Width="169"/>
 
     </Grid>

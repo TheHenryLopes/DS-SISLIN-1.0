@@ -15,31 +15,32 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Cadastrar_Promocao.xaml
+    /// Lógica interna para MainWindow1.xaml
     /// </summary>
-    public partial class Cadastrar_Promocao : Window
+    public partial class MainWindow1 : Window
     {
-        public Cadastrar_Promocao()
+        public MainWindow1()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AdicionarPromocao chamar = new AdicionarPromocao();
-            chamar.ShowDialog();
-           
-        }
-
-        private void Adicionar_Produto_Click(object sender, RoutedEventArgs e)
-        {
-           
+            MessageBoxResult result = MessageBox.Show("O contato foi cadastrado com sucesso!!", "Notificação", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            VerProdutos chamar = new VerProdutos();
-            chamar.ShowDialog();
+            NOME.Clear();
+            EMAIL.Clear();
+            NUMERO.Clear();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
-}
+
+   }
+

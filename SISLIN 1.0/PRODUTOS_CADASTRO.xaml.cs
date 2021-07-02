@@ -23,5 +23,27 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
+=======
+
+        private void oi_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Editado com Sucesso!", "Notificação", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ClearTextBox();
+            MessageBoxResult result = MessageBox.Show("Excluído com Sucesso!", "Notificação", MessageBoxButton.OK, MessageBoxImage.Information);
+            if(result == MessageBoxResult.OK)
+            this.Close();
+        }
+
+        private void ClearTextBox()
+        {
+            codigo1.Text = "";
+            nome1.Text = "";
+        }
+>>>>>>> main
     }
 }

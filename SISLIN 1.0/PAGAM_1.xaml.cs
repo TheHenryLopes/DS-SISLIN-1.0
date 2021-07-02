@@ -23,5 +23,18 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
+=======
+
+        private void salvar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Salvo com Sucesso!", "Notificação", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Excluir_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Excluído com Sucesso!", "Notificação", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+>>>>>>> main
     }
 }

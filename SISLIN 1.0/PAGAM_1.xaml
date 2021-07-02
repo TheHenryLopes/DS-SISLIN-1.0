@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="PAGAM_1" Height="450" Width="800">
     <Grid>
         <Grid Margin="10,3,20,10">
@@ -61,6 +62,75 @@
         <TextBox x:Name="formas" HorizontalAlignment="Left" Height="30" Margin="501,161,0,0" TextWrapping="Wrap" Text="formas de pagamento" VerticalAlignment="Top" Width="188" FontSize="18" Background="#FFC5BFBF"/>
         <Label Content="Código da Compra" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Background="#FFDAD2D2"/>
         <Label Content="Nome do Comprador" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Background="#FFDAD2D2"/>
+=======
+        Title="PAGAM_1" Height="450" Width="534.134" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,-317,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="529*"/>
+            <ColumnDefinition Width="316*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="10,3,20,10" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="0*"/>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="1" Margin="-13,-10,295,-12" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#7BE9F6" Offset="0.0"/>
+                        <GradientStop Color="#C490E4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+
+
+
+
+
+            <Button x:Name="salvar" Content="Salvar" HorizontalAlignment="Left" 
+                Margin="125,327,0,38" Width="122" 
+                Background="#FF969696" 
+                FontSize="20" FontFamily="Helvetica" Foreground="White" Click="salvar_Click">
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF080707" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+            </Button>
+
+
+            <Button x:Name="Excluir" Content="Excluir" HorizontalAlignment="Left" 
+                Margin="264,327,0,38" Width="122" 
+                Background="#FF969696" BorderBrush="#FF0E0D0D" 
+                FontSize="20" FontFamily="Helvetica" 
+                Foreground="White" Click="Excluir_Click"/>
+            <ComboBox HorizontalAlignment="Left" Height="26" Margin="323,73,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.5,0.5">
+
+                <ComboBoxItem Content="....."/>
+                <ComboBoxItem Content="....."/>
+                <ComboBoxItem Content="....."/>
+                <ComboBoxItem Content="....."/>
+
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF8C8C8C" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+            <TextBox x:Name="codigo1" HorizontalAlignment="Left" Height="30" Margin="125,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+            <TextBox x:Name="nome1" HorizontalAlignment="Left" Height="28" Margin="125,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" RenderTransformOrigin="0.766,0.462"/>
+            <RadioButton Content="A vista" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" Width="86" Height="38" FontSize="16" BorderBrush="Black"/>
+            <RadioButton Content="Cartão de Crédito" HorizontalAlignment="Left" Margin="175,216,0,0" VerticalAlignment="Top" Background="#FFFFFEFE" BorderBrush="#FF151515" Height="19" Width="148" FontSize="16"/>
+            <RadioButton x:Name="bol_" Content="Boleto" HorizontalAlignment="Left" Margin="96,212,0,0" VerticalAlignment="Top" FontSize="16" Background="White" BorderBrush="Black"/>
+        </Grid>
+
+        <TextBox x:Name="formas" HorizontalAlignment="Left" Height="30" Margin="19,176,0,0" TextWrapping="Wrap" Text="formas de pagamento" VerticalAlignment="Top" Width="188" FontSize="18" Background="#FFC5BFBF"/>
+        <Label Content="Código da Compra" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Background="#FFDAD2D2" Height="26" Width="110"/>
+        <Label Content="Nome do Comprador" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Background="#FFDAD2D2" Height="26" Width="124"/>
+        <Label Content="Tipo de Compra" HorizontalAlignment="Left" Margin="334,48,0,0" VerticalAlignment="Top" Background="#FFDAD2D2" Width="115" Height="26"/>
+>>>>>>> main
     </Grid>
 
 </Window>
