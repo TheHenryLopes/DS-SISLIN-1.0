@@ -19,11 +19,6 @@ namespace SISLIN_1._0
     /// </summary>
     public partial class ConsumoInterno : Window
     {
-<<<<<<< HEAD
-        public ConsumoInterno()
-        {
-            InitializeComponent();
-=======
         List<MesInterno> m_i = new List<MesInterno>();
         public ConsumoInterno()
         {
@@ -67,7 +62,6 @@ namespace SISLIN_1._0
         {
             InternoEntreOsAnos chamar = new InternoEntreOsAnos();
             chamar.ShowDialog();
->>>>>>> main
         }
     }
 }

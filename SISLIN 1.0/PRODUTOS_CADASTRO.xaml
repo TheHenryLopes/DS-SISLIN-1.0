@@ -5,94 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-<<<<<<< HEAD
-        Title="PRODUTOS_CADASTRO" Height="450" Width="800">
-    <Grid Margin="0,0,30,13">
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="0*"/>
-        </Grid.RowDefinitions>
-        <Border CornerRadius="1" Margin="0,0,-31,-16" Grid.RowSpan="2">
-            <Border.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="#7BE9F6" Offset="0.0"/>
-                    <GradientStop Color="#C490E4" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-            <Label Content=""/>
-        </Border>
-
-        <Button Content="Editar" HorizontalAlignment="Left" 
-                Margin="192,50,0,0" VerticalAlignment="Top" 
-                Width="76" Height="28" Background="Transparent" 
-                BorderBrush="Black" FontSize="18" 
-                FontFamily="Helvetica" Foreground="White"  Opacity="0.8"/>
-
-        <Button Content="Inserir" HorizontalAlignment="Left" 
-                Margin="293,50,0,0" VerticalAlignment="Top" 
-                Width="76" Height="27" Background="Transparent" 
-                BorderBrush="Black" FontSize="18" 
-                FontFamily="Helvetica" Foreground="White"  Opacity="0.8"/>
-
-
-
-
-
-        <Button Content="catalogar" HorizontalAlignment="Left" 
-                Margin="320,355,0,10" Width="159" 
-                Background="#FF969696" 
-                FontSize="20" FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.034,1.419">
-            <Button.BorderBrush>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF080707" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.BorderBrush>
-        </Button>
-
-
-        <Button Content="Excluir" HorizontalAlignment="Left" 
-                Margin="607,355,0,10" Width="122" 
-                Background="#FF969696" BorderBrush="#FF0E0D0D" 
-                FontSize="20" FontFamily="Helvetica" 
-                Foreground="White"/>
-        <TextBox x:Name="quan_" HorizontalAlignment="Left" Height="28" Margin="533,26,0,0" TextWrapping="Wrap" Text="Quantidade" VerticalAlignment="Top" Width="93" Background="Transparent" 
-                BorderBrush="Black" FontSize="16" 
-                FontFamily="Helvetica" Foreground="White" Opacity="0.8"/>
-        <Button x:Name="edi_nom_pro" Content="Editar" HorizontalAlignment="Left" 
-            Margin="243,116,0,0" VerticalAlignment="Top" 
-            Width="75" Height="32" Background="Transparent" 
-                BorderBrush="Black" FontSize="18" 
-                FontFamily="Helvetica" Foreground="White"  Opacity="0.8"/>
-        <Button x:Name="ins_cod" Content="Inserir" HorizontalAlignment="Left" Margin="338,116,0,0" VerticalAlignment="Top" Width="80" Background="Transparent" 
-                BorderBrush="Black" FontSize="18" 
-                FontFamily="Helvetica" Foreground="White"  Opacity="0.8" Height="32"  >
-
-        </Button>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="533,49,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.5,0.5">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                    <GradientStop Color="#FF8C8C8C" Offset="1"/>
-                </LinearGradientBrush>
-            </ComboBox.Background>
-        </ComboBox>
-        <TextBox x:Name="cor" HorizontalAlignment="Left" Height="28" Margin="648,26,0,0" TextWrapping="Wrap" Text="Cor" VerticalAlignment="Top" Width="63" Background="Transparent" 
-                BorderBrush="Black" FontSize="16" 
-                FontFamily="Helvetica" Foreground="White"  Opacity="0.8"/>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="648,54,0,0" VerticalAlignment="Top" Width="63">
-            <ComboBox.Background>
-                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                    <GradientStop Color="#FF8C8C8C" Offset="1"/>
-                </LinearGradientBrush>
-            </ComboBox.Background>
-             </ComboBox>
-        <TextBox x:Name="codigo1" HorizontalAlignment="Left" Height="30" Margin="65,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"  RenderTransformOrigin="0.201,0.934"/>
-        <TextBox x:Name="nome1" HorizontalAlignment="Left" Height="29" Margin="114,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.43,0.468"/>
-        <Label Content="Código" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" BorderBrush="#FFABADB3" RenderTransformOrigin="6.064,0.024" Background="#FFABADB3"/>
-        <Label Content="Nome do Produto" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Background="#FFABADB3"/>
-=======
         Title="PRODUTOS_CADASTRO" Height="450" Width="473.75" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid Margin="0,0,-305,13">
         <Grid.RowDefinitions>
@@ -194,6 +106,5 @@
             RenderTransformOrigin="6.064,0.024" Background="Transparent" Height="50" Width="128" FontSize="15"/>
         <Label x:Name="nome_Produto_Copy" Content="Cor" HorizontalAlignment="Left" 
             Margin="197,139,0,0" VerticalAlignment="Top" Background="Transparent" RenderTransformOrigin="1.722,-1.058" FontSize="15"/>
->>>>>>> main
     </Grid>
 </Window>

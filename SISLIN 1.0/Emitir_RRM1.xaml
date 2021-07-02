@@ -52,28 +52,6 @@
         <Button x:Name="Gerar_Relal" Content="Gerar Relatório" HorizontalAlignment="Left" Margin="65,113,0,0"  
                     VerticalAlignment="Top" Width="166" Height="37" 
                     Background="Transparent" BorderBrush="White" FontSize="20" 
-<<<<<<< HEAD
-                    FontFamily="Helvetica" Foreground="White" Grid.Row="0" Click="Gerar_Relal_Click" Opacity="0.8">
-            <Button.Effect>
-                <DropShadowEffect Opacity="2"/>
-            </Button.Effect>
-        </Button>
-
-        <Button x:Name="Imprimir" Content="Imprimir" HorizontalAlignment="Left" Margin="159,332,0,0" VerticalAlignment="Top" Width="102" Height="37" 
-                    Background="Transparent" BorderBrush="White" FontSize="20" 
-                    FontFamily="Helvetica" Foreground="White" Click="Imprimir_Click" Opacity="0.8">
-            <Button.Effect>
-                <DropShadowEffect Opacity="2"/>
-            </Button.Effect>
-        </Button>
-        <Button x:Name="pdf" Content="Salvar em PDF" HorizontalAlignment="Left" Margin="320,332,0,0" VerticalAlignment="Top" Width="150" Height="37" 
-                Background="Transparent" BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White" Click="pdf_Click" Opacity="0.8">
-            <Button.Effect>
-                <DropShadowEffect Opacity="2"/>
-            </Button.Effect>
-        </Button>
-=======
                     FontFamily="Helvetica" Foreground="White" Grid.Row="0" Click="Gerar_Relal_Click"/>
 
         <Button x:Name="Imprimir" Content="Imprimir" HorizontalAlignment="Left" Margin="159,332,0,0" VerticalAlignment="Top" Width="102" Height="37" 
@@ -82,7 +60,6 @@
         <Button x:Name="pdf" Content="Salvar em PDF" HorizontalAlignment="Left" Margin="320,332,0,0" VerticalAlignment="Top" Width="150" Height="37" 
                 Background="Transparent" BorderBrush="White" FontSize="20" 
                 FontFamily="Helvetica" Foreground="White" Click="pdf_Click"/>
->>>>>>> main
         <DataGrid x:Name="relatorio" HorizontalAlignment="Left" Height="140" Margin="9,172,0,0" VerticalAlignment="Top" Width="573"
                   IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#d3e0f5" AlternationCount="2" 
                   FontFamily="Corbel">

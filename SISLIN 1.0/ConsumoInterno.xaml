@@ -5,13 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-<<<<<<< HEAD
-        Title="Consumo Interno" Height="450" Width="800">
-    
-=======
         Title="Consumo Interno" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
 
->>>>>>> main
     <Grid>
         <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2">
             <Border.Background>
@@ -22,8 +17,6 @@
             </Border.Background>
 
         </Border>
-<<<<<<< HEAD
-=======
         <Label Content="Consumo Interno" HorizontalAlignment="Left" Margin="252,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Arial Black" FontSize="26">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -57,7 +50,6 @@
                 <DropShadowEffect Opacity="2"/>
             </Button.Effect>
         </Button>
->>>>>>> main
 
 
     </Grid>

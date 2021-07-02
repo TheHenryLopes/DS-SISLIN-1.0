@@ -25,8 +25,6 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
             Loaded += VerProdutos_Loaded;
-<<<<<<< HEAD
-=======
         }
 
         private void VerProdutos_Loaded(object sender, RoutedEventArgs e)
@@ -49,26 +47,6 @@ namespace SISLIN_1._0
         private void datagrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
->>>>>>> main
         }
-
-        private void VerProdutos_Loaded(object sender, RoutedEventArgs e)
-        {
-            for (int i = 0; i < 50; i++)
-            {
-                codigopromo.Add(new ProdutosPromocao()
-                {
-                    Id = i + 1,
-                    Produto = "Langerie",
-                    Valor_atual = 100,
-                    Valor_promo = 90,
-                    Porcent = 10,
-                    
-                });
-            }
-            datagrid.ItemsSource = codigopromo;
-        }
-
-       
     }
 }

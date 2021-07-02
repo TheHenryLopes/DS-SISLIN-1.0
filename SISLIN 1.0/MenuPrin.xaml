@@ -40,19 +40,12 @@
                     <Button Content="Cadastrar Cliente" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" Click="Button_Click_5" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
                     <Button Content="Consultar Preços" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Click="Button_Click_7" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
                     <Button Content="Cadastrar Compras" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="226" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Button_Click_8"/>
-<<<<<<< HEAD
-                    <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
-                    <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
-                    <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
-                    <Button Content="Teste" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4"/>
-=======
                     <Button x:Name="Tabel_preco" Content="Tebela de Preços" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Tabel_preco_Click"/>
                     <Button x:Name="Cadas_Entr_Aluno" Content="Entrada de Dinheiro" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Cadas_Entr_Aluno_Click"/>
                     <Button x:Name="Cadas_Prod" Content="Cadastrar Produtos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Cadas_Prod_Click"/>
                     <Button x:Name="pagamento" Content="Formas de Pagar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="pagamento_Click"/>
                     <Button x:Name="Tell" Content="Lista Telefônica" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Tell_Click"/>
                     <Button x:Name="Consumo" Content="Consumo Interno" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Consumo_Click" />
->>>>>>> main
                 </StackPanel>
             </ScrollViewer>
         </Grid>

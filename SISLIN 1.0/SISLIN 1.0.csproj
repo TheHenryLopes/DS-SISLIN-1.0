@@ -69,13 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-<<<<<<< HEAD
-    <Compile Include="2PAGAMENTOS.xaml.cs">
-      <DependentUpon>2PAGAMENTOS.xaml</DependentUpon>
-    </Compile>
-=======
     <Compile Include="agenda.cs" />
->>>>>>> main
     <Compile Include="botaofeedback.xaml.cs">
       <DependentUpon>botaofeedback.xaml</DependentUpon>
     </Compile>
@@ -88,30 +82,16 @@
     <Compile Include="Cadastrar_PerdasSimples.xaml.cs">
       <DependentUpon>Cadastrar_PerdasSimples.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="COMPRAS_CAD.xaml.cs">
-      <DependentUpon>COMPRAS_CAD.xaml</DependentUpon>
-=======
     <Compile Include="Cadastro1.cs" />
     <Compile Include="Cadas_Comp.xaml.cs">
       <DependentUpon>Cadas_Comp.xaml</DependentUpon>
     </Compile>
     <Compile Include="Cadas_Entra_Dinh.xaml.cs">
       <DependentUpon>Cadas_Entra_Dinh.xaml</DependentUpon>
->>>>>>> main
     </Compile>
     <Compile Include="ConsumoInterno.xaml.cs">
       <DependentUpon>ConsumoInterno.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    <Compile Include="PAGAM_1.xaml.cs">
-      <DependentUpon>PAGAM_1.xaml</DependentUpon>
-=======
-    <Compile Include="Localizar.xaml.cs">
-      <DependentUpon>Localizar.xaml</DependentUpon>
->>>>>>> Stashed changes
-=======
     <Compile Include="Dados_preco.cs" />
     <Compile Include="Editar2.cs" />
     <Compile Include="Edit_Entr_Dinh.xaml.cs">
@@ -141,7 +121,6 @@
     <Compile Include="MesInterno.cs" />
     <Compile Include="PAGAM_1.xaml.cs">
       <DependentUpon>PAGAM_1.xaml</DependentUpon>
->>>>>>> main
     </Compile>
     <Compile Include="ProcurarProdutosNaPromocao.xaml.cs">
       <DependentUpon>ProcurarProdutosNaPromocao.xaml</DependentUpon>
@@ -155,20 +134,13 @@
       <DependentUpon>PRODUTOS_CADASTRO.xaml</DependentUpon>
     </Compile>
     <Compile Include="Relatorio_Mov.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Tabela_de_Preco.xaml.cs">
       <DependentUpon>Tabela_de_Preco.xaml</DependentUpon>
     </Compile>
     <Compile Include="VarLoc.cs" />
->>>>>>> main
     <Compile Include="VerProdutos.xaml.cs">
       <DependentUpon>VerProdutos.xaml</DependentUpon>
     </Compile>
-    <Page Include="2PAGAMENTOS.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="AdicionarPromocao.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -197,15 +169,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-<<<<<<< HEAD
-    <Page Include="COMPRAS_CAD.xaml">
-=======
     <Page Include="Cadas_Comp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Cadas_Entra_Dinh.xaml">
->>>>>>> main
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -213,13 +181,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-<<<<<<< HEAD
-=======
     <Page Include="Edit_Entr_Dinh.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
->>>>>>> main
     <Page Include="Emissor de documentos fiscais.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -228,8 +193,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-<<<<<<< HEAD
-=======
     <Page Include="Excl_Entr_Dinh.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -246,7 +209,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
->>>>>>> main
     <Page Include="Localizar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -295,13 +257,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-<<<<<<< HEAD
-=======
     <Page Include="Tabela_de_Preco.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
->>>>>>> main
     <Page Include="VerProdutos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -364,12 +323,6 @@
   <ItemGroup>
     <Resource Include="2753-removebg-preview.png" />
   </ItemGroup>
-<<<<<<< HEAD
-  <ItemGroup>
-    <Resource Include="admim.png" />
-  </ItemGroup>
-=======
->>>>>>> main
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

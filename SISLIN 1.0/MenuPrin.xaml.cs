@@ -72,11 +72,6 @@ namespace SISLIN_1._0
 
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
-            COMPRAS_CAD Chamar = new COMPRAS_CAD();
-            Chamar.ShowDialog();
-        }
-=======
             Cadas_Comp Chama = new Cadas_Comp();
             Chama.ShowDialog();
         }
@@ -116,6 +111,5 @@ namespace SISLIN_1._0
             ConsumoInterno Chama = new ConsumoInterno();
             Chama.ShowDialog();
         }
->>>>>>> main
     }
 }

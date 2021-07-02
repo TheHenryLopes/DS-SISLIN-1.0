@@ -55,11 +55,6 @@ namespace SISLIN_1._0
 
         private void loc_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
-            Localizar chamar = new Localizar();
-            chamar.ShowDialog();
-=======
->>>>>>> main
             MessageBoxResult result = MessageBox.Show("Localizado com sucesso!", "Confirmação", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 

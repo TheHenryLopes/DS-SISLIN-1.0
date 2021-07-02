@@ -23,8 +23,6 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-=======
 
         private void oi_Click(object sender, RoutedEventArgs e)
         {
@@ -44,6 +42,5 @@ namespace SISLIN_1._0
             codigo1.Text = "";
             nome1.Text = "";
         }
->>>>>>> main
     }
 }

@@ -28,21 +28,13 @@
                 Margin="170,20,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White" Click="editar_Click" Opacity="0.8">
-            <Button.Effect>
-                <DropShadowEffect Opacity="2"/>
-            </Button.Effect>
-        </Button>
+                FontFamily="Helvetica" Foreground="White" Click="editar_Click"/>
 
         <Button x:Name="inserir" Content="Inserir" HorizontalAlignment="Left" 
                 Margin="360,20,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White" Click="inserir_Click" Opacity="0.8">
-            <Button.Effect>
-                <DropShadowEffect Opacity="2"/>
-            </Button.Effect>
-        </Button>
+                FontFamily="Helvetica" Foreground="White" Click="inserir_Click"/>
 
         <Label Content="Código" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
@@ -141,26 +133,14 @@
         <Button x:Name="salvar" Content="Salvar" HorizontalAlignment="Left" 
                 Margin="170,431,0,27" Width="150" 
                 Background="Transparent" BorderBrush="White" 
-                FontSize="20" FontFamily="Helvetica" Foreground="White" Click="salvar_Click" Opacity="0.8">
-            <Button.Effect>
-                <DropShadowEffect Opacity="2"/>
-            </Button.Effect>
-        </Button>
+                FontSize="20" FontFamily="Helvetica" Foreground="White" Click="salvar_Click"/>
 
 
         <Button x:Name="excluir" Content="Excluir" HorizontalAlignment="Left" 
                 Margin="360,431,0,27" Width="150" 
                 Background="Transparent" BorderBrush="White" 
                 FontSize="20" FontFamily="Helvetica" 
-<<<<<<< HEAD
-                Foreground="White" Click="excluir_Click" Opacity="0.8">
-            <Button.Effect>
-                <DropShadowEffect Opacity="2"/>
-            </Button.Effect>
-        </Button>
-=======
                 Foreground="White" Click="excluir_Click"/>
->>>>>>> main
         <DatePicker x:Name="data_info" HorizontalAlignment="Left" Margin="198,120,0,0" VerticalAlignment="Top" Width="177" RenderTransformOrigin="0.605,1.744" Height="27"/>
 
     </Grid>

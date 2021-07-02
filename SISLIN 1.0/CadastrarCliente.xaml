@@ -5,15 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-<<<<<<< HEAD
-        Title="CadastrarCliente" Height="619.5" Width="840.5">
-    <Grid Margin="0,0,114,18">
-        <Border CornerRadius="1" Margin="-1,0,-115,-18">
-=======
         Title="Cadastrar Cliente" Height="618.5" Width="853.5" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid Margin="0,0,114,18">
         <Border CornerRadius="1" Margin="-1,0,-114,-18">
->>>>>>> main
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>
@@ -22,19 +16,11 @@
             </Border.Background>
         </Border>
 
-<<<<<<< HEAD
-        <Grid Background="Transparent" Margin="28,20,-89,10">
-=======
         <Grid Background="Transparent" Margin="28,20,-215,10">
->>>>>>> main
             <Grid.RowDefinitions>
                 <RowDefinition Height="149*"/>
                 <RowDefinition Height="56*"/>
             </Grid.RowDefinitions>
-<<<<<<< HEAD
-            <TextBox HorizontalAlignment="Left" Height="32" Margin="132,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" RenderTransformOrigin="0.196,-0.13"/>
-            <TextBox HorizontalAlignment="Left" Height="32" Margin="132,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" RenderTransformOrigin="0.196,-0.13"/>
-=======
             <TextBox x:Name="COD" HorizontalAlignment="Left" Height="32" Margin="132,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" RenderTransformOrigin="0.196,-0.13" TextChanged="COD_TextChanged"/>
             <TextBox x:Name="NOME" HorizontalAlignment="Left" Height="32" Margin="132,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="558" RenderTransformOrigin="0.196,-0.13"/>
             <TextBox x:Name="TELE" HorizontalAlignment="Left" Height="32" Margin="132,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" RenderTransformOrigin="0.196,-0.13"/>
@@ -42,71 +28,19 @@
             <TextBox x:Name="RG" HorizontalAlignment="Left" Height="32" Margin="132,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" RenderTransformOrigin="0.196,-0.13"/>
             <TextBox x:Name="CPF" HorizontalAlignment="Left" Height="32" Margin="470,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.196,-0.13"/>
             <TextBox x:Name="ENDERE" HorizontalAlignment="Left" Height="146" Margin="132,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="558" RenderTransformOrigin="0.196,-0.13" Grid.RowSpan="2"/>
->>>>>>> main
         </Grid>
 
         <Label Content="Código:" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
-<<<<<<< HEAD
-               Foreground="Black" Margin="67,41,563,495"/>
-
-        <Label Content="Motivo" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="267,234,183,300"/>
-=======
                Foreground="Black" Margin="52,41,578,478"/>
 
         <Label Content="Telefone:" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
                Foreground="Black" Margin="52,200,563,327"/>
->>>>>>> main
 
 
         <Label Content="Nome:" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
-<<<<<<< HEAD
-               Foreground="Black" Margin="67,93,563,440"/>
-
-        <Label Content="Código de Barras" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="323,146,50,250" Grid.ColumnSpan="2"/>
-
-        <Label Content="Referências" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,211,50,212" Grid.ColumnSpan="2"/>
-
-        <Label Content="Unidade" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,276,50,40" Grid.ColumnSpan="2"/>
-
-        <Label Content="Quantidade" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="193,276,50,40" Grid.ColumnSpan="2"/>
-
-        <Label Content="Preço Custo" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="342,276,50,40" Grid.ColumnSpan="2"/>
-
-        <Label Content="Preço Venda" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="498,276,50,40" Grid.ColumnSpan="2"/>
-
-        <Label Content="Observações" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,336,50,80" Grid.ColumnSpan="2"/>
-
-        <Button x:Name="salvar" Content="Salvar" HorizontalAlignment="Left" 
-                Margin="234,429,0,29" Width="150" 
-                Background="Transparent" BorderBrush="White" 
-                FontSize="20" FontFamily="Helvetica" Foreground="White" />
-
-
-        <Button x:Name="excluir" Content="Excluir" HorizontalAlignment="Left" 
-                Margin="412,434,0,24" Width="150" 
-                Background="Transparent" BorderBrush="White" 
-                FontSize="20" FontFamily="Helvetica" 
-                Foreground="White"/>
-=======
                Foreground="Black" Margin="52,93,578,424"/>
 
         <Label Content="Data de Nascimento:" FontWeight="Light" 
@@ -161,6 +95,5 @@
             Background="Transparent" BorderBrush="White" 
             FontSize="20" FontFamily="Helvetica" 
             Foreground="White" Click="excluir1_Click"/>
->>>>>>> main
     </Grid>
 </Window>
