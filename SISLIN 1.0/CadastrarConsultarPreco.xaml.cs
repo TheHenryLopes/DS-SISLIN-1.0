@@ -15,31 +15,22 @@ using System.Windows.Shapes;
 namespace SISLIN_1._0
 {
     /// <summary>
-    /// Lógica interna para Cadastrar_Promocao.xaml
+    /// Lógica interna para CadastrarConsultarPreco.xaml
     /// </summary>
-    public partial class Cadastrar_Promocao : Window
+    public partial class CadastrarConsultarPreco : Window
     {
-        public Cadastrar_Promocao()
+        public CadastrarConsultarPreco()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AdicionarPromocao chamar = new AdicionarPromocao();
-            chamar.ShowDialog();
-           
-        }
+            string nome;
+            nome = Convert.ToString(Nome.Text);
 
-        private void Adicionar_Produto_Click(object sender, RoutedEventArgs e)
-        {
-           
-        }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            VerProdutos chamar = new VerProdutos();
-            chamar.ShowDialog();
+            MessageBox.Show("O sistema ainda não está com essa função disponível, pois não temos o Banco de Dados.\nMas a opção " + nome + " será anotada, obrigado.");
         }
     }
 }

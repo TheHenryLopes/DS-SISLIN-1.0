@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace SISLIN_1._0
 {
-    class ProdutosPromocao
+    public class ProdutosPromocao
     {
+
+        public int Id { get; set; }
+
+
+        public string Produto {get;set;}
+
+        public double Valor_atual { get; set; }
+
+        public double Valor_promo { get; set; }
+
+        public double Porcent { get; set; }
+
     }
 }

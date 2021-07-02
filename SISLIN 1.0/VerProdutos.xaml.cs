@@ -19,9 +19,34 @@ namespace SISLIN_1._0
     /// </summary>
     public partial class VerProdutos : Window
     {
+        List<ProdutosPromocao> codigopromo = new List<ProdutosPromocao>();
+
         public VerProdutos()
         {
             InitializeComponent();
+            Loaded += VerProdutos_Loaded;
+        }
+
+        private void VerProdutos_Loaded(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                codigopromo.Add(new ProdutosPromocao()
+                {
+                    Id = i + 1,
+                    Produto = "Langerie",
+                    Valor_atual = 100,
+                    Valor_promo = 90,
+                    Porcent = 10,
+                    
+                });
+            }
+            datagrid.ItemsSource = codigopromo;
+        }
+
+        private void datagrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

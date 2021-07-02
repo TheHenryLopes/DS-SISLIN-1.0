@@ -75,6 +75,21 @@ namespace SISLIN_1._0
             VerProdutos chamar = new VerProdutos();
             chamar.ShowDialog();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ClearTextBox();
+        }
+
+        private void ClearTextBox()
+        {
+            ProdutoNome.Text = "";
+            QtPromo.Text = "";
+            DpData.Text = "";
+            ValorProduto.Text = "";
+            ValorPor.Text = "";
+            
+        }
     }
 }
 
