@@ -146,6 +146,7 @@
     <Compile Include="Excl_Entr_Dinh.xaml.cs">
       <DependentUpon>Excl_Entr_Dinh.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IDAO.cs" />
     <Compile Include="InternoAno.cs" />
     <Compile Include="InternoEntreOsAnos.xaml.cs">
       <DependentUpon>InternoEntreOsAnos.xaml</DependentUpon>
