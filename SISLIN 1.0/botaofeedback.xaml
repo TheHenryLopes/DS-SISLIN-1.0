@@ -19,7 +19,7 @@
 
 
         <Label Content="Deixe sua dúvida" HorizontalAlignment="Left" Margin="124,86,0,0" VerticalAlignment="Top" Height="38" Width="158" FontSize="18"/>
-        <Button Content="Enviar" HorizontalAlignment="Left" Margin="144,261,0,0" VerticalAlignment="Top" Width="120" Height="32" Click="Button_Click" Background="#FF993399"/>
+        <Button Content="Enviar" HorizontalAlignment="Left" Margin="144,261,1,3" VerticalAlignment="Top" Width="120" Height="32" Click="Button_Click" Background="#FF993399"/>
         <TextBox HorizontalAlignment="Left" Height="94" Margin="83,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236"/>
         <Label Content="Entre em Contato por E-mail: SISLIN1.0@gmail.com" HorizontalAlignment="Left" Margin="59,317,0,0" VerticalAlignment="Top" Height="26" Width="282"/>
 
