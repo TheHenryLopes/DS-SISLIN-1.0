@@ -13,7 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SISLIN_1._0.Models;
- 
+
+
+
 
 
 
@@ -30,6 +32,11 @@ namespace SISLIN_1._0
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            InsertTest();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -63,6 +70,23 @@ namespace SISLIN_1._0
 
         private void SENHA_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void InsertTest()
+        {
+            Cliente cliente = new Cliente();
+            cliente.nome_cliente = "Gustavo";
+            cliente.cpf_cliente = "454444545";
+            cliente.email_cliente="gustavo.saam@gmail.com";
+
+            ClienteDAO clientedao = new ClienteDAO();
+            clientedao.Insert(cliente);
 
         }
     }

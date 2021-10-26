@@ -12,6 +12,7 @@ namespace SISLIN_1._0.Models
         public void Delete(Funcionario t)
         {
             throw new NotImplementedException();
+
         }
 
         public Funcionario GetById(int id)

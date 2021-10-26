@@ -46,7 +46,7 @@
                 HorizontalAlignment="Center" Foreground="White"
                 Background="Transparent" BorderThickness="0"
                 Width="236" HorizontalContentAlignment="Left"
-                Opacity="0.5" Height="25" Margin="62,0"/>
+                Opacity="0.5" Height="25" Margin="62,0" TextChanged="TextBox_TextChanged_1"/>
 
                 </StackPanel>
                 <Border Width="250" Height="2" Background="White" Opacity="0.5"/>

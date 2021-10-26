@@ -18,8 +18,9 @@ namespace SISLIN_1._0.Models
         public string telefone_funcionario { get; set; }
         public string senha_funcionario { get; set; }
         public DateTime data_nascimento_funcionario { get; set; }
-
-        
+ 
 
     }
+
+
 }
