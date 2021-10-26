@@ -22,6 +22,7 @@ namespace SISLIN_1._0.Database
             try
             {
                 connection = new MySqlConnection($"server={host};user={user};database={dbname};port={port};password={password}");
+                connection.Open();
             } catch(Exception)
             {
                 throw;
