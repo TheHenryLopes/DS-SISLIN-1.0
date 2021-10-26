@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace SISLIN_1._0
 {
     /// <summary>
@@ -39,6 +40,11 @@ namespace SISLIN_1._0
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void NOME_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 
