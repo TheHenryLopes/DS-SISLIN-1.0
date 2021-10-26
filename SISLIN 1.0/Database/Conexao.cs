@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
@@ -21,11 +22,28 @@ namespace SISLIN_1._0.Database
             try
             {
                 connection = new MySqlConnection($"server={host};user={user};database={dbname};port={port};password={password}");
-            } catch(Exception ex)
+                connection.Open();
+            } catch(Exception)
             {
                 throw;
             }
         }
+
+        public MySqlCommand Query()
+        {
+            try
+            {
+                command = connection.CreateCommand();
+                command.CommandType = CommandType.Text;
+
+                return command;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         public void Close()
         {
             connection.Close();

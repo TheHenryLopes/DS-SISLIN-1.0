@@ -29,26 +29,14 @@ namespace SISLIN_1._0
 
         public MainWindow()
         {
-            try
-            {
-                var conexao = new Conexao();
-            }
-            catch(Exception ex)
-                {
-                MessageBox.Show(ex.Message);
-            }
-            
-           
-
-
-
-
-
-
-
-
+   
             InitializeComponent();
+            Loaded += MainWindow_Loaded;
+        }
 
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -76,11 +64,31 @@ namespace SISLIN_1._0
             {
                 System.Windows.MessageBox.Show("Senha Incorreta!");
             }
+
+            Inset_Teste();
         }
 
         private void SENHA_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Inset_Teste()
+        {
+            try
+            {
+                Perdas perdas = new Perdas();
+
+                perdas.ID = 1;
+                perdas.Nome = "Jennifer";
+                perdas.Valor = 5000;
+
+                PerdasDAO perdasDAO = new PerdasDAO();
+                perdasDAO.Insert(perdas);
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Não Executado", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
