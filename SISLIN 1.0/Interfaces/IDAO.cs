@@ -14,11 +14,13 @@ namespace SISLIN_1._0.Interfaces
     interface IDAO<T>
     {
         void Insert(T t);
+
         void Update(T t);
+
         void Delete(T t);
+
         List<T> List();
 
         T GetById(int id);
-
     }
 }
