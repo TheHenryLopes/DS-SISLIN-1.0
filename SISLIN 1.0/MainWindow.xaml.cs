@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SISLIN_1._0.Models;
-using SISLIN_1._0.Database;
+ 
 
 
 
@@ -29,26 +29,7 @@ namespace SISLIN_1._0
 
         public MainWindow()
         {
-            try
-            {
-                var conexao = new Conexao();
-            }
-            catch(Exception ex)
-                {
-                MessageBox.Show(ex.Message);
-            }
-            
-           
-
-
-
-
-
-
-
-
             InitializeComponent();
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -76,6 +57,8 @@ namespace SISLIN_1._0
             {
                 System.Windows.MessageBox.Show("Senha Incorreta!");
             }
+
+            
         }
 
         private void SENHA_TextChanged(object sender, TextChangedEventArgs e)

@@ -1,4 +1,6 @@
 ﻿using SISLIN_1._0;
+using SISLIN_1._0.Database;
+using SISLIN_1._0.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +25,21 @@ namespace SISLIN_1._0
         public MenuPrin()
         {
             InitializeComponent();
+            Loaded += MenuPrin_Loaded;
         }
+
+        private void MenuPrin_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var conexao = new Conexao();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Emitir_RRM1 Chamar = new Emitir_RRM1();
@@ -110,6 +126,24 @@ namespace SISLIN_1._0
         {
             ConsumoInterno Chama = new ConsumoInterno();
             Chama.ShowDialog();
+        }
+
+        private void Insert_Teste()
+        {
+            try
+            {
+                Perdas perdas = new Perdas();
+                perdas.ID = 1;
+                perdas.Nome = "Nina";
+                perdas.Valor = 50000;
+
+                PerdasDAO perdasDAO = new PerdasDAO();
+                perdasDAO.Insert(perdas);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Não executado", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

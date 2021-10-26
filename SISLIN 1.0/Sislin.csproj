@@ -168,6 +168,10 @@
     <Compile Include="Models\EntrDinheiroDAO.cs" />
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\FuncionarioDAO.cs" />
+    <Compile Include="Models\Orcamento.cs" />
+    <Compile Include="Models\OrcamentoDAO.cs" />
+    <Compile Include="Models\Perdas.cs" />
+    <Compile Include="Models\PerdasDAO.cs" />
     <Compile Include="PAGAM_1.xaml.cs">
       <DependentUpon>PAGAM_1.xaml</DependentUpon>
     </Compile>
