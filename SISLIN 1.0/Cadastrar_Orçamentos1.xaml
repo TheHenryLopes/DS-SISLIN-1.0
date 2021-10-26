@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="Cadastrar_Orçamentos1" Height="750" Width="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="Cadastrar_Orçamentos1" Height="520" Width="774" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="701*"/>
             <RowDefinition Height="18*"/>
         </Grid.RowDefinitions>
-        <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2">
+        <Border CornerRadius="1" Margin="-1,0,-10,0" Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>
                     <GradientStop Color="#C490E4" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <DataGrid x:Name="info_orca" Margin="72,414,48,96" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"
+            <DataGrid x:Name="info_orca" Margin="33,155,87,75" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"
                   IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#d3e0f5" AlternationCount="2" 
                   FontFamily="Corbel">
 
@@ -34,155 +34,15 @@
                 </DataGrid.Columns>
 
             </DataGrid>
- 
+
         </Border>
-
-        <Button x:Name="atual" Content="Atualizar" HorizontalAlignment="Left" 
-                Margin="67,40,0,0" VerticalAlignment="Top" 
-                Width="150" Height="37" Background="Transparent" 
-                BorderBrush="White" FontSize="25" 
-                FontFamily="Helvetica" Foreground="White" Click="atual_Click"/>
-
-        <Button x:Name="loc" Content="Localizar" HorizontalAlignment="Left" 
-                Margin="260,40,0,0" VerticalAlignment="Top" 
-                Width="150" Height="37" Background="Transparent" 
-                BorderBrush="White" FontSize="25" 
-                FontFamily="Helvetica" Foreground="White" Click="loc_Click"/>
-
-        <Button x:Name="ord" Content="Ordenar" HorizontalAlignment="Left" 
-                Margin="460,40,0,0" VerticalAlignment="Top" 
-                Width="150" Height="37" Background="Transparent" 
-                BorderBrush="White" FontSize="25" 
-                FontFamily="Helvetica" Foreground="White" Click="ord_Click"/>
-
-        <Button x:Name="cancel" Content="Cancelar" HorizontalAlignment="Left" 
-                Margin="650,40,0,0" VerticalAlignment="Top" 
-                Width="150" Height="37" Background="Transparent" 
-                BorderBrush="White" FontSize="25" 
-                FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.3,0.61" Click="cancel_Click"/>
 
 
         <Label Content="Código" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,85,50,255"/>
+               Foreground="Black" Margin="81,16,557,422" RenderTransformOrigin="0.669,0.537"/>
 
-        <TextBox x:Name="txt_cod" TextWrapping="Wrap" Margin="67,118,735,548"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-        <Label Content="Data de Emissão" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="193,85,50,255"/>
-
-        <Label Content="Vendedor" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="400,85,50,255"/>
-
-        <ComboBox x:Name="combox_Vendedor" Background="Transparent" Margin="400,118,342,548"
-                     Foreground="Black" BorderBrush="White">
-            <ComboBoxItem  Content="Any"/>
-            <ComboBoxItem Content="Jeremy"/>
-            <ComboBoxItem Content="Arthur"/>
-            <ComboBoxItem Content="Tess"/>
-            <ComboBoxItem Content="Athanasia"/>
-            <ComboBoxItem Content="Claude Athanasius"/>
-            <ComboBoxItem Content="..."/>
-        </ComboBox>
-
-        <Label Content="Cliente" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="610,85,50,255"/>
-
-        <TextBox x:Name="txt_cliente" TextWrapping="Wrap" Margin="610,118,50,548"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-
-
-
-        <Label Content="Nome Usual" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="70,158,130,272"/>
-
-        <TextBox x:Name="txt_nick" TextWrapping="Wrap" Margin="75,194,670,472"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-        <Label Content="CPF" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="247,158,213,271"/>
-
-        <TextBox x:Name="txt_cpf" TextWrapping="Wrap" Margin="247,194,457,472"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-        <Label Content="País" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="458,159,282,271"/>
-
-        <ComboBox x:Name="combox_Pais" Background="Transparent" 
-         Foreground="Black" BorderBrush="White" Margin="460,194,285,472">
-            <ComboBoxItem  Content="Argentina"/>
-            <ComboBoxItem Content="Brasil"/>
-            <ComboBoxItem Content="Estados Unidos"/>
-            <ComboBoxItem Content="Itália"/>
-            <ComboBoxItem Content="Espanha"/>
-            <ComboBoxItem Content="Gênova"/>
-            <ComboBoxItem Content="..."/>
-        </ComboBox>
-
-        <Label Content="Telefone" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="650,159,79,270"/>
-
-        <TextBox x:Name="txt_tell" TextWrapping="Wrap" Margin="647,194,50,472"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-
-
-
-        <Label Content="Logradouro" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="75,234,125,351"/>
-
-        <TextBox x:Name="txt_logra" TextWrapping="Wrap" Margin="75,269,572,396"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-        <Label Content="Número" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="340,234,50,286"/>
-
-        <TextBox x:Name="txt_num" TextWrapping="Wrap" Margin="340,269,434,396"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-        <Label Content="Complemento" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="493,234,50,286"/>
-
-        <TextBox x:Name="txt_compl" TextWrapping="Wrap" Margin="493,269,50,396"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-
-
-
-
-        <Label Content="Bairro" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="75,310,125,286"/>
-
-        <TextBox x:Name="txt_bairro" TextWrapping="Wrap" Margin="75,350,474,305"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-        <Label Content="Localidade" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="450,310,50,300"/>
-
-        <TextBox x:Name="txt_local" TextWrapping="Wrap" Margin="450,350,50,305"
+        <TextBox x:Name="txt_cod" TextWrapping="Wrap" Margin="81,56,557,397"
                  Background="Transparent" 
                      Foreground="Black" BorderBrush="White"/>
 
@@ -191,25 +51,36 @@
 
 
 
-        <Button x:Name="salv" Content="Salvar" Margin="67,644,0,0" HorizontalAlignment="Left"
+
+
+        <Button x:Name="salv" Content="Salvar" Margin="157,428,0,0" HorizontalAlignment="Left"
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" VerticalAlignment="Top"
                 FontFamily="Helvetica" Foreground="White" Click="salv_Click"/>
 
-        <Button x:Name="inse" Content="Inserir" Margin="260,644,0,0" HorizontalAlignment="Left"
+        <Button x:Name="inse" Content="Inserir" Margin="266,104,0,0" HorizontalAlignment="Left"
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" VerticalAlignment="Top"
                 FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.583,1.443" Click="inse_Click"/>
 
-        <Button x:Name="exc" Content="Excluir" Margin="458,644,0,0" HorizontalAlignment="Left"
+        <Button x:Name="exc" Content="Excluir" Margin="324,428,0,0" HorizontalAlignment="Left"
                 Width="152" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" VerticalAlignment="Top"
                 FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.451,0.514" Click="exc_Click"/>
 
-        <Button x:Name="edit" Content="Editar" Margin="650,644,0,0" Height="37" Background="Transparent" 
+        <Button x:Name="edit" Content="Editar" Margin="493,428,0,0" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" HorizontalAlignment="Left"
                 FontFamily="Helvetica" Foreground="White" VerticalAlignment="Top" Width="150" Click="edit_Click"/>
-        <DatePicker x:Name="datinha" HorizontalAlignment="Left" Margin="193,123,0,0" VerticalAlignment="Top" Width="169"/>
+        <DatePicker x:Name="datinha" HorizontalAlignment="Left" Margin="275,56,0,0" VerticalAlignment="Top" Width="169"/>
+        <Label Content="Data" FontWeight="Light" 
+            FontFamily="Helvetica" FontSize="22" 
+            Foreground="Black" Margin="275,16,363,422"/>
+        <Label Content="Valor" FontWeight="Light" 
+            FontFamily="Helvetica" FontSize="22" 
+            Foreground="Black" Margin="481,16,157,422"/>
+        <TextBox x:Name="txt_cod_Copy" TextWrapping="Wrap" Margin="481,54,157,399"
+            Background="Transparent" 
+            Foreground="Black" BorderBrush="White"/>
 
     </Grid>
 </Window>

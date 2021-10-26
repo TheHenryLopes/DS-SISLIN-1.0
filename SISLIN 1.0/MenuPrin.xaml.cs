@@ -1,6 +1,7 @@
 ﻿using SISLIN_1._0;
 using SISLIN_1._0.Database;
 using SISLIN_1._0.Models;
+//using SISLIN_1._0.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,7 @@ namespace SISLIN_1._0
 
         private void MenuPrin_Loaded(object sender, RoutedEventArgs e)
         {
+            
             try
             {
                 var conexao = new Conexao();
@@ -42,11 +44,19 @@ namespace SISLIN_1._0
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            Button button = sender as Button;
+
+            MessageBox.Show(button.Name);
+
             Emitir_RRM1 Chamar = new Emitir_RRM1();
             Chamar.ShowDialog();
         }
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            Button button = sender as Button;
+
+            MessageBox.Show(button.Name);
+
             Cadastrar_Orçamentos1 Chamar = new Cadastrar_Orçamentos1();
             Chamar.ShowDialog();
         }
@@ -59,8 +69,12 @@ namespace SISLIN_1._0
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            Button button = sender as Button;
+
+            MessageBox.Show(button.Name);
             Cadastrar_PerdasSimples Chamar = new Cadastrar_PerdasSimples();
             Chamar.ShowDialog();
+          
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -128,22 +142,6 @@ namespace SISLIN_1._0
             Chama.ShowDialog();
         }
 
-        private void Insert_Teste()
-        {
-            try
-            {
-                Perdas perdas = new Perdas();
-                perdas.ID = 1;
-                perdas.Nome = "Nina";
-                perdas.Valor = 50000;
-
-                PerdasDAO perdasDAO = new PerdasDAO();
-                perdasDAO.Insert(perdas);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Não executado", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
+        
     }
 }

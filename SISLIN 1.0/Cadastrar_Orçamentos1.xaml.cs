@@ -101,16 +101,9 @@ namespace SISLIN_1._0
 
         private void ClearTextBox()
         {
-            txt_bairro.Text = "";
-            txt_cliente.Text = "";
+
             txt_cod.Text = "";
-            txt_compl.Text = "";
-            txt_cpf.Text = "";
-            txt_local.Text = "";
-            txt_logra.Text = "";
-            txt_nick.Text = "";
-            txt_num.Text = "";
-            txt_tell.Text = "";
+          
         }
     }
 }

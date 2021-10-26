@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SISLIN_1._0"
         mc:Ignorable="d"
-        Title="Cadastrar_PerdasSimples" Height="550" Width="700" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="Cadastrar_PerdasSimples" Height="374.5" Width="700" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="601*"/>
+            <ColumnDefinition Width="395*"/>
+            <ColumnDefinition Width="209*"/>
             <ColumnDefinition Width="91*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="165*"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+        <Border CornerRadius="1" Margin="-1,0,0,0" Grid.RowSpan="2" Grid.ColumnSpan="3">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#7BE9F6" Offset="0.0"/>
@@ -34,114 +35,50 @@
                 Margin="360,20,0,0" VerticalAlignment="Top" 
                 Width="150" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White" Click="inserir_Click"/>
-
-        <Label Content="Código" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,85,50,236" Grid.ColumnSpan="2"/>
-
-        <TextBox x:Name="txt_codigo" TextWrapping="Wrap" Margin="67,120,435,348"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
+                FontFamily="Helvetica" Foreground="White" Click="inserir_Click" Grid.ColumnSpan="2"/>
 
         <Label Content="Data" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="198,85,50,231" Grid.ColumnSpan="2"/>
+               Foreground="Black" Margin="30,73,167,206"/>
 
         <Label Content="Motivo" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="400,85,50,231" Grid.ColumnSpan="2"/>
+               Foreground="Black" Margin="232,73,50,213" Grid.ColumnSpan="3"/>
 
-        <TextBox x:Name="txt_motivo" TextWrapping="Wrap" Margin="400,120,50,348"
+        <TextBox x:Name="txt_motivo" TextWrapping="Wrap" Margin="232,122,50,175"
                  Background="Transparent" 
-                     Foreground="Black" BorderBrush="White" Grid.ColumnSpan="2"/>
-
-
-
-        <Label Content="Produto" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,146,50,250" Grid.ColumnSpan="2"/>
-
-        <TextBox x:Name="txt_produto" TextWrapping="Wrap" Margin="67,180,307,288"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-        <Label Content="Código de Barras" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="323,146,50,250" Grid.ColumnSpan="2"/>
-
-        <TextBox x:Name="txt_codBarrs" TextWrapping="Wrap" Margin="323,180,50,288"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White" Grid.ColumnSpan="2"/>
-
-
-
-        <Label Content="Referências" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,211,50,212" Grid.ColumnSpan="2"/>
-
-        <TextBox x:Name="txt_ref" TextWrapping="Wrap" Margin="67,245,50,223"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White" Grid.ColumnSpan="2"/>
-
-
-
-        <Label Content="Unidade" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,276,50,40" Grid.ColumnSpan="2"/>
-
-        <TextBox x:Name="txt_unidade" TextWrapping="Wrap" Margin="67,310,435,158"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
+                     Foreground="Black" BorderBrush="White" Grid.ColumnSpan="3"/>
 
         <Label Content="Quantidade" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="193,276,50,40" Grid.ColumnSpan="2"/>
+               Foreground="Black" Margin="170,159,96,110"/>
 
-        <TextBox x:Name="txt_quantidade" TextWrapping="Wrap" Margin="193,310,281,158"
+        <TextBox x:Name="txt_quantidade" TextWrapping="Wrap" Margin="170,199,96,97"
                  Background="Transparent" 
                      Foreground="Black" BorderBrush="White"/>
 
-        <Label Content="Preço Custo" FontWeight="Light" 
+        <Label Content="Valor Estimulado" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="342,276,50,40" Grid.ColumnSpan="2"/>
+               Foreground="Black" Margin="360,159,50,107" Grid.ColumnSpan="3"/>
 
-        <TextBox x:Name="txt_custo" TextWrapping="Wrap" Margin="342,310,126,158"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White"/>
-
-        <Label Content="Preço Venda" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="498,276,50,40" Grid.ColumnSpan="2"/>
-
-        <TextBox x:Name="txt_venda" TextWrapping="Wrap" Margin="498,310,50,158"
-                 Background="Transparent" 
-                     Foreground="Black" BorderBrush="White" Grid.ColumnSpan="2"/>
-
-
-
-        <Label Content="Observações" FontWeight="Light" 
-               FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="67,336,50,80" Grid.ColumnSpan="2"/>
-
-        <TextBox x:Name="txt_obs" TextWrapping="Wrap" Margin="67,372,50,92"
+        <TextBox x:Name="txt_venda" TextWrapping="Wrap" Margin="364,199,93,97"
                  Background="Transparent" 
                      Foreground="Black" BorderBrush="White" Grid.ColumnSpan="2"/>
 
 
 
         <Button x:Name="salvar" Content="Salvar" HorizontalAlignment="Left" 
-                Margin="170,431,0,27" Width="150" 
+                Margin="170,257,0,35" Width="150" 
                 Background="Transparent" BorderBrush="White" 
                 FontSize="20" FontFamily="Helvetica" Foreground="White" Click="salvar_Click"/>
 
 
         <Button x:Name="excluir" Content="Excluir" HorizontalAlignment="Left" 
-                Margin="360,431,0,27" Width="150" 
+                Margin="360,257,0,35" Width="150" 
                 Background="Transparent" BorderBrush="White" 
                 FontSize="20" FontFamily="Helvetica" 
-                Foreground="White" Click="excluir_Click"/>
-        <DatePicker x:Name="data_info" HorizontalAlignment="Left" Margin="198,120,0,0" VerticalAlignment="Top" Width="177" RenderTransformOrigin="0.605,1.744" Height="27"/>
+                Foreground="White" Click="excluir_Click" Grid.ColumnSpan="2"/>
+        <DatePicker x:Name="data_info" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="177" RenderTransformOrigin="0.605,1.744" Height="27"/>
 
     </Grid>
 </Window>

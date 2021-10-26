@@ -83,7 +83,7 @@ namespace SISLIN_1._0
             Cliente cliente = new Cliente();
             cliente.nome_cliente = "Gustavo";
             cliente.cpf_cliente = "454444545";
-            cliente.email_cliente="gustavo.saam@gmail.com";
+            cliente.email_cliente = "gustavo.saam@gmail.com";
 
             ClienteDAO clientedao = new ClienteDAO();
             clientedao.Insert(cliente);

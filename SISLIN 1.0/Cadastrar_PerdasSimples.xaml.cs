@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SISLIN_1._0.Models;
 
 namespace SISLIN_1._0
 {
@@ -40,6 +41,23 @@ namespace SISLIN_1._0
 
         private void salvar_Click(object sender, RoutedEventArgs e)
         {
+            try
+                {
+                    Perdas perdas = new Perdas();
+                    
+                    perdas.Nome = "Nina";
+                    perdas.Valor = 50000;
+
+                    PerdasDAO perdasDAO = new PerdasDAO();
+                    perdasDAO.Insert(perdas);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Não executado", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            
+
+            /*
             MessageBoxResult result = MessageBox.Show("Salvo com sucesso!", "Confirmação", MessageBoxButton.OK, MessageBoxImage.Exclamation);
 
             if(result == MessageBoxResult.OK)
@@ -50,6 +68,7 @@ namespace SISLIN_1._0
                     this.Close();
                 }
             }
+            */
         }
 
         private void excluir_Click(object sender, RoutedEventArgs e)
@@ -62,15 +81,8 @@ namespace SISLIN_1._0
 
         private void ClearTextBox()
         {
-            txt_codBarrs.Text = "";
-            txt_codigo.Text = "";
-            txt_custo.Text = "";
             txt_motivo.Text = "";
-            txt_obs.Text = "";
-            txt_produto.Text = "";
             txt_quantidade.Text = "";
-            txt_ref.Text = "";
-            txt_unidade.Text = "";
             txt_venda.Text = "";
         }
     }

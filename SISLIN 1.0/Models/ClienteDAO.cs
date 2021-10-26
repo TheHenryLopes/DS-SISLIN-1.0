@@ -44,13 +44,6 @@ namespace SISLIN_1._0.Models
                 query.Parameters.AddWithValue("@telefonefx", t.telefone_fixo_cliente);
 
                 var result = query.ExecuteNonQuery();
-
-               
-
-
-
-
-
             }
             catch(Exception e)
             {
