@@ -126,13 +126,6 @@ namespace SISLIN_1._0
             ListaTelefonica Chama = new ListaTelefonica();
             Chama.ShowDialog();
         }
-
-        private void Consumo_Click(object sender, RoutedEventArgs e)
-        {
-            ConsumoInterno Chama = new ConsumoInterno();
-            Chama.ShowDialog();
-        }
-
         
     }
 }
