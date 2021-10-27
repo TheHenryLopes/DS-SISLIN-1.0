@@ -64,7 +64,7 @@ namespace SISLIN_1._0
             try
             {
                 EntrDinheiro entrDinheiro = new EntrDinheiro();
-                entrDinheiro.Id_Dinheiro = ;
+                entrDinheiro.Id_Dinheiro = 1;
                 entrDinheiro.Valor_Dinheiro = 55;
                 entrDinheiro.Tipo_Dinheiro = "Dinheiro";
 
