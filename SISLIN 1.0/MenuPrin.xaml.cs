@@ -44,18 +44,11 @@ namespace SISLIN_1._0
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Button button = sender as Button;
-
-            MessageBox.Show(button.Name);
-
             Emitir_RRM1 Chamar = new Emitir_RRM1();
             Chamar.ShowDialog();
         }
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Button button = sender as Button;
-
-            MessageBox.Show(button.Name);
 
             Cadastrar_Orçamentos1 Chamar = new Cadastrar_Orçamentos1();
             Chamar.ShowDialog();
@@ -69,9 +62,7 @@ namespace SISLIN_1._0
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Button button = sender as Button;
-
-            MessageBox.Show(button.Name);
+            
             Cadastrar_PerdasSimples Chamar = new Cadastrar_PerdasSimples();
             Chamar.ShowDialog();
           

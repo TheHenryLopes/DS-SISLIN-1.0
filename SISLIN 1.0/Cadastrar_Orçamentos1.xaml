@@ -18,18 +18,18 @@
                     <GradientStop Color="#C490E4" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
-            <DataGrid x:Name="info_orca" Margin="33,155,87,75" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"
+            <DataGrid x:Name="info_orca" Margin="61,180,59,105" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"
                   IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#d3e0f5" AlternationCount="2" 
                   FontFamily="Corbel">
 
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Código          " FontSize="17" Binding="{Binding Cod, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Descrição                                                                    " FontSize="17" Binding="{Binding Desc, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Desconto             " FontSize="17" Binding="{Binding Desconto, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Unidade                  " FontSize="17" Binding="{Binding Unidd, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Quantidade             " FontSize="17" Binding="{Binding Quantdd, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Preço Venda                " FontSize="17" Binding="{Binding Preco_Venda, ConverterCulture='pt-BR'}"/>
-                    <DataGridTextColumn Header="Total                " FontSize="17" Binding="{Binding Total, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Data" FontSize="17" Binding="{Binding Data, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Descrição" FontSize="17" Binding="{Binding Descrisao, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Desconto" FontSize="17" Binding="{Binding Desconto, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Unidade" FontSize="17" Binding="{Binding Unidade, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Quantidade" FontSize="17" Binding="{Binding Quantdd, ConverterCulture='pt-BR'}"/>
+                    <DataGridTextColumn Header="Preço Venda" FontSize="17" Binding="{Binding Valor, ConverterCulture='pt-BR'}"/>
+           
 
                 </DataGrid.Columns>
 
@@ -38,47 +38,49 @@
         </Border>
 
 
-        <Label Content="Código" FontWeight="Light" 
+        <Label x:Name="descrisao" Content="Descrisão" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
-               Foreground="Black" Margin="81,16,557,422" RenderTransformOrigin="0.669,0.537"/>
+               Foreground="Black" Margin="237,16,401,422" RenderTransformOrigin="0.669,0.537"/>
 
-        <TextBox x:Name="txt_cod" TextWrapping="Wrap" Margin="81,56,557,397"
+        <TextBox x:Name="txt_descrisao" TextWrapping="Wrap" Margin="237,54,34,393"
                  Background="Transparent" 
                      Foreground="Black" BorderBrush="White"/>
 
-
-
-
-
-
-
-
-        <Button x:Name="salv" Content="Salvar" Margin="157,428,0,0" HorizontalAlignment="Left"
-                Width="150" Height="37" Background="Transparent" 
+        <Button x:Name="salv" Content="Salvar" Margin="237,424,0,0" HorizontalAlignment="Left"
+                Width="150" Height="38" Background="Transparent" 
                 BorderBrush="White" FontSize="25" VerticalAlignment="Top"
                 FontFamily="Helvetica" Foreground="White" Click="salv_Click"/>
 
-        <Button x:Name="inse" Content="Inserir" Margin="266,104,0,0" HorizontalAlignment="Left"
-                Width="150" Height="37" Background="Transparent" 
-                BorderBrush="White" FontSize="25" VerticalAlignment="Top"
-                FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.583,1.443" Click="inse_Click"/>
-
-        <Button x:Name="exc" Content="Excluir" Margin="324,428,0,0" HorizontalAlignment="Left"
+        <Button x:Name="sair" Content="Sair" Margin="427,424,0,0" HorizontalAlignment="Left"
                 Width="152" Height="37" Background="Transparent" 
                 BorderBrush="White" FontSize="25" VerticalAlignment="Top"
-                FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.451,0.514" Click="exc_Click"/>
-
-        <Button x:Name="edit" Content="Editar" Margin="493,428,0,0" Height="37" Background="Transparent" 
-                BorderBrush="White" FontSize="25" HorizontalAlignment="Left"
-                FontFamily="Helvetica" Foreground="White" VerticalAlignment="Top" Width="150" Click="edit_Click"/>
-        <DatePicker x:Name="datinha" HorizontalAlignment="Left" Margin="275,56,0,0" VerticalAlignment="Top" Width="169"/>
-        <Label Content="Data" FontWeight="Light" 
+                FontFamily="Helvetica" Foreground="White" RenderTransformOrigin="0.451,0.514" Click="sair_Click"/>
+        <DatePicker x:Name="datinha" HorizontalAlignment="Left" Margin="36,57,0,0" VerticalAlignment="Top" Width="169"/>
+        <Label x:Name="data" Content="Data" FontWeight="Light" 
             FontFamily="Helvetica" FontSize="22" 
-            Foreground="Black" Margin="275,16,363,422"/>
-        <Label Content="Valor" FontWeight="Light" 
+            Foreground="Black" Margin="36,16,602,422"/>
+        <Label x:Name="desconto" Content="Desconto" FontWeight="Light" 
             FontFamily="Helvetica" FontSize="22" 
-            Foreground="Black" Margin="481,16,157,422"/>
-        <TextBox x:Name="txt_cod_Copy" TextWrapping="Wrap" Margin="481,54,157,399"
+            Foreground="Black" Margin="36,86,572,352"/>
+        <TextBox x:Name="txt_desconto" TextWrapping="Wrap" Margin="36,127,602,317"
+            Background="Transparent" 
+            Foreground="Black" BorderBrush="White"/>
+        <Label x:Name="Unidade" Content="Unidade" FontWeight="Light" 
+            FontFamily="Helvetica" FontSize="22" 
+            Foreground="Black" Margin="201,86,401,352"/>
+        <Label x:Name="quantdd" Content="Quantidade" FontWeight="Light" 
+            FontFamily="Helvetica" FontSize="22" 
+            Foreground="Black" Margin="354,86,238,352"/>
+        <Label x:Name="valor" Content="Valor Venda" FontWeight="Light" 
+            FontFamily="Helvetica" FontSize="22" 
+            Foreground="Black" Margin="530,86,78,352"/>
+        <TextBox x:Name="txt_unidade" TextWrapping="Wrap" Margin="201,127,476,317"
+            Background="Transparent" 
+            Foreground="Black" BorderBrush="White"/>
+        <TextBox x:Name="txt_quantdd" TextWrapping="Wrap" Margin="354,127,292,317"
+            Background="Transparent" 
+            Foreground="Black" BorderBrush="White"/>
+        <TextBox x:Name="txt_valor" TextWrapping="Wrap" Margin="530,127,108,317"
             Background="Transparent" 
             Foreground="Black" BorderBrush="White"/>
 

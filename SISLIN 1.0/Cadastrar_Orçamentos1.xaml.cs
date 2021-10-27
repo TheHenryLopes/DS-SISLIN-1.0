@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SISLIN_1._0.Models;
 
 namespace SISLIN_1._0
 {
@@ -32,78 +33,72 @@ namespace SISLIN_1._0
 
         private void Cadastrar_Orçamentos1_Loaded(object sender, RoutedEventArgs e)
         {
-            for(int i = 0; i < 50; i++)
+            LoadDataGrid();
+        }
+
+        private void LoadDataGrid()
+        {
+            try
             {
-                Informacao.Add(new Dados_Orcamento()
-                {
-                    Cod = i + 1,
-                    Desc = "Lingeries",
-                    Desconto = 15,
-                    Unidd = 50 + i,
-                    Quantdd = 200 + i,
-                    Preco_Venda = 80 +i,
-                    Total = 76 + i
-                }) ;
+                var dao = new OrcamentoDAO();
+
+                info_orca.ItemsSource = dao.List();
             }
-            info_orca.ItemsSource = Informacao;
-        }
-
-        private void atual_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBoxResult result = MessageBox.Show("Atualizado com sucesso!", "Confirmação", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        private void loc_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBoxResult result = MessageBox.Show("Localizado com sucesso!", "Confirmação", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        private void ord_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBoxResult result = MessageBox.Show("Ordenado com sucesso!", "Confirmação", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        private void cancel_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBoxResult result = MessageBox.Show("Certeza que deseja cancelar?", "Alerta", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if(result == MessageBoxResult.Yes)
+            catch (Exception ex)
             {
-                MessageBoxResult result1 = MessageBox.Show("Cancelado! (ㆆ_ㆆ)", "Aviso", MessageBoxButton.OK, MessageBoxImage.Information);
-                if(result1 == MessageBoxResult.OK)
-                {
-                    this.Close();
-                }
+                MessageBox.Show(ex.Message, "Exceção", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void salv_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Salvo com sucesso!", "Confirmação", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            
+            try
+            {
+                Orcamento orcamento = new Orcamento();
+                orcamento.Data = (DateTime)datinha.SelectedDate;
+                orcamento.Descrisao = Convert.ToString(txt_descrisao.Text);
+                orcamento.Desconto = Convert.ToInt32(txt_desconto.Text);
+                orcamento.Unidade = Convert.ToInt32(txt_unidade.Text);
+                orcamento.Quantdd = Convert.ToInt32(txt_quantdd.Text);
+                orcamento.Valor = Convert.ToDouble(txt_valor.Text);
+
+                OrcamentoDAO OrcamentoDAO = new OrcamentoDAO();
+                OrcamentoDAO.Insert(orcamento);
+
+                MessageBox.Show("Cadastrado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                LoadDataGrid();
+
+                var result = MessageBox.Show("Deseja continuar adicionando?", "Continuar?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.No)
+                    this.Close();
+                else
+                    ClearInputs();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Não executado", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
         }
 
-        private void inse_Click(object sender, RoutedEventArgs e)
+        private void sair_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Tem certeza que deseja inserir/modificar alguma inforção?", "Confirmação", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            this.Close();
         }
 
-        private void exc_Click(object sender, RoutedEventArgs e)
+        private void ClearInputs()
         {
-            MessageBoxResult result = MessageBox.Show("Tem certeza que deseja excluir?", "Confirmação", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            datinha.SelectedDate = null;
+            txt_descrisao.Text = "";
+            txt_desconto.Text = "";
+            txt_unidade.Text = "";
+            txt_quantdd.Text = "";
+            txt_valor.Text = "";
 
-            if (result == MessageBoxResult.Yes)
-                ClearTextBox();
-        }
-
-        private void edit_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBoxResult result = MessageBox.Show("Informação editada com sucesso!", "Aviso", MessageBoxButton.OK, MessageBoxImage.Exclamation);
-        }
-
-        private void ClearTextBox()
-        {
-
-            txt_cod.Text = "";
-          
         }
     }
 }

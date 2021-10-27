@@ -25,18 +25,6 @@
             </Border.Background>
         </Border>
 
-        <Button x:Name="editar" Content="Editar" HorizontalAlignment="Left" 
-                Margin="170,20,0,0" VerticalAlignment="Top" 
-                Width="150" Height="37" Background="Transparent" 
-                BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White" Click="editar_Click"/>
-
-        <Button x:Name="inserir" Content="Inserir" HorizontalAlignment="Left" 
-                Margin="360,20,0,0" VerticalAlignment="Top" 
-                Width="150" Height="37" Background="Transparent" 
-                BorderBrush="White" FontSize="20" 
-                FontFamily="Helvetica" Foreground="White" Click="inserir_Click" Grid.ColumnSpan="2"/>
-
         <Label Content="Data" FontWeight="Light" 
                FontFamily="Helvetica" FontSize="22" 
                Foreground="Black" Margin="30,73,167,206"/>
@@ -61,7 +49,7 @@
                FontFamily="Helvetica" FontSize="22" 
                Foreground="Black" Margin="360,159,50,107" Grid.ColumnSpan="3"/>
 
-        <TextBox x:Name="txt_venda" TextWrapping="Wrap" Margin="364,199,93,97"
+        <TextBox x:Name="txt_valorEstimulado" TextWrapping="Wrap" Margin="364,199,93,97"
                  Background="Transparent" 
                      Foreground="Black" BorderBrush="White" Grid.ColumnSpan="2"/>
 
@@ -73,11 +61,11 @@
                 FontSize="20" FontFamily="Helvetica" Foreground="White" Click="salvar_Click"/>
 
 
-        <Button x:Name="excluir" Content="Excluir" HorizontalAlignment="Left" 
+        <Button x:Name="Sair" Content="Sair" HorizontalAlignment="Left" 
                 Margin="360,257,0,35" Width="150" 
                 Background="Transparent" BorderBrush="White" 
                 FontSize="20" FontFamily="Helvetica" 
-                Foreground="White" Click="excluir_Click" Grid.ColumnSpan="2"/>
+                Foreground="White" Click="sair_Click" Grid.ColumnSpan="2"/>
         <DatePicker x:Name="data_info" HorizontalAlignment="Left" Margin="30,122,0,0" VerticalAlignment="Top" Width="177" RenderTransformOrigin="0.605,1.744" Height="27"/>
 
     </Grid>

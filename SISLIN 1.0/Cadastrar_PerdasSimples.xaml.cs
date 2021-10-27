@@ -43,17 +43,27 @@ namespace SISLIN_1._0
         {
             try
                 {
-                    Perdas perdas = new Perdas();
-                    
-                    perdas.Nome = "Nina";
-                    perdas.Valor = 50000;
+                Perdas perdas = new Perdas();
+                perdas.Data = (DateTime)data_info.SelectedDate;
+                perdas.Motivo = Convert.ToString(txt_motivo.Text);
+                perdas.Valor = Convert.ToDouble(txt_valorEstimulado.Text);
+                perdas.Quantidade = Convert.ToInt32(txt_quantidade.Text);
 
-                    PerdasDAO perdasDAO = new PerdasDAO();
-                    perdasDAO.Insert(perdas);
+                PerdasDAO perdasDAO = new PerdasDAO();
+                perdasDAO.Insert(perdas);
+
+                MessageBox.Show("Cadastrado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                var result = MessageBox.Show("Deseja continuar adicionando?", "Continuar?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.No)
+                    this.Close();
+                else
+                    ClearInputs();
+
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Não executado", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(ex.Message, "Erro inesperado!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             
 
@@ -71,19 +81,17 @@ namespace SISLIN_1._0
             */
         }
 
-        private void excluir_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBoxResult result = MessageBox.Show("Tem certeza que deseja excluir?", "Confirmação" , MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-            if(result == MessageBoxResult.Yes)
-            ClearTextBox();
-        }
-
-        private void ClearTextBox()
+        private void ClearInputs()
         {
             txt_motivo.Text = "";
             txt_quantidade.Text = "";
-            txt_venda.Text = "";
+            txt_valorEstimulado.Text = "";
+            data_info.SelectedDate = null;
+        }
+
+        private void sair_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

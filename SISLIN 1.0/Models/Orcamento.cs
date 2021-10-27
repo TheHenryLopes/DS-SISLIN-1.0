@@ -12,9 +12,15 @@ namespace SISLIN_1._0.Models
 
         public DateTime Data { get; set; }
 
-        public double Valor { get; set; }
+        public string Descrisao { get; set; }
 
-        public int Via { get; set; }
+        public int Desconto { get; set; }
+
+        public int Unidade { get; set; }
+
+        public int Quantdd { get; set; }
+
+        public double Valor { get; set; }
 
     }
 }

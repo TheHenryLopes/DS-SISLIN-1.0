@@ -33,13 +33,14 @@ namespace SISLIN_1._0.Models
             try
             {
                 var query = conn.Query();
-                query.CommandText = "INSERT INTO Orcamento (id_despesa, nome_despesa, valor_despesa)" +
-                    "VALUES (@id,@nome,@valor)";
+                query.CommandText = "INSERT INTO Despesa (id_despesa, data_despesa, motivo_despesa, " +
+                    "quantdd_despesa, valor_despesa)" +
+                    "VALUES (null, @data,@motivo,@quantidade,@valor)";
 
-                query.Parameters.AddWithValue("@id", t.ID);
-                query.Parameters.AddWithValue("@nome", t.Nome);
+                query.Parameters.AddWithValue("@data", t.Data);
+                query.Parameters.AddWithValue("@motivo", t.Motivo);
+                query.Parameters.AddWithValue("@quantidade", t.Quantidade);
                 query.Parameters.AddWithValue("@valor", t.Valor);
-
                 var result = query.ExecuteNonQuery();
 
             }
