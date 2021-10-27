@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SISLIN_1._0.Models;
 
 namespace SISLIN_1._0
 {
@@ -23,8 +24,16 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
 
-            Niver.SelectedDate = DateTime.Now;
+            
+
+            Loaded += CadastrarCliente_Loaded;
         }
+
+        private void CadastrarCliente_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
         private void excluir1_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -32,26 +41,39 @@ namespace SISLIN_1._0
 
         private void salvar_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Deseja salvar Operação?", "Alerta", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (result == MessageBoxResult.Yes)
+            
+
+
+            try
             {
-                MessageBoxResult result1 = MessageBox.Show("Salvo com sucesso!", "Aviso", MessageBoxButton.OK, MessageBoxImage.Information);
-                if (result1 == MessageBoxResult.OK)
-                {
-                    this.Close();
-                }
+                Cliente cliente = new Cliente();
+                cliente.nome_cliente = NOME.Text;
+                cliente.cpf_cliente = CPF.Text;
+                cliente.rg_cliente = RG.Text;
+                cliente.email_cliente = EMAIL.Text;
+                cliente.nome_fantasia_cliente = FANTA.Text;
+                cliente.telefone_cli = CELU.Text;
+
+                ClienteDAO clientedao = new ClienteDAO();
+                clientedao.Insert(cliente);
             }
+            catch
+            (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Não Executado", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
         }
 
         private void excluir_Click(object sender, RoutedEventArgs e)
         {
             COD.Clear();
             NOME.Clear();
-            TELE.Clear();
+            FANTA.Clear();
             CELU.Clear();
             RG.Clear();
             CPF.Clear();
-            ENDERE.Clear();
+            EMAIL.Clear();
         }
 
         private void junior_Click_1(object sender, RoutedEventArgs e)
@@ -64,5 +86,7 @@ namespace SISLIN_1._0
         {
 
         }
+
+        
     }
 }

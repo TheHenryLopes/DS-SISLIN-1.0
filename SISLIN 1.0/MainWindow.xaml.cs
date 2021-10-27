@@ -27,6 +27,12 @@ namespace SISLIN_1._0
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += MainWindow_Loaded;
+        }
+
+        private void MainWindow_Loaded1(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
@@ -37,6 +43,7 @@ namespace SISLIN_1._0
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -46,7 +53,7 @@ namespace SISLIN_1._0
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            senha = (SENHA.Text);
+            senha = (PassSenha.Password);
 
             if (senha == "12345")
             {
@@ -65,7 +72,7 @@ namespace SISLIN_1._0
 
         private void SENHA_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
@@ -75,13 +82,14 @@ namespace SISLIN_1._0
 
         private void InsertTest()
         {
+
             Cliente cliente = new Cliente();
             cliente.nome_cliente = "Gustavo";
             cliente.cpf_cliente = "454444545";
-            cliente.email_cliente = "gustavo.saam@gmail.com";
+          cliente.email_cliente = "gustavo.saam@gmail.com";
 
-            ClienteDAO clientedao = new ClienteDAO();
-            clientedao.Insert(cliente);
+
+
 
         }
 

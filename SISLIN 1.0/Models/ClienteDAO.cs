@@ -32,16 +32,16 @@ namespace SISLIN_1._0.Models
             try
             {
                 var query = conn.Query();
-                query.CommandText = "INSERT INTO cliente(nome_cliente,cpf_cliente,rg_cliente,cnpj_cliente,nome_fanclientetasia_cliente,email_cliente,telefone_cliente,telefone_fixo_cliente) " + 
-                    "VALUES (@nome, @cpf, @rg, @cnpj,@nomefan,@email, @telefone,@telefonefx)";
+                query.CommandText = "INSERT INTO cliente(nome_cliente,cpf_cliente,rg_cliente,cnpj_cliente,nome_fantasia_cliente,email_cli,telefone_cliente) " + 
+                    "VALUES (@nome, @cpf, @rg, @cnpj,@nomefan,@email, @telefone)";
                 query.Parameters.AddWithValue("@nome",t.nome_cliente);
                 query.Parameters.AddWithValue("@cpf",t.cpf_cliente);
                 query.Parameters.AddWithValue("@rg", t.rg_cliente);
                 query.Parameters.AddWithValue("@cnpj", t.cnpj_cliente);
-                query.Parameters.AddWithValue("@nomefan", t.nome_fanclientetasia_cliente);
+                query.Parameters.AddWithValue("@nomefan", t.nome_fantasia_cliente);
                 query.Parameters.AddWithValue("@email", t.email_cliente);
-                query.Parameters.AddWithValue("@telefone", t.telefone_cliente);
-                query.Parameters.AddWithValue("@telefonefx", t.telefone_fixo_cliente);
+                query.Parameters.AddWithValue("@telefone", t.telefone_cli);
+                
 
                 var result = query.ExecuteNonQuery();
             }

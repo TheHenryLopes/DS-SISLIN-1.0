@@ -13,10 +13,10 @@ namespace SISLIN_1._0.Models
             public string cpf_cliente { get; set; }
             public string rg_cliente { get; set; }
             public string cnpj_cliente { get; set; }
-            public string nome_fanclientetasia_cliente { get; set; }
+            public string nome_fantasia_cliente { get; set; }
             public string email_cliente { get; set; }
-            public string telefone_cliente { get; set; }
-            public string telefone_fixo_cliente { get; set; }
+            public string telefone_cli { get; set; }
+            
           
 
 
