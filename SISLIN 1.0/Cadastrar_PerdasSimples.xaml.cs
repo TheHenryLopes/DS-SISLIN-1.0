@@ -27,6 +27,7 @@ namespace SISLIN_1._0
             data_info.SelectedDate = DateTime.Now;
         }
 
+
         private void editar_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Informação editada com sucesso!", "Aviso", MessageBoxButton.OK, MessageBoxImage.Exclamation);
@@ -56,29 +57,15 @@ namespace SISLIN_1._0
                 var result = MessageBox.Show("Deseja continuar adicionando?", "Continuar?", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
                 if (result == MessageBoxResult.No)
-                    this.Close();
+                    ClearInputs();
                 else
                     ClearInputs();
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Erro inesperado!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             
-
-            /*
-            MessageBoxResult result = MessageBox.Show("Salvo com sucesso!", "Confirmação", MessageBoxButton.OK, MessageBoxImage.Exclamation);
-
-            if(result == MessageBoxResult.OK)
-            {
-                MessageBoxResult result2 = MessageBox.Show("Deseja sair da tela?", "Confirmação", MessageBoxButton.YesNo, MessageBoxImage.Information);
-                if(result2 == MessageBoxResult.Yes)
-                {
-                    this.Close();
-                }
-            }
-            */
         }
 
         private void ClearInputs()

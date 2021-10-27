@@ -73,7 +73,7 @@ namespace SISLIN_1._0
                 var result = MessageBox.Show("Deseja continuar adicionando?", "Continuar?", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
                 if (result == MessageBoxResult.No)
-                    this.Close();
+                    LoadDataGrid();
                 else
                     ClearInputs();
 
