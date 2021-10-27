@@ -127,15 +127,11 @@ namespace SISLIN_1._0
             Chama.ShowDialog();
         }
 
-<<<<<<< HEAD
-=======
         private void Consumo_Click(object sender, RoutedEventArgs e)
         {
             ConsumoInterno Chama = new ConsumoInterno();
             Chama.ShowDialog();
         }
-
->>>>>>> parent of b0a6c30... Atualização Das Telas Consumo
         
     }
 }
