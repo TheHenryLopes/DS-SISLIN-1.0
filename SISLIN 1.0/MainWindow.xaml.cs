@@ -15,11 +15,6 @@ using System.Windows.Shapes;
 using SISLIN_1._0.Models;
 
 
-
-
-
-
-
 namespace SISLIN_1._0
 {
     /// <summary>
@@ -88,6 +83,17 @@ namespace SISLIN_1._0
             ClienteDAO clientedao = new ClienteDAO();
             clientedao.Insert(cliente);
 
+        }
+
+        private void InsertVenda()
+        {
+            EntrDinheiro entrDinheiro = new EntrDinheiro();
+            entrDinheiro.Id_Dinheiro = 1;
+            entrDinheiro.Valor_Dinheiro = 55;
+            entrDinheiro.Tipo_Dinheiro = "Dinheiro";
+
+            EntrDinheiroDAO entrDinheiroDAO = new EntrDinheiroDAO();
+            entrDinheiroDAO.Insert(entrDinheiro);
         }
     }
 }
