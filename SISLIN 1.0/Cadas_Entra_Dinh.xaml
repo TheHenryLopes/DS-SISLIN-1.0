@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="Cadastrar Entrada de Dinheiro" Height="450" Width="572.516" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid Margin="0,0,-153,0">
-        <Border CornerRadius="1" Margin="-1,0,127,0" RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="317*"/>
+            <ColumnDefinition Width="43*"/>
+        </Grid.ColumnDefinitions>
+        <Border CornerRadius="1" Margin="-1,0,41,0" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -24,28 +28,36 @@
             </Border.Background>
         </Border>
         <DataGrid x:Name="Tela1" HorizontalAlignment="Left" Height="151" Margin="10,250,0,0" VerticalAlignment="Top" Width="337" Grid.Column="0"
-                  IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#d3e0f5" AlternationCount="2">
+                  IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#d3e0f5" AlternationCount="2" SelectionChanged="Tela1_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Código" FontSize="17" Binding="{Binding Cod, ConverterCulture='pt-BR'}"/>
                 <DataGridTextColumn Header="Valor" FontSize="17" Binding="{Binding Val, ConverterCulture='pt-BR'}"/>
                 <DataGridTextColumn Header="Tipo" FontSize="17" Binding="{Binding Tip, ConverterCulture='pt-BR'}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="Fechar" Content="Fechar Caixa" HorizontalAlignment="Left" Margin="39,33,0,0" VerticalAlignment="Top" Width="123" Height="32" Click="Fechar_Click" Foreground="Black" FontSize="15" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent" Opacity="0.8" />
-        <Button x:Name="Editar" Content="Editar Entrada" HorizontalAlignment="Left" Margin="194,33,0,0" VerticalAlignment="Top" Width="123" Height="32" Click="Editar_Click" Foreground="Black" FontSize="15" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent"/>
-        <Button x:Name="Excluir" Content="Excluir Entrada" HorizontalAlignment="Left" Margin="348,33,0,0" VerticalAlignment="Top" Width="123" Height="32" Click="Excluir_Click" Foreground="Black" FontSize="15" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent"/>
+        <Button x:Name="Fechar" Content="Fechar Caixa" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Width="123" Height="32" Click="Fechar_Click" Foreground="Black" FontSize="15" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent" Opacity="0.8" />
+        <Button x:Name="Editar" Content="Editar Entrada" HorizontalAlignment="Left" Margin="192,10,0,0" VerticalAlignment="Top" Width="123" Height="32" Click="Editar_Click" Foreground="Black" FontSize="15" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent"/>
+        <Button x:Name="Excluir" Content="Excluir Entrada" HorizontalAlignment="Left" Margin="349,10,0,0" VerticalAlignment="Top" Width="123" Height="32" Click="Excluir_Click" Foreground="Black" FontSize="15" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent"/>
         <TextBox HorizontalAlignment="Left" Height="151" Margin="369,250,0,0" TextWrapping="Wrap" Text="Faça sua anotação aqui..." VerticalAlignment="Top" Width="181"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="39,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+        <TextBox x:Name="text02" HorizontalAlignment="Left" Height="23" Margin="39,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
         <Label Content="Digite o valor:" FontWeight="Light" 
             FontFamily="Helvetica" FontSize="15" 
-            Foreground="Black" Margin="39,90,549,279"/>
-        <Label Content="Selecione o tipo de entrada:" FontWeight="Light" 
+            Foreground="Black" Margin="39,75,463,304"/>
+        <Label Content="Forma da pagamento:" FontWeight="Light" 
             FontFamily="Helvetica" FontSize="15" 
-            Foreground="Black" Margin="39,147,452,238"/>
-        <RadioButton Content="Dinheiro" HorizontalAlignment="Left" Margin="39,183,0,0" VerticalAlignment="Top" Width="100"/>
-        <RadioButton Content="Cartão de Crédito" HorizontalAlignment="Left" Margin="115,183,0,0" VerticalAlignment="Top" Width="119" />
-        <RadioButton Content="Cartão de Débito" HorizontalAlignment="Left" Margin="239,183,0,0" VerticalAlignment="Top" Width="119" />
-        <RadioButton Content="À Prazo" HorizontalAlignment="Left" Margin="363,183,0,0" VerticalAlignment="Top" Width="100"/>
+            Foreground="Black" Margin="39,132,366,253"/>
         <Button Content="Salvar" HorizontalAlignment="Left" Margin="39,203,0,0" VerticalAlignment="Top" Width="88" Height="29" Background="#FFC490E4" BorderBrush="Transparent" Click="Button_Click"/>
+        <TextBox x:Name="text01" HorizontalAlignment="Left" Height="23" Margin="103,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Código:" FontWeight="Light" 
+            FontFamily="Helvetica" FontSize="15" 
+            Foreground="Black" Margin="39,42,531,336"/>
+        <Button Content="SAIR" HorizontalAlignment="Left" Margin="259,203,0,0" VerticalAlignment="Top" Width="88" Height="29" Background="#FFC490E4" BorderBrush="Transparent" Click="Button_Click_1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="39,164,0,0" VerticalAlignment="Top" Width="189">
+        <ComboBoxItem Content="Dinheiro"/>
+        <ComboBoxItem Content="Cartão de Crédito"/>
+        <ComboBoxItem Content="Cartão de débito"/>
+        <ComboBoxItem Content="À prazo"/>
+        </ComboBox>
+        <Button Content="Nova" HorizontalAlignment="Left" Margin="151,203,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="Button_Click_2"/>
     </Grid>
 </Window>

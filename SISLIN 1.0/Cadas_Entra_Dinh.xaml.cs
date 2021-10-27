@@ -62,5 +62,20 @@ namespace SISLIN_1._0
         {
             MessageBoxResult result = MessageBox.Show("Função Ainda Não Disponível!", "Alerta", MessageBoxButton.OK, MessageBoxImage.Question);
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Tela1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
