@@ -45,6 +45,7 @@
                     <Button x:Name="Cadas_Prod" Content="Cadastrar Produtos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Cadas_Prod_Click"/>
                     <Button x:Name="pagamento" Content="Formas de Pagar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="pagamento_Click"/>
                     <Button x:Name="Tell" Content="Lista Telefônica" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Tell_Click"/>
+                    <Button x:Name="Consumo" Content="Consumo Interno" HorizontalAlignment="Left" VerticalAlignment="Top" Width="226" Height="54" FontSize="20" Background="#FFC490E4" BorderBrush="#FFC490E4" Click="Consumo_Click" />
                 </StackPanel>
             </ScrollViewer>
         </Grid>

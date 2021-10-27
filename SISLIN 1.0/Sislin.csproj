@@ -132,6 +132,9 @@
     <Compile Include="Cadas_Entra_Dinh.xaml.cs">
       <DependentUpon>Cadas_Entra_Dinh.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ConsumoInterno.xaml.cs">
+      <DependentUpon>ConsumoInterno.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dados_preco.cs" />
     <Compile Include="Database\Conexao.cs" />
     <Compile Include="Editar2.cs" />
@@ -145,6 +148,12 @@
     </Compile>
     <Compile Include="Interfaces\IDAO.cs" />
     <Compile Include="InternoAno.cs" />
+    <Compile Include="InternoEntreOsAnos.xaml.cs">
+      <DependentUpon>InternoEntreOsAnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InternoEntreOsMeses.xaml.cs">
+      <DependentUpon>InternoEntreOsMeses.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListaTelefonica.xaml.cs">
       <DependentUpon>ListaTelefonica.xaml</DependentUpon>
     </Compile>
@@ -226,6 +235,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ConsumoInterno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Edit_Entr_Dinh.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -239,6 +252,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Excl_Entr_Dinh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InternoEntreOsAnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InternoEntreOsMeses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
