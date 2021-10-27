@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SISLIN_1._0.Models;
 
 namespace SISLIN_1._0
 {
@@ -60,7 +61,20 @@ namespace SISLIN_1._0
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Função Ainda Não Disponível!", "Alerta", MessageBoxButton.OK, MessageBoxImage.Question);
+            try
+            {
+                EntrDinheiro entrDinheiro = new EntrDinheiro();
+                entrDinheiro.Id_Dinheiro = ;
+                entrDinheiro.Valor_Dinheiro = 55;
+                entrDinheiro.Tipo_Dinheiro = "Dinheiro";
+
+                EntrDinheiroDAO entrDinheiroDAO = new EntrDinheiroDAO();
+                entrDinheiroDAO.Insert(entrDinheiro);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Não executado", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

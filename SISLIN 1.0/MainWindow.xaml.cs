@@ -88,20 +88,6 @@ namespace SISLIN_1._0
             cliente.cpf_cliente = "454444545";
           cliente.email_cliente = "gustavo.saam@gmail.com";
 
-
-
-
-        }
-
-        private void InsertVenda()
-        {
-            EntrDinheiro entrDinheiro = new EntrDinheiro();
-            entrDinheiro.Id_Dinheiro = 1;
-            entrDinheiro.Valor_Dinheiro = 55;
-            entrDinheiro.Tipo_Dinheiro = "Dinheiro";
-
-            EntrDinheiroDAO entrDinheiroDAO = new EntrDinheiroDAO();
-            entrDinheiroDAO.Insert(entrDinheiro);
         }
     }
 }
