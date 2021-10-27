@@ -26,11 +26,12 @@
                     <GradientStop Color="#C490E4" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
+            <DatePicker x:Name="data" Margin="350,53,46,330"/>
         </Border>
         <DataGrid x:Name="Tela1" HorizontalAlignment="Left" Height="151" Margin="10,250,0,0" VerticalAlignment="Top" Width="337" Grid.Column="0"
                   IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#d3e0f5" AlternationCount="2" SelectionChanged="Tela1_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Código" FontSize="17" Binding="{Binding Cod, ConverterCulture='pt-BR'}"/>
+                <DataGridTextColumn Header="Data" FontSize="17" Binding="{Binding Val, ConverterCulture='pt-BR'}"/>
                 <DataGridTextColumn Header="Valor" FontSize="17" Binding="{Binding Val, ConverterCulture='pt-BR'}"/>
                 <DataGridTextColumn Header="Tipo" FontSize="17" Binding="{Binding Tip, ConverterCulture='pt-BR'}"/>
             </DataGrid.Columns>
@@ -39,25 +40,18 @@
         <Button x:Name="Editar" Content="Editar Entrada" HorizontalAlignment="Left" Margin="192,10,0,0" VerticalAlignment="Top" Width="123" Height="32" Click="Editar_Click" Foreground="Black" FontSize="15" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent"/>
         <Button x:Name="Excluir" Content="Excluir Entrada" HorizontalAlignment="Left" Margin="349,10,0,0" VerticalAlignment="Top" Width="123" Height="32" Click="Excluir_Click" Foreground="Black" FontSize="15" FontWeight="Bold" Background="Transparent" BorderBrush="Transparent"/>
         <TextBox HorizontalAlignment="Left" Height="151" Margin="369,250,0,0" TextWrapping="Wrap" Text="Faça sua anotação aqui..." VerticalAlignment="Top" Width="181"/>
-        <TextBox x:Name="text02" HorizontalAlignment="Left" Height="23" Margin="39,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+        <TextBox x:Name="text02" HorizontalAlignment="Left" Height="23" Margin="39,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
         <Label Content="Digite o valor:" FontWeight="Light" 
             FontFamily="Helvetica" FontSize="15" 
-            Foreground="Black" Margin="39,75,463,304"/>
+            Foreground="Black" Margin="39,47,463,332"/>
         <Label Content="Forma da pagamento:" FontWeight="Light" 
             FontFamily="Helvetica" FontSize="15" 
-            Foreground="Black" Margin="39,132,366,253"/>
-        <Button Content="Salvar" HorizontalAlignment="Left" Margin="39,203,0,0" VerticalAlignment="Top" Width="88" Height="29" Background="#FFC490E4" BorderBrush="Transparent" Click="Button_Click"/>
-        <TextBox x:Name="text01" HorizontalAlignment="Left" Height="23" Margin="103,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <Label Content="Código:" FontWeight="Light" 
+            Foreground="Black" Margin="39,105,366,280"/>
+        <Button Content="Salvar" HorizontalAlignment="Left" Margin="83,203,0,0" VerticalAlignment="Top" Width="88" Height="29" Background="#FFC490E4" BorderBrush="Transparent" Click="Button_Click"/>
+        <Button Content="SAIR" HorizontalAlignment="Left" Margin="198,203,0,0" VerticalAlignment="Top" Width="88" Height="29" Background="#FFC490E4" BorderBrush="Transparent" Click="Button_Click_1"/>
+        <TextBox x:Name="tipo" HorizontalAlignment="Left" Height="23" Margin="39,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+        <Label Content="Data:" FontWeight="Light" 
             FontFamily="Helvetica" FontSize="15" 
-            Foreground="Black" Margin="39,42,531,336"/>
-        <Button Content="SAIR" HorizontalAlignment="Left" Margin="259,203,0,0" VerticalAlignment="Top" Width="88" Height="29" Background="#FFC490E4" BorderBrush="Transparent" Click="Button_Click_1"/>
-        <ComboBox HorizontalAlignment="Left" Margin="39,164,0,0" VerticalAlignment="Top" Width="189">
-        <ComboBoxItem Content="Dinheiro"/>
-        <ComboBoxItem Content="Cartão de Crédito"/>
-        <ComboBoxItem Content="Cartão de débito"/>
-        <ComboBoxItem Content="À prazo"/>
-        </ComboBox>
-        <Button Content="Nova" HorizontalAlignment="Left" Margin="151,203,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="Button_Click_2"/>
+            Foreground="Black" Margin="307,52,263,327"/>
     </Grid>
 </Window>
