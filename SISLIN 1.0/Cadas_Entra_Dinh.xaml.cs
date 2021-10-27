@@ -25,16 +25,22 @@ namespace SISLIN_1._0
         {
             InitializeComponent();
 
-
             Loaded += Cadas_Entra_Dinh_LoadedCadas_Entra_Dinh_Loaded;
         }
 
         private void Cadas_Entra_Dinh_LoadedCadas_Entra_Dinh_Loaded(object sender, RoutedEventArgs e)
         {
-         
+            for (int i = 0; i < 50; i++)
+            {
+                Cadas.Add(new Cadastro1()
+                {
+                    Cod = i + 1,
+                    Val = 50 + i,
+                    Tip = "Jesus é amigo, Jesus é meu Irmão"
+                });
+            }
+            Tela1.ItemsSource = Cadas;
         }
-
-        
 
         private void Editar_Click(object sender, RoutedEventArgs e)
         {
@@ -60,19 +66,10 @@ namespace SISLIN_1._0
                 EntrDinheiro entrDinheiro = new EntrDinheiro();
                 entrDinheiro.Id_Dinheiro = 1;
                 entrDinheiro.Valor_Dinheiro = 55;
-                entrDinheiro.formapaga_Dinheiro = "Dinheiro";
+                entrDinheiro.Tipo_Dinheiro = "Dinheiro";
 
-                
-
-                MessageBox.Show("Cadastrado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                var result = MessageBox.Show("Deseja continuar adicionando?", "Continuar?", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-                if (result == MessageBoxResult.No)
-                    ClearInputs();
-                else
-                    ClearInputs();
-
+                EntrDinheiroDAO entrDinheiroDAO = new EntrDinheiroDAO();
+                entrDinheiroDAO.Insert(entrDinheiro);
             }
             catch (Exception ex)
             {
@@ -93,12 +90,6 @@ namespace SISLIN_1._0
         private void Tela1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
-        }
-        private void ClearInputs()
-        {
-            data.SelectedDate = null;
-            text02.Text = "";
-            tipo.Text = "";
         }
     }
 }

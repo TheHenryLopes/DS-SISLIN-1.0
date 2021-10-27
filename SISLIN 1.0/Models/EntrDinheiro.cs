@@ -10,7 +10,6 @@ namespace SISLIN_1._0.Models
     {
         public int Id_Dinheiro { get; set; }
         public double Valor_Dinheiro { get; set; }
-        public string formapaga_Dinheiro { get; set; }
-        public DateTime Data { get; set; }
+        public string Tipo_Dinheiro { get; set; }
     }
 }
