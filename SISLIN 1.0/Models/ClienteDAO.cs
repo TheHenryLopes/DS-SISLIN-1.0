@@ -32,8 +32,8 @@ namespace SISLIN_1._0.Models
             try
             {
                 var query = conn.Query();
-                query.CommandText = "INSERT INTO cliente(nome_cliente,cpf_cliente,rg_cliente,cnpj_cliente,nome_fantasia_cliente,email_cli,telefone_cliente) " + 
-                    "VALUES (@nome, @cpf, @rg, @cnpj,@nomefan,@email, @telefone)";
+                query.CommandText = "INSERT INTO cliente(id_cliente, nome_cliente,cpf_cliente,rg_cliente,cnpj_cliente,nome_fantasia_cliente,email_cliente,telefone_cliente) " + 
+                    "VALUES (null, @nome, @cpf, @rg, @cnpj,@nomefan,@email, @telefone)";
                 query.Parameters.AddWithValue("@nome",t.nome_cliente);
                 query.Parameters.AddWithValue("@cpf",t.cpf_cliente);
                 query.Parameters.AddWithValue("@rg", t.rg_cliente);
